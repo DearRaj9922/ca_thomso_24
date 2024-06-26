@@ -3,7 +3,7 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background: #f0f0f0; /* Adjust if necessary */
+    background: #f0f0f0; 
 }
 
 .background-image {
@@ -80,7 +80,7 @@
     width: 50px;
 }
 
-/* Adjust positions based on the design */
+
 .line2 { top: 20%; left: 10%; }
 .line3 { top: 30%; right: 20%; }
 .line4 { bottom: 20%; left: 15%; }
