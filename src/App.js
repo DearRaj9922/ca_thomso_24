@@ -16,6 +16,7 @@ import Bird1 from "../src/images/purepng.com-gull-birdbirdsflyanimals-6315229364
 import Bird2 from "../src/images/purepng.com-gull-birdbirdsflyanimals-6315229364462xrbq 2.png";
 function App() {
   return (
+    // Home Page
     <div className="page">
       <h1>WHAT ARE YOU WAITING FOR?</h1>
       <div className="white-ellipse1"></div>
