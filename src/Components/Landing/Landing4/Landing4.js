@@ -16,7 +16,12 @@ function Landing4() {
       <div className="reg-button-div">
         <button className="reg-button">Register Now!</button>
       </div>
-      <img src={cloud4} className="cloud4" alt="cloud-4"/>
+      <div className="clouds">
+      <img src={cloud4} className="cloud4-1" alt="cloud-4-1"/>
+      <img src={cloud4} className="cloud4-2" alt="cloud-4-2"/>
+      <img src={cloud4} className="cloud4-3" alt="cloud-4-3"/>
+      <img src={cloud4} className="cloud4-4" alt="cloud-4-4"/>
+      </div>
       
     </div>
     <div className="landing4mobile">
