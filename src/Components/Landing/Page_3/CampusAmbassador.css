@@ -1,0 +1,171 @@
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.campus-ambassador-container {
+  width: 100%;
+  min-height: 100vh;
+  flex-shrink: 0;
+  background-image: url('./assets/page3desktop.svg');
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 16vw;
+}
+
+.text-frame {
+  margin-left: 100px;
+  margin-top: 150px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 693px;
+  width: 500px;
+}
+
+.text-item {
+  opacity: 0; 
+  padding: 15px; 
+  border-radius: 12px; 
+  transition: transform 0.3s ease-in-out; 
+}
+
+.text-item:hover {
+  transform: translateY(-5px); 
+}
+
+.text-item.animate {
+  animation: popUp 0.5s ease-out forwards; 
+}
+
+.text-item h1 {
+  color: #000000;
+  text-shadow: 8.593px 12.03px 3.437px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke-width: 1.8074074268341064px;
+  -webkit-text-stroke-color: #FFF;
+  font-family: Nashville-Serial;
+  font-size: 42.963px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 2.148px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.text-item ul, .text-item li {
+  color: #000;
+  text-align: justify;
+  font-family: Nashville-Serial;
+  font-size: 18.341px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#certificate-text,
+#leadershipQualities-text,
+#freeEntry-text,
+#internshipOpportunity-text,
+#workshops-text {
+  width: 100%;
+}
+
+/* #cloud2 {
+  width: 167.556px;
+  height: 57.57px;
+  flex-shrink: 0;
+  stroke-width: 3.437px;
+  stroke: #595959;
+  margin-top: 10px;
+} */
+#cloud1 {
+  width: 167.556px;
+  height: 57.57px;
+  flex-shrink: 0;
+  stroke-width: 3.437px;
+  stroke: #595959;
+  margin-top: 10px;
+  position: absolute;
+  top: 89.4px;
+  left: 668px; 
+}
+
+#cloud2 {
+  /* width: 167.556px; */
+  height: 35.57px;
+  flex-shrink: 0;
+  stroke-width: 4.437px;
+  stroke: #595959;
+  margin-top: 10px;
+  position: absolute;
+  top: 52px; 
+  right: 380px; 
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .campus-ambassador-container {
+    background-image: url('./assets/page3mobile.svg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; 
+  }
+
+  .text-frame {
+    margin-left: 20px;
+    margin-top: 50px;
+    width: 90%;
+  }
+
+  .text-item {
+    padding: 10px; 
+    border-radius: 12px; 
+    transition: transform 0.3s ease-in-out; 
+  }
+
+  .text-item h1 {
+    color: #303030;
+    text-shadow: 8.593px 12.03px 3.437px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke-width: 1.0099999904632568px;
+    -webkit-text-stroke-color: #FFF;
+    font-family: Nashville-Serial;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; 
+    letter-spacing: 1.25px;
+  }
+
+  .text-item ul, .text-item li {
+    color: #000;
+    text-align: justify;
+    font-family: Nashville-Serial;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  #cloud1 {
+    width: 100px;
+    height: 34.542px;
+    top: 550px; 
+    left: 40px; 
+  }
+
+  #cloud2 {
+    width: 100px;
+    height: 34.542px;
+    top: 36px; 
+    right: 40px; 
+  }
+}
