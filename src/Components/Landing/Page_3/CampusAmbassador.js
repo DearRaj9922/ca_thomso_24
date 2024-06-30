@@ -1,17 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './CampusAmbassador.css';
 import cloud1 from './assets/cloud2.svg';
 import cloud2 from './assets/cloud2.svg';
 
 function CampusAmbassador() {
-  useEffect(() => {
-    const textItems = document.querySelectorAll('.text-item');
-    textItems.forEach((item, index) => {
-      setTimeout(() => {
-        item.classList.add('animate');
-      }, index * 500); //delay (500ms for each item)
-    });
-  }, []);
 
   return (
     <div className='campus-ambassador-container'>
@@ -53,4 +45,4 @@ function CampusAmbassador() {
   );
 }
 
-export default CampusAmbassador;
+export default CampusAmbassador
