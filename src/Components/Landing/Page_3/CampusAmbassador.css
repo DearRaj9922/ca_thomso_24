@@ -1,23 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap');
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-.campus-ambassador-container{
+body {
+  margin: 0px;
+}
+
+.campus-ambassador-container {
   width: 100%;
   min-height: 100vh;
   flex-shrink: 0;
   background-image: url('./assets/page3desktop.svg');
   background-size: cover;
   background-position: center;
-  padding-bottom: 16vw;
+  padding-bottom: 16px;
 }
-.text-frame{
-  margin-left:100px;
-  margin-top:150px;
+
+.text-frame {
+  margin-left: 100px;
+  margin-top: 150px;
   display: inline-flex;
   flex-direction: column;
-  /* align-items: flex-start; */
   gap: 10px;
-  height:693px;
+  height: 693px;
   width: 500px;
 }
 
@@ -41,10 +53,10 @@
   text-shadow: 8.593px 12.03px 3.437px rgba(0, 0, 0, 0.25);
   -webkit-text-stroke-width: 1.8074074268341064px;
   -webkit-text-stroke-color: #FFF;
-  font-family: Nashville-Serial;
+  font-family: Noto serif;
   font-size: 42.963px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 100%;
   letter-spacing: 2.148px;
   margin-top: 5px;
@@ -54,7 +66,7 @@
 .text-item ul, .text-item li {
   color: #000;
   text-align: justify;
-  font-family: Nashville-Serial;
+  font-family: Noto serif;
   font-size: 18.341px;
   font-style: normal;
   font-weight: 700;
@@ -62,8 +74,13 @@
   margin-top: 5px;
   margin-bottom: 5px;
 }
-#leadershipQualities-text{
-  width: 495.793px;
+
+#certificate-text,
+#leadershipQualities-text,
+#freeEntry-text,
+#internshipOpportunity-text,
+#workshops-text {
+  width: 100%;
 }
 
 /* #cloud2 {
@@ -99,7 +116,7 @@
 }
 
 /* Media query for mobile view */
-@media (max-width: 768px) {
+@media (max-width: 768px ) and (min-width: 300px) {
   .campus-ambassador-container {
     background-image: url('./assets/page3mobile.svg');
     background-size: cover;
@@ -124,10 +141,10 @@
     text-shadow: 8.593px 12.03px 3.437px rgba(0, 0, 0, 0.25);
     -webkit-text-stroke-width: 1.0099999904632568px;
     -webkit-text-stroke-color: #FFF;
-    font-family: Nashville-Serial;
+    font-family: Noto serif;
     font-size: 25px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 100%; 
     letter-spacing: 1.25px;
   }
@@ -135,7 +152,7 @@
   .text-item ul, .text-item li {
     color: #000;
     text-align: justify;
-    font-family: Nashville-Serial;
+    font-family: Noto serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
