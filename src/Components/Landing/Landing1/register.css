@@ -1,0 +1,24 @@
+@font-face {
+    font-family: Nashville;
+    src: url('./assets/Nashville-Serial Bold.ttf');
+}
+.register{
+    margin-top: 0.5vh;
+    padding-bottom: 1.5vh;
+    /* margin-bottom: 0.5vh; */
+}
+.register button{
+    font-family: Nashville;
+    font-size: 3vh;
+    color: #515151;
+    height: 8vh;
+    width: fit-content;
+    padding: 0 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vh;
+    border: 0.75vh solid #515151;
+    background-color: white;
+    box-shadow: 1.5vh 1.5vh 0vh 0vh rgba(0, 0, 0, 0.25);
+}

@@ -1,0 +1,134 @@
+.first {
+  background-image: url("../assets/background2.svg");
+  width: 100%;
+  min-height: 1000px;
+  flex-shrink: 0;
+  background-size: cover;
+  background-position: center;
+}
+.text {
+  color: #535252;
+  text-shadow: 6px 8px 3px rgba(0, 0, 0, 0.25);
+
+  font-family: "NashvilleSerial-Light-Regular";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 64px */
+  letter-spacing: 2.7px;
+  position: relative;
+  text-decoration: 2px solid white;
+  width: 650px;
+  height: 128px;
+  top: 97.15px;
+  left: 800px;
+
+}
+
+.cloud1 {
+  width: 118.78px;
+  height: 40.68px;
+  top: 455px;
+  left: 95px;
+
+  position: absolute;
+}
+
+.cloud2 {
+  width: 118.78px;
+  height: 40.68px;
+  top: 370px;
+  left: 540px;
+
+  position: absolute;
+}
+
+.cloud3 {
+  width: 118.78px;
+  height: 40.68px;
+  top: 430.01px;
+  left: 980px;
+
+  position: absolute;
+}
+
+.cloud4 {
+  width: 118.78px;
+  height: 40.68px;
+  top: 300px;
+  left: 1250px;
+
+  position: absolute;
+}
+.scooter {
+  width: 571.11px;
+  height: 571.11px;
+  top: 449px;
+  left: 100px;
+
+  position: absolute;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .first{
+        background-image: url("../assets/background2.svg");
+        background-size: cover;
+        /* background-position: center; */
+        /* min-height: 100vh;  */
+        max-height: 100vh;
+        
+    }
+
+    .text{
+        color: #535252;
+        text-shadow: 6px 8px 3px rgba(0, 0, 0, 0.25);
+      
+        font-family: "NashvilleSerial-Light-Regular";
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 64px */
+        letter-spacing: 2.7px;
+
+        top: 100px;
+        left:40px;
+        width: 600px;
+        margin: auto;
+        
+    }
+    .cloud1{
+        width: 100.78px;
+        height: 40.68px;
+        top: 300px;
+        left: 50px;
+      
+    }
+    .cloud2{
+        width: 100.78px;
+        height: 40.68px;
+        top: 350px;
+        left: 250px;
+      
+    }
+    .cloud3{
+        width: 100.78px;
+        height: 40.68px;
+        top: 400px;
+        left: 400px;
+      
+    }
+    .cloud4{
+        width: 100.78px;
+        height: 40.68px;
+        top: 250px;
+        left: 450px;
+      
+    }
+    .scooter{
+        width: 300px;
+        height: 300px;
+        top: 600px;
+        left: 100px;
+    }
+}
