@@ -1,4 +1,4 @@
-import styles from "./Landing2.module.css";
+import styles from "./Landing2.css";
 import cloud from "./Assets/cloud.svg"
 import scooter from "./Assets/scooter.svg"
 export default function Landing2() {
