@@ -12,6 +12,12 @@ body {
   /* margin: -8px; */
   position: relative;
   overflow: hidden; 
+  object-fit: cover;
+}
+img{
+  max-height: 100%;
+  max-width: 100%;
+  object-fit:contain;
 }
 
 .bg_img_4 {
