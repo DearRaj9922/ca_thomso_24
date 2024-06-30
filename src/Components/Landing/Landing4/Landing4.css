@@ -63,6 +63,37 @@ body {
   font-weight: 700;
   color: #515151;
 }
+.reg-button:hover{
+  cursor: pointer;
+}
+/* .clouds{
+  position: relative;
+  z-index: 2;
+} */
+.cloud4-1{
+  position: relative;
+  z-index: 2;
+  width: 12vw;
+  margin :-12vh 0 0 6vw;
+}
+.cloud4-2{
+  position: relative;
+  z-index: 2;
+  width: 6vw;
+  margin :-6vh 0 -5vh 11vw;
+}
+.cloud4-3{
+  position: relative;
+  z-index: 2;
+  width: 9vw;
+  margin :-30vh 0 11vh 70vw;
+}
+.cloud4-4{
+  position: relative;
+  z-index: 2;
+  width: 12vw;
+  margin :-30vh 0 0 84vw;
+}
 .landing4mobile{
   display: none;
 }
