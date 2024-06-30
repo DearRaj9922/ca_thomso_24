@@ -1,7 +1,7 @@
-import styles from "./page.module.css";
-import cloud from "../assets/cloud.svg"
-import scooter from "../assets/scooter.svg"
-export default function Page() {
+import styles from "./Landing2.module.css";
+import cloud from "./Assets/cloud.svg"
+import scooter from "./Assets/scooter.svg"
+export default function Landing2() {
   return (
     <div>
       <div className={styles.first}>
