@@ -9,6 +9,10 @@
   }
 }
 
+body {
+  margin: 0px;
+}
+
 .campus-ambassador-container {
   width: 100%;
   min-height: 100vh;
@@ -16,7 +20,7 @@
   background-image: url('./assets/page3desktop.svg');
   background-size: cover;
   background-position: center;
-  padding-bottom: 16vw;
+  padding-bottom: 16px;
 }
 
 .text-frame {
@@ -49,10 +53,10 @@
   text-shadow: 8.593px 12.03px 3.437px rgba(0, 0, 0, 0.25);
   -webkit-text-stroke-width: 1.8074074268341064px;
   -webkit-text-stroke-color: #FFF;
-  font-family: Nashville-Serial;
+  font-family: Noto serif;
   font-size: 42.963px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 100%;
   letter-spacing: 2.148px;
   margin-top: 5px;
@@ -62,7 +66,7 @@
 .text-item ul, .text-item li {
   color: #000;
   text-align: justify;
-  font-family: Nashville-Serial;
+  font-family: Noto serif;
   font-size: 18.341px;
   font-style: normal;
   font-weight: 700;
@@ -112,7 +116,7 @@
 }
 
 /* Media query for mobile view */
-@media (max-width: 768px) {
+@media (max-width: 768px ) and (min-width: 300px) {
   .campus-ambassador-container {
     background-image: url('./assets/page3mobile.svg');
     background-size: cover;
@@ -137,10 +141,10 @@
     text-shadow: 8.593px 12.03px 3.437px rgba(0, 0, 0, 0.25);
     -webkit-text-stroke-width: 1.0099999904632568px;
     -webkit-text-stroke-color: #FFF;
-    font-family: Nashville-Serial;
+    font-family: Noto serif;
     font-size: 25px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 100%; 
     letter-spacing: 1.25px;
   }
@@ -148,7 +152,7 @@
   .text-item ul, .text-item li {
     color: #000;
     text-align: justify;
-    font-family: Nashville-Serial;
+    font-family: Noto serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
