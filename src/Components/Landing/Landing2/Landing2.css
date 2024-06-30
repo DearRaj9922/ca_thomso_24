@@ -1,5 +1,5 @@
 .first {
-  background-image: url("../assets/background2.svg");
+  background-image: url("./Assets/background2.svg");
   width: 100%;
   min-height: 1000px;
   flex-shrink: 0;
@@ -72,7 +72,7 @@
 
 @media (max-width: 768px) {
     .first{
-        background-image: url("../assets/background2.svg");
+        background-image: url("./Assets/background2.svg");
         background-size: cover;
         /* background-position: center; */
         /* min-height: 100vh;  */
