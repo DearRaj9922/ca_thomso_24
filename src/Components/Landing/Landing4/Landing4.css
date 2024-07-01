@@ -54,6 +54,7 @@ img{
   justify-content: center;
   position: relative;
   z-index: 1;
+  filter: drop-shadow(8px 8px 0px rgba(0, 0, 0, 0.4));
 }
 .reg-button{
   display: flex;
