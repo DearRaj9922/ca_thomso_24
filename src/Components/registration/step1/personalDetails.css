@@ -11,12 +11,12 @@
 
 } */
 #welcomebckbg12 {
-  /* z-index: -1; */
+  z-index: -1;
   width: 100vw;
   height: 100vh;
   margin-top:-35vh;
   position: fixed;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 .personal {
   position: relative;
@@ -239,10 +239,10 @@ select option [value="Gender 1"] {
     z-index: -1;
     width: 100vw;
     height: 100vh;
-    margin-top:-26vh;
+    margin-top: -26vh;
     /* margin-top: 76px; */
     position: fixed;
-    object-fit: cover;
+    /* object-fit: cover; */
   }
 
   .personal-step2 {

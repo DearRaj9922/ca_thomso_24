@@ -1,6 +1,6 @@
 import React from "react";
 import "./Landing4.css";
-import landingbgdesk4 from "../../Assets/landing4desktopbg.svg";
+import landingbgdesk4 from "../../Assets/land4.webp";
 import landingbgmon4 from "../../Assets/landing4mobilebg.svg";
 import textimg from "../../Assets/WHAT ARE YOU WAITING FOR_.svg";
 import cloud4 from "../../Assets/cloud4.svg";
@@ -8,8 +8,9 @@ import cloud4 from "../../Assets/cloud4.svg";
 function Landing4() {
   return (
     <>
+    <img src={landingbgdesk4} className="bg_img_4" alt="land-bg-4"/>
     <div className="landing4">
-      <img src={landingbgdesk4} className="bg_img_4" alt="land-bg-4"/>
+      
       <div className="text-div">
       <img src={textimg} className="head-text" alt="text-i"/>
       </div>

@@ -5,8 +5,8 @@ import Select from "react-select";
 import CircularProgress from "@mui/material/CircularProgress";
 import axios from "axios";
 // import Nav from "../../web/NewNavbar/Nav";
-import welcomebckbg from "../../Assets/Registrationbg.svg";
-import bgimage123 from "../../Assets/registrationbg-mobile.svg";
+import welcomebckbg from "../../Assets/Registrationbg.webp";
+import bgimage123 from "../../Assets/444.webp";
 import { EyeInvisibleOutlined, EyeTwoTone } from "@ant-design/icons";
 import { Input } from "antd";
 import Collegedetails from "../../registration/CollegeDetailes/Collegedetailes"
