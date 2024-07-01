@@ -1,22 +1,33 @@
 import React from 'react'
 import "./Landing2.css";
-import back2 from "../../Assets/background.svg";
-import monument2 from "../../Assets/page2bg.svg";
+import back2 from "../../Assets/land2.webp";
+import back2mob from "../../Assets/land2-mobile.webp";
+import land2text from "../../Assets/land2textmob.svg";
 import scooter from "../../Assets/scooter.svg";
 
 export default function Landing2() {
   return (
     <div>
+      <img src={back2} className='bg_img_2' alt="bg-2-img"/>
+      <img src={back2mob} className='bg_img_2_mob' alt="bg"/>
       <div className="landing2">
-        <img src={back2} className='bg_img_2' alt="bg-2-img"/>
-        <div className="bgpart-2">
-        <img src={monument2} className='bg_img_monumnet' alt="bg-monumnet"/>
-        </div>
         <div className="landing2-text-box">
         <div className="landing2-text">
           <h1>
             What is Campus Ambassdor Program?
           </h1>
+        </div>
+        </div>
+        <div className="scooter-div">
+          <div className="scooter-img-div">
+            <img src={scooter} className='scooter-img' alt="scooter-img"/>
+          </div>
+        </div>
+      </div>
+      <div className="landing2-mobile">
+      <div className="landing2-text-box">
+        <div className="landing2-text">
+          <img src={land2text} className='land2text-img' alt="land2-text"/>
         </div>
         </div>
         <div className="scooter-div">
