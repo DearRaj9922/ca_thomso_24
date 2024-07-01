@@ -5,6 +5,16 @@ body {
   /* width: 100vw;
   height: 100vh; */
 }
+.bg_img_2 {
+  z-index:-1;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 0;
+  /* object-fit:cover;  */
+  position:fixed; 
+ 
+}
+
 
 .landing2 {
   width: 100vw;
@@ -14,22 +24,10 @@ body {
   overflow: hidden; 
   object-fit: cover;
 }
-img{
-  max-height: 100%;
-  max-width: 100%;
-  /* object-fit:contain; */
-}
 
-.bg_img_2 {
-  width: 100vw;
-  height: 100vh;
-  object-fit:cover; 
-  position:absolute; 
-  top: 0;
-  margin: 0;
- 
-}
-.bgpart-2{
+
+
+/* .bgpart-2{
   width:100vw;
   height:100vh;
   position: absolute;
@@ -43,7 +41,7 @@ img{
   z-index: 1;
   display: flex;
   justify-content: center;
-}
+} */
 .landing2-text-box{
   display: flex;
   justify-content: right;
@@ -52,8 +50,8 @@ img{
   z-index: 2;
 }
 .landing2-text{
-  width:50vw;
-  font-size: 2.5vw;
+  width:60vw;
+  font-size: 2rem;
   color: #535252;
   text-shadow: 8.135px 11.39px 3.254px rgb(132, 131, 131);
   -webkit-text-stroke-width: 2.847395896911621;
@@ -71,12 +69,95 @@ img{
   padding:0 0 5vh 5vw;
   position: relative;
   z-index: 2;
+  height: 100vh;
 }
 .scooter-img-div{
   width:50vw;
-  height:auto;
+  height: 100vh;
+  margin-bottom: -11rem;
 
 }
 .scooter-img{
   width:40vw;
+  margin-bottom: -60vh;
+}
+.bg_img_2_mob{
+  display: none;
+}
+.landing2-mobile{
+  display: none;
+}
+@media only screen and (max-width:1030px){
+  .landing2-text{
+    width:65vw;
+  }
+}
+@media only screen and (max-width:932px){
+  .landing2-text{
+    width:70vw;
+  }
+}
+@media only screen and (max-width:863px){
+  .landing2-text{
+    width:65vw;
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (max-width:800px){
+  .landing2-text{
+    width:70vw;
+  }
+}
+@media only screen and (max-width:768px){
+  .landing2{
+    display: none;
+  }
+  .bg_img_2{
+    display: none;
+  }
+  .bg_img_2_mob{
+    display: block;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+
+  }
+  .landing2-mobile{
+    display: block;
+    width: 100vw;
+  height: 100vh;
+  /* margin: -8px; */
+  position: relative;
+  overflow: hidden; 
+  /* object-fit: cover; */
+  }
+  .landing2-text-box{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 10vh;
+  }
+  .landing2-text{
+    display: flex;
+    justify-content: center;
+    width:70vw;
+    height: auto;
+  }
+  .land2text-img{
+    width:70vw;
+    height: auto;
+  }
+  .scooter-img{
+    margin-bottom:-41vh;
+  }
+
+}
+@media only screen and (max-width:530px){
+  .landing2-text{
+    width:100vw;
+  }
+  .land2text-img{
+    width: 90vw;
+  }
 }
