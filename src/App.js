@@ -10,6 +10,8 @@ import React from "react";
 // import { Main } from './Components/Landing/Landing1/Main.jsx';
 import PersonalDetails from './Components/registration/step1/personalDetails.jsx';
 import Landing5 from "../src/Components/Landing/Landing5/Landing5.js";
+import Emailverify from "../src/Components/registration/register/form.js"
+import Emailverified from "../src/Components/registration/EmailVerify/EmailVerify.js";
 
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
           <Route path='/landing3' element={<CampusAmbassador />} />
           <Route path='/landing5' element={<Landing5/>}/>
           <Route path='/registration' element={<PersonalDetails />} />
+          <Route path='/verify' element={<Emailverify />} />
+          <Route path='/emailverified' element={<Emailverified/>}/>
         </Routes>
       </Router>
     </div>
