@@ -1,0 +1,20 @@
+.land5-bg{
+    width:100vw;
+    height: 100vh;
+    position: fixed;
+
+}
+.land5-bg-mob{
+    display: none;
+}
+@media only screen and (max-width:768px){
+    .land5-bg{
+        display: none;
+    }
+    .land5-bg-mob{
+        display: block;
+        width:100vw;
+        height:100vh;
+        position: fixed;
+    }
+}
