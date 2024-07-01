@@ -9,6 +9,7 @@ import React from "react";
 // import Landing1 from "../src/Components/Landing/Landing1/Landing1.js"
 // import { Main } from './Components/Landing/Landing1/Main.jsx';
 import PersonalDetails from './Components/registration/step1/personalDetails.jsx';
+import Landing5 from "../src/Components/Landing/Landing5/Landing5.js";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
 
           <Route path='/landing4' element={<Landing4 />} />
           <Route path='/landing3' element={<CampusAmbassador />} />
+          <Route path='/landing5' element={<Landing5/>}/>
           <Route path='/registration' element={<PersonalDetails />} />
         </Routes>
       </Router>
