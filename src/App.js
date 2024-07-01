@@ -7,7 +7,8 @@ import Landing1 from "../src/Components/Landing/Landing1/Landing1.js";
 import Landing2 from "../src/Components/Landing/Landing2/Landing2.js";
 import React from "react";
 // import Landing1 from "../src/Components/Landing/Landing1/Landing1.js"
-import { Main } from './Components/Landing/Landing1/Main.jsx';
+// import { Main } from './Components/Landing/Landing1/Main.jsx';
+import PersonalDetails from './Components/registration/step1/personalDetails.jsx';
 
 
 function App() {
@@ -17,12 +18,13 @@ function App() {
     
       <Router>
         <Routes>  
-          <Route path='/' element={<Main />} />
+          {/* <Route path='/' element={<Main />} /> */}
           <Route path='/land' element={<Landing1 />} />
           <Route path='/landing2' element={<Landing2/>}/>
 
           <Route path='/landing4' element={<Landing4 />} />
           <Route path='/landing3' element={<CampusAmbassador />} />
+          <Route path='/registration' element={<PersonalDetails />} />
         </Routes>
       </Router>
     </div>
