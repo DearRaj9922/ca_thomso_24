@@ -22,8 +22,10 @@ body {
 }
 
 .text-frame {
-    /*margin-left: 100px;*/
-    /*margin-top: 150px;*/
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
     display: inline-flex;
     flex-direction: column;
     gap: 10px;
@@ -122,12 +124,11 @@ body {
     }
 
     .text-frame {
-      /*display: none;*/
       display: inline-flex;
       flex-direction: column;
       gap: 1px;
         margin-left: 20px;
-        /*margin-top: 50px;*/
+        margin-top: 50px;
         width: 80%;
       max-height: 100vh;
     }
@@ -185,7 +186,6 @@ body {
     }
 
     .text-frame {
-      /*display: none;*/
       display: inline-flex;
       flex-direction: column;
       gap: 1px;
