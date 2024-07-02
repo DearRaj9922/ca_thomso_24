@@ -22,7 +22,7 @@ body {
   overflow: hidden; 
   object-fit: cover;
 }
-img{
+.clouds .landing4mobile img{
   max-height: 100%;
   max-width: 100%;
   /* object-fit:contain; */

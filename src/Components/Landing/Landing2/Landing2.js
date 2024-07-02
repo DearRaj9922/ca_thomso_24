@@ -7,7 +7,7 @@ import scooter from "../../Assets/scooter.svg";
 
 export default function Landing2() {
   return (
-    <div>
+    <div className='Landing2wrapper'>
       <img src={back2} className='bg_img_2' alt="bg-2-img"/>
       <img src={back2mob} className='bg_img_2_mob' alt="bg"/>
       <div className="landing2">
