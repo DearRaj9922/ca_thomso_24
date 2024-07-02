@@ -13,6 +13,7 @@ import Emailverify from "../src/Components/registration/register/form.js"
 import Emailverified from "../src/Components/registration/EmailVerify/EmailVerify.js";
 import Login from '../src/Components/registration/login/login.js';
 import HeroSection from "./Components/Landing/Hero Section/HeroSection";
+import Footer from "./Components/Footer/Footer.js";
 
 
 
@@ -36,6 +37,7 @@ function App() {
 
         </Routes>
       </Router>
+      
     </div>
   );
 }
