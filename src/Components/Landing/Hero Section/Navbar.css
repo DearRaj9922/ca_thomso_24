@@ -1,0 +1,26 @@
+.Nav-Wrapper{
+    background-image: url("../../Assets/background.svg");
+    display: flex;
+    justify-content:space-between;
+    /* padding: 0 1vw; */
+    align-items: center;
+    /* width: 100vw; */
+    overflow: hidden; 
+    height: 10vw;
+
+}
+
+.nav-logo{
+    overflow: hidden;
+}
+
+.nav-logo img{
+    height: 2vw;
+    width: auto;
+    /* overflow: hidden; */
+}
+
+.login-nav{
+    /* flex:1;
+    height: 100%; */
+}

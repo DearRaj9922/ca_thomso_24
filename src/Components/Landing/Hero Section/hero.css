@@ -2,9 +2,10 @@
 
 .hero_wrapper{
     background-image: url("../../Assets/background.svg");
-    height: 111vh;
+    height: 104vh;
     width: 100%;
-    /* overflow: hidden; */
+    /* overflow: hidden;
+    overflow-y: hidden; */
     /* height: 100vw; */
     margin: 0;
     padding: 0;
@@ -85,12 +86,14 @@
 
 .landingImage{
     position: absolute;
-    object-fit: fill;
-    /* margin-left: 1.5vw; */
+    /* object-fit: fill; */
+    overflow-y: hidden;
+    object-fit: contain;
+    margin-left: -1.5vw;
     /* display: none; */
-    height: 70vh;
+    height: 67vh;
     width: 100vw !important;
-    margin-top: -24vh;
+    margin-top: -28vh;
 
 }
 

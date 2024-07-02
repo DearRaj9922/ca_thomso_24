@@ -2,10 +2,14 @@ import React from "react";
 import "./hero.css";
 import clouds from "../../Assets/clouds-hero.svg";
 import landing from "../../Assets/Landing page image.svg";
+import Footer from "../../Footer/Footer";
+import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const HeroSection = () => {
   return (
     <div>
+      {/* <Navbar/> */}
       <div className="hero_wrapper">
         <div className="hero_content">
           <p>CAMPUS AMBASSADOR</p>
@@ -13,7 +17,11 @@ const HeroSection = () => {
         </div>
 
         <div className="hero-reg-btn">
-          <button className="hero-reg">Register Now</button>
+          <Link
+          to="/registration">
+              <button className="hero-reg">Register Now</button>
+          </Link>
+          
         </div>
 
         <div className="hero_image">
@@ -21,6 +29,7 @@ const HeroSection = () => {
           <img src={landing} alt="" className="landingImage" />
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
