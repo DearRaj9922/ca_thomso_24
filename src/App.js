@@ -12,7 +12,8 @@ import Landing5 from "../src/Components/Landing/Landing5/Landing5.js";
 import Emailverify from "../src/Components/registration/register/form.js"
 import Emailverified from "../src/Components/registration/EmailVerify/EmailVerify.js";
 import Login from '../src/Components/registration/login/login.js';
-import HeroSection from "../src/Components/Landing/Hero Section/HeroSection.jsx";
+import HeroSection from "./Components/Landing/Hero Section/HeroSection";
+
 
 
 function App() {
