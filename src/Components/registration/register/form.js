@@ -2,12 +2,13 @@ import React, { useEffect } from "react";
 import "./index.css";
 import { useState } from "react";
 
-import Nav from "../../web/NewNavbar/Nav";
-import logbg1 from "../../../assets/WELCOME_BACK.svg";
-import logbg2 from "../../../assets/Campus_Ambassador.svg";
+// import Nav from "../../web/NewNavbar/Nav";
+// import logbg1 from "../../../assets/WELCOME_BACK.svg";
+// import logbg2 from "../../../assets/Campus_Ambassador.svg";
 import { message } from "antd";
 import OtpInput from "react-otp-input";
-import background from "../../../assets/registration.webp";
+import background from "../../Assets/Registrationbg.webp";
+import bgimage111 from "../../Assets/444.webp";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
@@ -68,9 +69,10 @@ export default function VerifyEmail() {
   }, [code]);
   return (
     <div style={{ overflowY: "hidden" }}>
-      <Nav />
+      {/* <Nav /> */}
       <div>
         <img className="otpBack" src={background} alt="back" />
+        <img className="otpBack-mob" src={bgimage111} alt="back-mob" />
       </div>
       <div id="log_bg2" className="otpBox">
         {/* <img src={logbg1} id ="wel_log_back" alt="" />

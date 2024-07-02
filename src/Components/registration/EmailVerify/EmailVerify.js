@@ -1,17 +1,19 @@
 import React from "react";
 import "./EmailVerify.css";
-import Nav from "../../web/NewNavbar/Nav";
-import logbg1 from "../../../assets/welcome.webp";
-import logbg2 from "../../../assets/Campus_Ambassador.svg";
+// import Nav from "../../web/NewNavbar/Nav";
+import logbg1 from "../../Assets/Registrationbg.webp";
+import logbg1mob from "../../Assets/444.webp";
+// import logbg2 from "../../../assets/Campus_Ambassador.svg";
 import { Link, useNavigate } from "react-router-dom";
 
 const EmailVerify = () => {
   const navigate = useNavigate()
   return (
     <div id="emailroot">
-      <Nav id="navemailbar" />
+      {/* <Nav id="navemailbar" /> */}
       <div id="log_bg12">
         <img src={logbg1} className="emailVerifyBack" alt="" />
+        <img src={logbg1mob} className="emailVerifyBack-mob" alt="" />
         {/* <img src={logbg2} id="campus_ambd2" /> */}
         <div className="Box" id="box2_reg">
           <div className="Box2">

@@ -7,8 +7,12 @@ import Landing2 from "../src/Components/Landing/Landing2/Landing2.js";
 import React from "react";
 // import Landing1 from "../src/Components/Landing/Landing1/Landing1.js"
 // import { Main } from './Components/Landing/Landing1/Main.jsx';
-import PersonalDetails from "./Components/registration/step1/personalDetails.jsx";
-import HeroSection from "./Components/Landing/Hero Section/HeroSection.jsx";import Landing5 from "../src/Components/Landing/Landing5/Landing5.js";
+import PersonalDetails from './Components/registration/step1/personalDetails.jsx';
+import Landing5 from "../src/Components/Landing/Landing5/Landing5.js";
+import Emailverify from "../src/Components/registration/register/form.js"
+import Emailverified from "../src/Components/registration/EmailVerify/EmailVerify.js";
+import Login from '../src/Components/registration/login/login.js';
+
 
 
 function App() {
@@ -20,9 +24,15 @@ function App() {
           <Route path="/land" element={<Landing1 />} />
           <Route path="/landing2" element={<Landing2 />} />
 
-          <Route path="/landing4" element={<Landing4 />} />
-          <Route path="/landing3" element={<CampusAmbassador />} />
-          <Route path="/registration" element={<PersonalDetails />} />
+          <Route path='/landing4' element={<Landing4 />} />
+          <Route path='/landing3' element={<CampusAmbassador />} />
+          <Route path='/landing5' element={<Landing5/>}/>
+          <Route path='/registration' element={<PersonalDetails />} />
+          <Route path='/verify' element={<Emailverify />} />
+          <Route path='/emailverified' element={<Emailverified/>}/>
+          <Route path='/login' element={<Login/>}/>
+
+
         </Routes>
       </Router>
     </div>

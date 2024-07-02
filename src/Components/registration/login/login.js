@@ -1,18 +1,18 @@
 import React, { useState,useEffect } from "react";
 import "./login.css";
 import "./mobile_login.css";
-import Nav from "../../web/NewNavbar/Nav";
-import MobNavbar from "../../mobile/Navbar/MobNavbar";
-import logbg1 from "../../../assets/WELCOME_BACK.svg";
-import logbg2 from "../../../assets/Campus_Ambassador.svg";
-import welcomebckbg from "../../../assets/welcomebckbg.webp";
+// import Nav from "../../web/NewNavbar/Nav";
+// import MobNavbar from "../../mobile/Navbar/MobNavbar";
+import logbg1 from "../../Assets/Welcome Back-text.webp";
+import logbg2 from "../../Assets/cam-ambasdor-tex.webp";
+import welcomebckbg from "../../Assets/login.webp";
 import { Input } from "antd";
 import { Link, useNavigate } from "react-router-dom";
 import SimpleReactValidator from "simple-react-validator";
 import { login, fetchEvents, fetchUser } from "../../User/UserActions";
 import { connect } from "react-redux";
 import axios from "axios";
-import Loader from "../../Loader/Loader";
+// import Loader from "../../Loader/Loader";
 import setAuthToken from "../../User/setAuthToken";
 
 const Login = (props) => {
@@ -99,9 +99,9 @@ const Login = (props) => {
 
   return (
     <>
-      {loading && <Loader />}
+      {/* {loading && <Loader />} */}
       {/* <MobNavbar id="nav1bar" /> */}
-      <Nav />
+      {/* <Nav /> */}
       <img src={welcomebckbg} id="welcomebckbg" alt="" />
       <div id="bg">
         <div id="log_bg1">
