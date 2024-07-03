@@ -1,12 +1,14 @@
 import React from 'react';
 import './CampusAmbassador.css';
-import cloud1 from './assets/cloud2.svg';
-import cloud2 from './assets/cloud2.svg';
+import landingdesktop from '../../Assets/page3desktop.svg';
+import cloud1 from '../../Assets/cloud2.svg';
+import cloud2 from '../../Assets/cloud2.svg';
 
 function CampusAmbassador() {
 
   return (
     <div className='campus-ambassador-container'>
+      <img src={landingdesktop} className="bg_img" alt="landing-bg"/>
       <div className="text-frame">
         <div className="text-item">
           <h1 id='certificates'>CERTIFICATES</h1>
@@ -39,7 +41,7 @@ function CampusAmbassador() {
           </ul>
         </div>
       </div>
-      <img src={cloud2} alt="cloud1" id='cloud1'/>
+      <img src={cloud1} alt="cloud1" id='cloud1'/>
       <img src={cloud2} alt="cloud2" id='cloud2'/>
     </div>
   );
