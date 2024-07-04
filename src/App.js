@@ -25,7 +25,6 @@ function App() {
           <Route path="/" element={<HeroSection />} />
           <Route path="/land" element={<Landing1 />} />
           <Route path="/landing2" element={<Landing2 />} />
-
           <Route path='/landing4' element={<Landing4 />} />
           <Route path='/landing3' element={<CampusAmbassador />} />
           <Route path='/landing5' element={<Landing5/>}/>
@@ -33,8 +32,6 @@ function App() {
           <Route path='/verify' element={<Emailverify />} />
           <Route path='/emailverified' element={<Emailverified/>}/>
           <Route path='/login' element={<Login/>}/>
-
-
         </Routes>
       </Router>
       
