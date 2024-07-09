@@ -1,0 +1,268 @@
+.heading-text {
+    width: 62vw;
+}
+
+.res-con {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 3% 4%;
+    flex-direction: row;
+}
+
+.con1 {
+    width: 31vw;
+}
+
+.res {
+    width: 30vw;
+}
+
+.heading {
+    width: 100% !important
+}
+
+.caguide {
+    width: 52vw;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid;
+    gap: 10%;
+    height: 100%;
+    overflow-y: auto
+}
+
+.heading-text {
+    font-family: Comic Neue;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #212121;
+    width: 100%;
+}
+
+
+.head-ca {
+    font-family: Comic Sans MS;
+    font-weight: 700;
+    font-size: 20px !important;
+    line-height: 24px;
+    letter-spacing: 1.5%;
+    text-align: left;
+    color: #212121;
+    padding-top: 2vw !important; 
+}
+
+.res {
+    font-family: Comic Sans MS;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.015em;
+    /* text-align: left; */
+
+}
+
+.img-vec {
+    padding-left: 1.3vw
+}
+
+.res1 {
+    font-family: Comic Sans MS;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    /* text-align: left; */
+    padding-top: 12px;
+    padding-bottom: 12px;
+    /* display: flex; */
+
+
+}
+#res1 a{
+    color:black;
+}
+
+.uks1 {
+    padding: 7px 2vw;
+}
+
+.con2 {
+    font-family: Comic Sans MS;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.caguide {
+    background-color: white;
+    margin: auto;
+}
+
+#bgguide {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.profileBack3 {
+    display: none;
+}
+
+@media only screen and (max-width:1000px) {
+    .res-con {
+        flex-direction: column;
+    }
+
+    .res {
+        width: 60vw;
+    }
+
+    .caguide {
+        width: 83vw;
+        height: 80vh;
+        gap: 0;
+        margin-top: 1vh;
+        padding: 10px 0;
+        justify-content: initial;
+
+    }
+
+    .uks1 {
+        font-size: 13px;
+        padding: 0px 2vw;
+    }
+
+    .res-con {
+        padding: 1% 4%;
+    }
+
+    #nav1bar {
+        display: none !important;
+    }
+    .heading{
+        margin-top: 15px;
+    }
+
+    .profileBack3 {
+        display: block;
+    }
+
+}
+
+#welcomebckbg {
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+
+@media only screen and (min-width:800px) {
+    #wel_log_back1 {
+        margin-top: 16vh;
+        margin-left: 24vw;
+        width: 42vw;
+        margin-bottom: 2vh;
+    }
+}
+
+#campus_ambd1 {
+    margin-left: -14vw;
+    width: 23vw;
+    margin-bottom: 1vh;
+}
+
+.ca-leftbar {
+    position: absolute;
+    top: 8vh;
+    z-index: 2;
+}
+.ca-rightbar{
+    position: relative;
+    z-index: 1;
+}
+.ca-mob-nav{
+    position: relative;
+    z-index:9;
+}
+@media only screen and (max-width: 1000px) {
+
+    #wel_log_back1 {
+        margin-top: 20vh !important;
+        width: 65vw !important;
+        margin-left: 15vw;
+    }
+
+    #campus_ambd1 {
+        margin-top: -4vh !important;
+        margin-left: 40vw !important;
+        width: 42vw !important;
+    }
+
+    #bgguide {
+        top: 11vh !important;
+        left: 0vw !important;
+        height: 85vh !important;
+        overflow-y: auto;
+    }
+    #bgguide::-webkit-scrollbar{
+        display: none !important;
+    }
+}
+
+@media (max-width:373px) {
+
+    .res1 {
+
+        padding-top: 0px;
+
+        /* display: flex; */
+    }
+
+}
+
+@media (max-width:306px) {
+
+    .res1 {
+
+        padding-top: 0px;
+        /* display: flex; */
+    }
+
+    .heading {
+        margin-bottom: 0;
+
+    }
+
+    .caguide {
+        overflow-y: auto;
+        /* max-height: 86vh; */
+    }
+
+    .caguide::-webkit-scrollbar {
+        display: none !important;
+    }
+}
+
+.caguide::-webkit-scrollbar {
+    display: none !important;
+}
+
+/* @media only screen and (max-width:500px){
+    #log_bg12{
+        margin-top:70vh !important;
+        z-index:2;
+    }
+}
+
+@media only screen and(max-width:470px){
+    #log_bg12{
+        margin-top:80vh !important;
+        z-index:2;
+    }
+} */

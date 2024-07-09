@@ -1,0 +1,103 @@
+@import url(https://db.onlinewebfonts.com/c/5a6bcdf461365efd4a14cddf611bd176?family=NashvilleSerial-Bold);
+
+.hero_wrapper{
+    background-image: url("../../Assets/background.svg");
+    height: 104vh;
+    width: 100%;
+    /* overflow: hidden;
+    overflow-y: hidden; */
+    /* height: 100vw; */
+    margin: 0;
+    padding: 0;
+}
+
+.hero_content{
+    display: grid;
+    place-content: center;
+    text-align: center;
+    line-height: 0;
+    margin-top: -2vw;
+    font-size: 5vw;
+    font-family: "NashvilleSerial-Bold";
+    color: #535252;
+    text-shadow: 0.35vw 0.3vw 0px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke-width: 0.1vw;
+    -webkit-text-stroke-color: #FFF;
+    font-weight: bolder;
+    font-stretch: expanded;
+    letter-spacing: 0.24506rem;
+
+}
+
+.hero-reg{
+    border-radius: 1.05069rem;
+    border: 0.25vw solid #515151;
+    background: #FFF;
+    box-shadow: 0.4vw 0.7vw 0px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 1.5vw;
+    color: #515151;
+    font-family: "NashvilleSerial-Bold";
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0.10506rem;
+    padding: 0.7vw 1vw;
+}
+
+.hero-reg:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    background-color: #515151;
+    color: #FFF;
+    border-color: #FFF;
+}
+
+.hero-reg:active{
+    transform: scale(0.97);
+}
+
+.program-text{
+    margin: 0;
+    padding: 0;
+}
+
+.hero-reg-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 2vw;
+}
+
+.clouds-landing{
+    display: block;
+    height: 28vh;
+    width: 100vw;
+    justify-content: stretch;
+    margin-top: -2vw;
+
+}
+
+.hero_image{
+    position:absolute;
+    object-fit: fill;
+}
+
+.landingImage{
+    position: absolute;
+    /* object-fit: fill; */
+    overflow-y: hidden;
+    object-fit: contain;
+    margin-left: -1.5vw;
+    /* display: none; */
+    height: 67vh;
+    width: 100vw !important;
+    margin-top: -28vh;
+
+}
+
+.hero-img img{
+    
+    width: 100vw;
+}

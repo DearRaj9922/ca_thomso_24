@@ -1,19 +1,42 @@
-import styles from "./page.module.css";
-import cloud from "../assets/cloud.svg"
-import scooter from "../assets/scooter.svg"
-export default function Page() {
-  return (
-    <div>
-      <div className={styles.first}>
-      <p className={styles.text}>What is Campus
-        Ambassador Program?</p>
-        <img src={cloud} alt="cloud" className={styles.cloud1}/>
-        <img src={cloud} alt="cloud" className={styles.cloud2}/>
-        <img src={cloud} alt="cloud" className={styles.cloud3}/>
-        <img src={cloud} alt="cloud" className={styles.cloud4}/>
-        <img src={scooter} alt="scooter" className={styles.scooter} />
-      </div>
+import React from 'react'
+import "./Landing2.css";
+import back2 from "../../Assets/land2.webp";
+import back2mob from "../../Assets/land2-mobile.webp";
+import land2text from "../../Assets/land2textmob.svg";
+import scooter from "../../Assets/scooter.svg";
 
+export default function Landing2() {
+  return (
+    <div className='Landing2wrapper'>
+      <img src={back2} className='bg_img_2' alt="bg-2-img"/>
+      <img src={back2mob} className='bg_img_2_mob' alt="bg"/>
+      <div className="landing2">
+        <div className="landing2-text-box">
+        <div className="landing2-text">
+          <h1>
+            What is Campus Ambassdor Program?
+          </h1>
+        </div>
+        </div>
+        <div className="scooter-div">
+          <div className="scooter-img-div">
+            <img src={scooter} className='scooter-img' alt="scooter-img"/>
+          </div>
+        </div>
+      </div>
+      <div className="landing2-mobile">
+      <div className="landing2-text-box">
+        <div className="landing2-text">
+          <img src={land2text} className='land2text-img' alt="land2-text"/>
+        </div>
+        </div>
+        <div className="scooter-div">
+          <div className="scooter-img-div">
+            <img src={scooter} className='scooter-img' alt="scooter-img"/>
+          </div>
+        </div>
+      </div>
+      
     </div>
-  );
+  )
 }

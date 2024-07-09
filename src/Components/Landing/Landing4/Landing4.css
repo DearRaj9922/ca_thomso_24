@@ -1,27 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap'); 
 /* Add this to your CSS to prevent scrolling */
 body {
-  /* overflow: hidden; */
-  overflow:hidden;
+  overflow: hidden;
+  /* width: 100vw;
+  height: 100vh; */
+}
+.bg_img_4 {
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  margin-top:0;
+  position: fixed;
+ 
 }
 
 .landing4 {
   width: 100vw;
   height: 100vh;
-  margin: 0;
+  /* margin: -8px; */
   position: relative;
-  /* overflow: hidden; Ensure no overflow within the div */
+  overflow: hidden; 
+  object-fit: cover;
+}
+.clouds .landing4mobile img{
+  max-height: 100%;
+  max-width: 100%;
+  /* object-fit:contain; */
 }
 
-.bg_img_4 {
-  width: 100vw;
-  height: 100vh;
-  object-fit:cover; 
-  position: fixed; 
-  top: 0;
-  left: 0;
- 
-}
+
 .text-div{
   width:100vw;
   display: flex;
@@ -47,6 +54,7 @@ body {
   justify-content: center;
   position: relative;
   z-index: 1;
+  filter: drop-shadow(8px 8px 0px rgba(0, 0, 0, 0.4));
 }
 .reg-button{
   display: flex;
@@ -97,8 +105,17 @@ body {
 .landing4mobile{
   display: none;
 }
-@media only screen and (max-width:768px){
+.bg-mob-4{
+  display: none;
+}
+.head-text-mob{
+  display: none;
+}
+  @media only screen and (max-width:768px){
   .landing4{
+    display: none;
+  }
+  .bg_img_4{
     display: none;
   }
   .landing4mobile{
@@ -111,11 +128,45 @@ body {
     overflow: hidden;
   }
   .bg-mob-4 {
+    display: block;
+    z-index: -1;
     width: 100vw;
     height: 100vh;
-    object-fit: cover;
-    position: fixed; /* Fix the position to ensure it covers the viewport */
-    top: 0;
-    left: 0;
+    margin-top:0;
+    position: fixed;
   }
+  .head-text{
+    display: none;
+  }
+  .head-text-mob{
+    display: block;
+    position: relative;
+    z-index: 5;
+    /* color:#535353; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:70vw;
+  }
+  .cloud4-2 {
+    position: relative;
+    z-index: 2;
+    width: 13vw;
+    margin: -6vh 0 -5vh 11vw;
+  }
+  .cloud4-1{
+    position: relative;
+    z-index: 2;
+    width: 21vw;
+    margin :4vh 0 0 61vw;
+  }
+  .text-div{
+    margin-top: 5vh;
+  }
+  .reg-button{
+    width: 35vw;
+    font-size: 4.2vw;
+  }
+  
+  
 }
