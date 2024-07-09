@@ -13,12 +13,11 @@
 body {
   margin: 0;
   overflow: hidden;
-
 }
 
 .campus-ambassador-container {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   flex-shrink: 0;
   background-size: cover;
   background-position: center;
