@@ -72,11 +72,11 @@
 }
 
 #login{
-    color: #FF5C00;
+    color: #ff00c7;
     text-align: center;
     /* leading-trim: both;
     text-edge: cap; */
-    font-family: Comic Sans MS;
+    font-family:'Karma Medium';
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -99,7 +99,7 @@
     background: #FFF;
     box-shadow: 1.4900398254394531px 2.9800796508789062px 0px 0px #505050;
     color: #505050;
-    font-family: Comic Sans MS;
+    font-family:'Karma Medium';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -129,7 +129,7 @@
     background: #FFF;
     box-shadow: 1.4900398254394531px 2.9800796508789062px 0px 0px #505050;
     color: #505050;
-    font-family: Comic Sans MS;
+    font-family:'Karma Medium';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -149,7 +149,7 @@
     text-align: right;
     /* leading-trim: both;
     text-edge: cap; */
-    font-family: Comic Neue;
+    font-family: 'Karma Medium';
     font-size: 13px;
     font-style: normal;
     font-weight: 700;
@@ -165,7 +165,7 @@
     background: #FF5C00;
     box-shadow: 1.518475890159607px 3.036951780319214px 0px 0px #505050;
     color: #fff;
-    font-family: Comic Sans MS;
+    font-family:'Karma Medium';
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -187,7 +187,7 @@
     text-align: center;
     /* leading-trim: both;
     text-edge: cap; */
-    font-family: Comic Neue;
+    font-family:'Karma Medium';
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -202,7 +202,7 @@
     color: #FF5C00;
     /* leading-trim: both;
     text-edge: cap; */
-    font-family: Comic Neue;
+    font-family: 'Karma Medium';
     font-size: 16px;
     font-style: normal;
     font-weight: 700;

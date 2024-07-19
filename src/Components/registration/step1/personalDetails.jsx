@@ -294,10 +294,8 @@ const PersonalDetails = () => {
         </div>
 
         <div className="personal-buttons">
-          <button onClick ={nextpage} className="personal-button-submit" disabled={!active} style={active == true ? {background: "#ff5c00"} : {background: "rgb(204, 204, 204)"}}>
-          
-                Next
-                
+          <button onClick ={nextpage} className="personal-button-submit" disabled={!active} style={active == true ? {background: "#ff5c00"} : {background: "#ff00c7"}}>
+                Submit
           </button>
           <button className="personal-button-clear" onClick={clearInput}>
             Clear
