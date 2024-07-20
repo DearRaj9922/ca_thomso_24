@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap'); 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 /* Add this to your CSS to prevent scrolling */
 body {
   overflow: hidden;
@@ -6,26 +6,22 @@ body {
   height: 100vh; */
 }
 .bg_img_2 {
-  z-index:-1;
+  z-index: -1;
   width: 100vw;
   height: 100vh;
   margin-top: 0;
   /* object-fit:cover;  */
-  position:fixed; 
- 
+  position: fixed;
 }
-
 
 .landing2 {
   width: 100vw;
   height: 100vh;
   /* margin: -8px; */
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
   object-fit: cover;
 }
-
-
 
 /* .bgpart-2{
   width:100vw;
@@ -42,122 +38,144 @@ body {
   display: flex;
   justify-content: center;
 } */
-.landing2-text-box{
+@keyframes text {
+  from {
+    transform: translateX(500%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.landing2-text-box {
   display: flex;
-  justify-content: right;
-  padding:5vh 5vw 0 0;
+  justify-content: center;
+  padding: 3vh 5vw 0 0;
   position: relative;
   z-index: 2;
+  animation-name: text;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
-.landing2-text{
-  width:60vw;
+.landing2-text {
+  width: 60vw;
   font-size: 2rem;
   color: #535252;
   text-shadow: 8.135px 11.39px 3.254px rgb(132, 131, 131);
   -webkit-text-stroke-width: 2.847395896911621;
-  -webkit-text-stroke-color: #FFF;
+  -webkit-text-stroke-color: #fff;
   font-family: Nashville-Serial;
-  font-weight: 700 ;
+  font-weight: 700;
 }
-.landing2-text h1{
+.landing2-text h1 {
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #FFF;
+  -webkit-text-stroke-color: #fff;
 }
-.scooter-div{
-  display:flex;
+.scooter-div {
+  display: flex;
   justify-content: left;
-  padding:0 0 5vh 5vw;
+  padding: 0 0 0 5vw;
   position: relative;
   z-index: 2;
   height: 100vh;
 }
-.scooter-img-div{
-  width:50vw;
-  height: 100vh;
-  margin-bottom: -11rem;
 
-}
-.scooter-img{
-  width:40vw;
-  margin-bottom: -60vh;
-}
-.bg_img_2_mob{
-  display: none;
-}
-.landing2-mobile{
-  display: none;
-}
-@media only screen and (max-width:1030px){
-  .landing2-text{
-    width:65vw;
+@keyframes scooter {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
   }
 }
-@media only screen and (max-width:932px){
-  .landing2-text{
-    width:70vw;
+.scooter-img-div {
+  width: 50vw;
+  height: 80vh;
+  margin-bottom: 30vw;
+  animation-name: scooter;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.scooter-img {
+  width: 35vw;
+  margin-bottom: -40vh;
+}
+.bg_img_2_mob {
+  display: none;
+}
+.landing2-mobile {
+  display: none;
+}
+@media only screen and (max-width: 1030px) {
+  .landing2-text {
+    width: 65vw;
   }
 }
-@media only screen and (max-width:863px){
-  .landing2-text{
-    width:65vw;
+@media only screen and (max-width: 932px) {
+  .landing2-text {
+    width: 70vw;
+  }
+}
+@media only screen and (max-width: 863px) {
+  .landing2-text {
+    width: 65vw;
     font-size: 1.7rem;
   }
 }
-@media only screen and (max-width:800px){
-  .landing2-text{
-    width:70vw;
+@media only screen and (max-width: 800px) {
+  .landing2-text {
+    width: 70vw;
   }
 }
-@media only screen and (max-width:768px){
-  .landing2{
+@media only screen and (max-width: 768px) {
+  .landing2 {
     display: none;
   }
-  .bg_img_2{
+  .bg_img_2 {
     display: none;
   }
-  .bg_img_2_mob{
+  .bg_img_2_mob {
     display: block;
     z-index: -1;
     width: 100vw;
     height: 100vh;
     position: fixed;
-
   }
-  .landing2-mobile{
+  .landing2-mobile {
     display: block;
     width: 100vw;
-  height: 100vh;
-  /* margin: -8px; */
-  position: relative;
-  overflow: hidden; 
-  /* object-fit: cover; */
+    height: 100vh;
+    /* margin: -8px; */
+    position: relative;
+    overflow: hidden;
+    /* object-fit: cover; */
   }
-  .landing2-text-box{
+  .landing2-text-box {
     display: flex;
     justify-content: center;
     width: 100vw;
     margin-top: 10vh;
   }
-  .landing2-text{
+  .landing2-text {
     display: flex;
     justify-content: center;
-    width:70vw;
+    width: 70vw;
     height: auto;
   }
-  .land2text-img{
-    width:70vw;
+  .land2text-img {
+    width: 70vw;
     height: auto;
   }
-  .scooter-img{
-    margin-bottom:-41vh;
+  .scooter-img {
+    margin-bottom: -41vh;
   }
-
 }
-@media only screen and (max-width:530px){
-  .landing2-text{
-    width:100vw;
+@media only screen and (max-width: 530px) {
+  .landing2-text {
+    width: 100vw;
   }
-  .land2text-img{
+  .land2text-img {
     width: 90vw;
   }
 }
