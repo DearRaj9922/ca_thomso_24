@@ -29,7 +29,7 @@ function App() {
           <Route path='/landing3' element={<CampusAmbassador />} />
           <Route path='/landing5' element={<Landing5/>}/>
           <Route path='/registration' element={<PersonalDetails />} />
-          <Route path='/verify' element={<Emailverify />} />
+          <Route path='/verifyemail' element={<Emailverify />} />
           <Route path='/emailverified' element={<Emailverified/>}/>
           <Route path='/login' element={<Login/>}/>
         </Routes>
