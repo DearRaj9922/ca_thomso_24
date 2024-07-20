@@ -1,7 +1,7 @@
 import React from "react";
 import "./Landing4.css";
 import { useNavigate, Link } from "react-router-dom";
-import landingbgdesk4 from "../../Assets/land4.webp";
+import landingbgdesk4 from "../../Assets/land4.svg";
 import landingbgmon4 from "../../Assets/land4-mobile.webp";
 import textimg from "../../Assets/WHAT ARE YOU WAITING FOR_.svg";
 import textimgmob from "../../Assets/land4text.svg";
