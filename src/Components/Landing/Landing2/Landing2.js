@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Landing2.css";
-import back2 from "../../Assets/land2.webp";
+import back2 from "../../Assets/land2.svg";
 import back2mob from "../../Assets/land2-mobile.webp";
 import land2text from "../../Assets/land2textmob.svg";
 import scooter from "../../Assets/scooter.svg";
