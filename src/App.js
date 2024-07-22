@@ -14,6 +14,7 @@ import Emailverified from "../src/Components/registration/EmailVerify/EmailVerif
 import Login from '../src/Components/registration/login/login.js';
 import HeroSection from "./Components/Landing/Hero Section/HeroSection";
 import Footer from "./Components/Footer/Footer.js";
+import Profile from "./Components/Profile/Profile";
 
 
 
@@ -32,6 +33,8 @@ function App() {
           <Route path='/verify' element={<Emailverify />} />
           <Route path='/emailverified' element={<Emailverified/>}/>
           <Route path='/login' element={<Login/>}/>
+          <Route path='/profile' element={<Profile/>}/>
+
         </Routes>
       </Router>
       

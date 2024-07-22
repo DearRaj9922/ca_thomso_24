@@ -1,0 +1,18 @@
+.profilecard-container{
+    height: 600px;
+    width: 500px;
+    color: white;
+    background: #74005A;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.items{
+    display: flex;
+    align-items: center;
+}
+.inputbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
