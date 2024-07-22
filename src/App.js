@@ -27,15 +27,10 @@ function App() {
           <Route path='/landing5' element={<ParallaxWrapper><Landing5 className="parallax-element" data-speed="0.1" /></ParallaxWrapper>} />
           <Route path='/mainlanding' element={<CombinedLandingPage />} />
           <Route path='/registration' element={<PersonalDetails />} />
-<<<<<<< HEAD
           <Route path='/verifyemail' element={<Emailverify />} />
           <Route path='/emailverified' element={<Emailverified/>}/>
           <Route path='/login' element={<Login/>}/>
-=======
-          <Route path='/verify' element={<Emailverify />} />
-          <Route path='/emailverified' element={<Emailverified />} />
-          <Route path='/login' element={<Login />} />
->>>>>>> master
+
         </Routes>
       </Router>
     </div>
