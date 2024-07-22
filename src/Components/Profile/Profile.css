@@ -12,6 +12,7 @@
     justify-content: space-evenly;
 }
 .banner{
+    /*position: relative;*/
     box-sizing: border-box;
     padding-top: 35px;
     display: flex;
@@ -21,7 +22,7 @@
     justify-content: center;
     height: 100%;
 }
-.banner div{
+.banner-title{
     font-weight: bold;
     color: #DF3F39;
     font-size: xx-large;
@@ -38,4 +39,33 @@
     justify-content: center;
     gap: 20px;
     font-weight: bold;
+}
+.banner-data-container{
+    position: relative;
+}
+.banner-data{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    top: 15%;
+    left: 18%;
+    font-size: x-large;
+    color: #74005A;
+}
+.banner-section{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.banner-section div{
+    text-align: center;
+    width: 100%;
+}
+.banner-section div hr{
+    margin: 0;
+    padding: 0;
+    border: 1px solid #74005A;
 }

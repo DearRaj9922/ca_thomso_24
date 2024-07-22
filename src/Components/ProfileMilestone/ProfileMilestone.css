@@ -37,4 +37,5 @@
 }
 .profile-milestone div hr{
     color: rgba(0,0,0,0.12);
+    border: 1px solid rgba(0,0,0,0.12);
 }
