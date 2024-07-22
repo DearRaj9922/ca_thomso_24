@@ -11,7 +11,7 @@ body {
   height: 100vh;
   margin-top: 0;
   /* object-fit:cover;  */
-  position:fixed; 
+  position:absolute; 
  
 }
 
