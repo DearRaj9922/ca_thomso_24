@@ -100,7 +100,7 @@ export default function VerifyEmail() {
                 fontSize: "12px",
                 color: "#000",
                 fontWeight: "400",
-                caretColor: "blue",
+                caretColor: "black",
               }}
             />
           </div>
@@ -114,11 +114,11 @@ export default function VerifyEmail() {
             disabled={!active}
             style={
               active == true
-                ? { background: "#ff5c00" }
-                : { background: "rgb(204, 204, 204)" }
+                ? { background: "#ff00c7" }
+                : { background: "#ff00c7" }
             }
           >
-            verify
+            Verify
           </button>
           {/* <div className="resendOtp">
         <div>Haven’t received OTP yet?</div>
