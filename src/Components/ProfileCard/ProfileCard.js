@@ -4,7 +4,7 @@ import './ProfileCard.css'
 function ProfileCard(props) {
     return (
         <div className="profilecard-container">
-            <div>Referral Code</div>
+            <div className='profilecard-referral'>Referral Code</div>
             <div>Dhruv Bhatia</div>
             <div>
                 <div>

@@ -7,7 +7,9 @@
     background: #74005A;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    box-sizing: border-box;
 }
+
 .items{
     display: flex;
     align-items: center;
