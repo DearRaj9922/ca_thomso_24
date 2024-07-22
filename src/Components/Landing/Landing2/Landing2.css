@@ -1,163 +1,226 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap'); 
-/* Add this to your CSS to prevent scrolling */
-body {
-  overflow: hidden;
-  /* width: 100vw;
-  height: 100vh; */
-}
-.bg_img_2 {
-  z-index:-1;
-  width: 100vw;
-  height: 100vh;
-  margin-top: 0;
-  /* object-fit:cover;  */
-  position:absolute; 
- 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+@keyframes slideInBottom {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
+@keyframes pause {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50vw);
+  }
+}
+
+@keyframes moveRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(50vw);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+body {
+  overflow: hidden;
+}
+
+.bg_img_2 {
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
 
 .landing2 {
   width: 100vw;
   height: 100vh;
-  /* margin: -8px; */
   position: relative;
-  overflow: hidden; 
-  object-fit: cover;
+  overflow: hidden;
 }
 
-
-
-/* .bgpart-2{
-  width:100vw;
-  height:100vh;
-  position: absolute;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-}
-.bg_img_monumnet{
-  position: relative;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-} */
-.landing2-text-box{
+.landing2-text-box {
   display: flex;
   justify-content: right;
-  padding:5vh 5vw 0 0;
+  padding: 5vh 5vw 0 5vw;
   position: relative;
   z-index: 2;
+  /* width: 90vw !important; */
+  /* margin: 0 5vw; */
 }
-.landing2-text{
-  width:60vw;
+
+.landing2-text {
+  width: 50%;
   font-size: 2rem;
   color: #535252;
   text-shadow: 8.135px 11.39px 3.254px rgb(132, 131, 131);
   -webkit-text-stroke-width: 2.847395896911621;
   -webkit-text-stroke-color: #FFF;
   font-family: Nashville-Serial;
-  font-weight: 700 ;
+  font-weight: 700;
+  animation: slideInBottom 1s ease-out, pause 1s 1s, moveLeft 1s 2s;
+  animation-fill-mode: forwards;
+  margin-left: 50px;
 }
-.landing2-text h1{
+
+.landing2-text h1 {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #FFF;
+  padding-left: 5vw;
 }
-.scooter-div{
-  display:flex;
+
+.landing2-details {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  /* display: none; */
+  animation: slideUp 1s ease-out 3s;
+  animation-fill-mode: forwards;
+}
+
+.landing2-details h1 {
+  font-family: Karma;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  padding-right: 5vw;
+}
+
+.scooter-div {
+  display: flex;
   justify-content: left;
-  padding:0 0 5vh 5vw;
+  padding: 0 0 5vh 5vw;
   position: relative;
   z-index: 2;
   height: 100vh;
 }
-.scooter-img-div{
-  width:50vw;
+
+.scooter-img-div {
+  width: 50vw;
   height: 100vh;
   margin-bottom: -11rem;
-
+  animation: moveRight 1s ease-out 2s;
+  animation-fill-mode: forwards;
 }
-.scooter-img{
-  width:40vw;
+
+.scooter-img {
+  width: 40vw;
   margin-bottom: -60vh;
 }
-.bg_img_2_mob{
+
+.bg_img_2_mob {
   display: none;
 }
-.landing2-mobile{
+
+.landing2-mobile {
   display: none;
 }
-@media only screen and (max-width:1030px){
-  .landing2-text{
-    width:65vw;
+
+@media only screen and (max-width: 1030px) {
+  .landing2-text {
+    width: 65vw;
   }
 }
-@media only screen and (max-width:932px){
-  .landing2-text{
-    width:70vw;
+
+@media only screen and (max-width: 932px) {
+  .landing2-text {
+    width: 70vw;
   }
 }
-@media only screen and (max-width:863px){
-  .landing2-text{
-    width:65vw;
+
+@media only screen and (max-width: 863px) {
+  .landing2-text {
+    width: 65vw;
     font-size: 1.7rem;
   }
 }
-@media only screen and (max-width:800px){
-  .landing2-text{
-    width:70vw;
+
+@media only screen and (max-width: 800px) {
+  .landing2-text {
+    width: 70vw;
   }
 }
-@media only screen and (max-width:768px){
-  .landing2{
+
+@media only screen and (max-width: 768px) {
+  .landing2 {
     display: none;
   }
-  .bg_img_2{
+  .bg_img_2 {
     display: none;
   }
-  .bg_img_2_mob{
+  .bg_img_2_mob {
     display: block;
     z-index: -1;
     width: 100vw;
     height: 100vh;
     position: fixed;
-
   }
-  .landing2-mobile{
+  .landing2-mobile {
     display: block;
     width: 100vw;
-  height: 100vh;
-  /* margin: -8px; */
-  position: relative;
-  overflow: hidden; 
-  /* object-fit: cover; */
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
   }
-  .landing2-text-box{
+  .landing2-text-box {
     display: flex;
     justify-content: center;
     width: 100vw;
     margin-top: 10vh;
   }
-  .landing2-text{
+  .landing2-text {
     display: flex;
     justify-content: center;
-    width:70vw;
+    width: 70vw;
     height: auto;
   }
-  .land2text-img{
-    width:70vw;
+  .land2text-img {
+    width: 70vw;
     height: auto;
   }
-  .scooter-img{
-    margin-bottom:-41vh;
+  .scooter-img {
+    margin-bottom: -41vh;
   }
-
 }
-@media only screen and (max-width:530px){
-  .landing2-text{
-    width:100vw;
+
+@media only screen and (max-width: 530px) {
+  .landing2-text {
+    width: 100vw;
   }
-  .land2text-img{
+  .land2text-img {
     width: 90vw;
   }
 }

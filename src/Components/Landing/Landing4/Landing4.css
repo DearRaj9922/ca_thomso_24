@@ -1,4 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap'); 
+
+@keyframes slideInTop {
+  from {
+      transform: translateY(-100px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideInBottom {
+  from {
+      transform: translateY(100px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+      transform: scale(0);
+      opacity: 0;
+  }
+  to {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
 /* Add this to your CSS to prevent scrolling */
 body {
   overflow: hidden;
@@ -43,6 +77,8 @@ body {
   justify-content: center;
   align-items: center;
   width:80vw;
+  animation: slideInTop 1s ease-out forwards;
+
   /* font-size: 5vw; */
   /* text-shadow: 5px 0 #ffffff, 0 5px #ffffff, 5px 0 #ffffff, 0 -5px #ffffff; */
   /* text-shadow: 6px 0 #aeacac, 0 6px #aeacac,2px 0 #aeacac, 0 -2px #aeacac; */
@@ -54,7 +90,10 @@ body {
   justify-content: center;
   position: relative;
   z-index: 1;
+  opacity: 0;
   filter: drop-shadow(8px 8px 0px rgba(0, 0, 0, 0.4));
+  animation: scaleIn 1s ease-out forwards 1s;
+
 }
 .reg-button{
   display: flex;

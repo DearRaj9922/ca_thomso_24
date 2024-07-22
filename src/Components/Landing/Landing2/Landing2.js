@@ -17,6 +17,11 @@ export default function Landing2() {
               What is Campus Ambassdor Program?
             </h1>
           </div>
+          <div className="landing2-details">
+            <h1>
+              As part of the student campus ambassador program, THOMSO offers students the chance to represent and promote the organization at their colleges and universities. Their responsibilities comprise developing our presence and promoting THOMSO events among students and educators by serving as a link between their colleges and us.
+            </h1>
+          </div>
         </div>
         <div className="scooter-div">
           <div className="scooter-img-div">
