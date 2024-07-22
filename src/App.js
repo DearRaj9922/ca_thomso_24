@@ -14,6 +14,7 @@ import Login from './Components/registration/login/login.js';
 import HeroSection from "./Components/Landing/Hero Section/HeroSection";
 import Footer from "./Components/Footer/Footer.js";
 import CombinedLandingPage from "./Components/CombinedLandingPage/CombinedLandingPage.js";
+import ForgotPassword from "./Components/registration/ForgotPassword/ForgotPassword.jsx";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path='/verify' element={<Emailverify />} />
           <Route path='/emailverified' element={<Emailverified />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/forgotpassword' element={<ForgotPassword />} />
         </Routes>
       </Router>
     </div>
