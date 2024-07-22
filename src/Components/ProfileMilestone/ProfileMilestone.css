@@ -1,0 +1,11 @@
+.profile-milestone{
+    color: black;
+    box-shadow: 10px 10px 3px 0px rgba(0,0,0,0.25);
+    padding: 20px 15px;
+    height: 65vh;
+    width: 15vw;
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
