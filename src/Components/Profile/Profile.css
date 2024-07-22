@@ -12,8 +12,10 @@
     justify-content: space-evenly;
 }
 .banner{
+    box-sizing: border-box;
+    padding-top: 35px;
     display: flex;
-    gap: 40px;
+    gap: 15px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -26,4 +28,14 @@
 }
 .banner img{
     transform: scale(0.9);
+}
+
+.milestone-container{
+    color: #6E6D6D;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    font-weight: bold;
 }

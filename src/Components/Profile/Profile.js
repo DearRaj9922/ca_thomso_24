@@ -13,7 +13,7 @@ function Profile(props) {
             <div className="container">
                 <div><ProfileCard/></div>
                 <div className="banner"><div>Achievements</div><img src={banner}/></div>
-                <div><ProfileMilestone/></div>
+                <div className="milestone-container"><div>Recent Milestones</div><ProfileMilestone/></div>
             </div>
             <Footer/>
         </div>
