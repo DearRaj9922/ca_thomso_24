@@ -4,6 +4,7 @@ import Landing2 from '../Landing/Landing2/Landing2';
 import CampusAmbassador from '../Landing/Landing3/CampusAmbassador';
 import Landing4 from '../Landing/Landing4/Landing4';
 import Landing5 from '../Landing/Landing5/Landing5';
+import Footer from '../Footer/Footer';
 import './CombinedLandingPage.css';
 
 const CombinedLandingPage = () => {
@@ -14,6 +15,7 @@ const CombinedLandingPage = () => {
       <Landing5 />
       <CampusAmbassador />
       <Landing4 />
+      <Footer />
     </div>
   );
 };
