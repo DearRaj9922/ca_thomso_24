@@ -9,7 +9,13 @@
     background-color: white;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    scrollbar-width: none;
+    user-select: none;
 
+}
+.profile-milestone::-webkit-scrollbar{
+    display: none;
+    width: 0;
 }
 .milestone-title{
     font-size: large;
