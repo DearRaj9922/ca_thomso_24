@@ -20,12 +20,12 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<ParallaxWrapper><HeroSection className="parallax-element" data-speed="0.5" /></ParallaxWrapper>} />
+          <Route path="/landing1" element={<ParallaxWrapper><HeroSection className="parallax-element" data-speed="0.5" /></ParallaxWrapper>} />
           <Route path="/landing2" element={<ParallaxWrapper><Landing2 className="parallax-element" data-speed="0.4" /></ParallaxWrapper>} />
           <Route path='/landing3' element={<ParallaxWrapper><CampusAmbassador className="parallax-element" data-speed="0.2" /></ParallaxWrapper>} />
           <Route path='/landing4' element={<ParallaxWrapper><Landing4 className="parallax-element" data-speed="0.3" /></ParallaxWrapper>} />
           <Route path='/landing5' element={<ParallaxWrapper><Landing5 className="parallax-element" data-speed="0.1" /></ParallaxWrapper>} />
-          <Route path='/mainlanding' element={<CombinedLandingPage />} />
+          <Route path='/' element={<CombinedLandingPage />} />
           <Route path='/registration' element={<PersonalDetails />} />
           <Route path='/verify' element={<Emailverify />} />
           <Route path='/emailverified' element={<Emailverified />} />

@@ -4,7 +4,7 @@ import Nav from "../../web/NewNavbar/Nav";
 import welcomebckbg from "../../../assets/welcome.webp";
 import axios from "axios";
 import SimpleReactValidator from "simple-react-validator";
-import cawelcome from "../../../assets/caWelcome.webp";
+// import cawelcome from "../../../assets/caWelcome.webp";
 import { message } from "antd";
 
 function ForgotPassword() {
