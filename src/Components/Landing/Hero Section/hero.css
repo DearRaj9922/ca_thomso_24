@@ -1,18 +1,48 @@
 
 @import url(https://db.onlinewebfonts.com/c/5a6bcdf461365efd4a14cddf611bd176?family=NashvilleSerial-Bold);
 
-.hero_wrapper{
+@keyframes slideInTop {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInBottom {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.hero_wrapper {
     background-image: url("../../Assets/background.svg");
     height: 104vh;
     width: 100%;
-    /* overflow: hidden;
-    overflow-y: hidden; */
-    /* height: 100vw; */
     margin: 0;
     padding: 0;
 }
 
-.hero_content{
+.hero_content {
     display: grid;
     place-content: center;
     text-align: center;
@@ -27,10 +57,10 @@
     font-weight: bolder;
     font-stretch: expanded;
     letter-spacing: 0.24506rem;
-
+    animation: slideInTop 1s ease-out forwards;
 }
 
-.hero-reg{
+.hero-reg {
     border-radius: 1.05069rem;
     border: 0.25vw solid #515151;
     background: #FFF;
@@ -46,7 +76,7 @@
     padding: 0.7vw 1vw;
 }
 
-.hero-reg:hover{
+.hero-reg:hover {
     cursor: pointer;
     transform: scale(1.02);
     background-color: #515151;
@@ -54,51 +84,49 @@
     border-color: #FFF;
 }
 
-.hero-reg:active{
+.hero-reg:active {
     transform: scale(0.97);
 }
 
-.program-text{
+.program-text {
     margin: 0;
     padding: 0;
 }
 
-.hero-reg-btn{
+.hero-reg-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     padding-top: 2vw;
+    opacity: 0;
+    animation: scaleIn 1s ease-out forwards 1s;
 }
 
-.clouds-landing{
+.clouds-landing {
     display: block;
     height: 28vh;
     width: 100vw;
     justify-content: stretch;
     margin-top: -2vw;
-
 }
 
-.hero_image{
-    position:absolute;
+.hero_image {
+    position: absolute;
     object-fit: fill;
 }
 
-.landingImage{
+.landingImage {
     position: absolute;
-    /* object-fit: fill; */
     overflow-y: hidden;
     object-fit: contain;
     margin-left: -1.5vw;
-    /* display: none; */
     height: 67vh;
     width: 100vw !important;
     margin-top: -28vh;
-
+    animation: slideInBottom 1s ease-out forwards;
 }
 
-.hero-img img{
-    
+.hero-img img {
     width: 100vw;
 }

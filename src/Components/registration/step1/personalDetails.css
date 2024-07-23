@@ -51,14 +51,14 @@
   align-items: center;
   width: 32px;
   height: 32px;
-  border: 1.19px solid #111111;
-  border-radius: 5px;
-  background-color: #ff5c00;
-  box-shadow: 1.19px 2.38px 0px 0px #111111;
+  border: 1.19px solid #000000;
+  border-radius: 50%;
+  background-color: #ff00c7;
+  /* box-shadow: 1.19px 2.38px 0px 0px #111111; */
 }
 
 .personal-step1-number-content {
-  font-family: Comic Neue;
+  font-family: 'Karma Medium';
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.25rem;
@@ -76,8 +76,8 @@
 .personal-step1-description-content-para1,
 .personal-step2-description-content-para1 {
   height: 8px;
-  color: #000;
-  font-family: Comic Neue;
+  color: #000000;
+  font-family: 'Karma Medium';
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 400;
@@ -88,8 +88,8 @@
 .personal-step1-description-content-para2,
 .personal-step2-description-content-para2 {
   height: 11px;
-  color: #000;
-  font-family: Comic Neue;
+  color: #000000;
+  font-family:'Karma Medium';
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
@@ -103,19 +103,19 @@
   align-items: center;
   width: 32px;
   height: 32px;
-  border: 1.19px solid #111111;
-  border-radius: 5px;
+  border: 1.19px solid #000000;
+  border-radius: 50%;
   background-color: #ffffff;
-  box-shadow: 1.19px 2.38px 0px 0px #111111;
+  /* box-shadow: 1.19px 2.38px 0px 0px #111111; */
 }
 
 .personal-step2-number-content {
-  font-family: Comic Neue;
+  font-family:'Karma Medium';
   font-size: 20px;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: 0.02em;
-  color: #111111;
+  color: #505050;
 }
 
 .personal-inputs {
@@ -143,8 +143,8 @@ select-option {
   border: 1.5px solid #505050;
   color: #505050;
   background-color: #ffffff;
-  box-shadow: 1.5px 3px 0px 0px #505050;
-  font-family: Comic Sans MS;
+  /* box-shadow: 1.5px 3px 0px 0px #505050; */
+  font-family: 'Karma Medium';
   font-size: 1rem;
   font-weight: 400;
   line-height: 1rem;
@@ -164,7 +164,7 @@ select option [value="Gender 1"] {
 .input-field:focus {
   border: 1.5px solid #111111;
   color: #111111;
-  box-shadow: 1.5px 3px 0px 0px #111111;
+  /* box-shadow: 1.5px 3px 0px 0px #111111; */
   outline: none;
 }
 
@@ -183,19 +183,20 @@ select option [value="Gender 1"] {
   padding: 10px 20px;
   border-radius: 6px;
   border: 1.5px;
-  font-family: Comic Sans MS;
+  font-family:'Karma Medium';
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.25rem;
   letter-spacing: 0em;
-  border: 1.52px solid #505050;
-  box-shadow: 1.5px 3px 0px 0px #505050;
+  /* border: 1.52px solid #505050; */
+  /* box-shadow: 1.5px 3px 0px 0px #505050; */
   cursor: pointer;
 }
 
 .personal-button-clear {
   color: #505050;
   background-color: #ffffff;
+  border: 1.52px solid #505050;
 }
 
 .personal-button-submit {

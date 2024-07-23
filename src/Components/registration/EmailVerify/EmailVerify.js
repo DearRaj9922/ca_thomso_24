@@ -7,7 +7,7 @@ import logbg1mob from "../../Assets/444.webp";
 import { Link, useNavigate } from "react-router-dom";
 
 const EmailVerify = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate() 
   return (
     <div id="emailroot">
       {/* <Nav id="navemailbar" /> */}
@@ -27,7 +27,7 @@ const EmailVerify = () => {
             {/* <Link to='/collegedetailes'> */}
             <button className="submit" onClick={()=>{navigate("/login")}}>
               <Link to="/login" className="reg-btn1">
-                Login
+                Continue Registration
               </Link>
             </button>
             {/* </Link> */}

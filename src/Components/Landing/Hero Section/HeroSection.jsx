@@ -2,7 +2,6 @@ import React from "react";
 import "./hero.css";
 import clouds from "../../Assets/clouds-hero.svg";
 import landing from "../../Assets/Landing page image.svg";
-import Footer from "../../Footer/Footer";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 
@@ -29,7 +28,6 @@ const HeroSection = () => {
           <img src={landing} alt="" className="landingImage" />
         </div>
       </div>
-      <Footer/>
     </div>
   );
 };

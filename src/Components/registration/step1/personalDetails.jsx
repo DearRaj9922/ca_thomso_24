@@ -37,50 +37,60 @@ const PersonalDetails = () => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
 
-  // const onSubmit = async (e) => {
-  //   e.preventDefault();
 
-  //   if (!confirm_err) {
-  //     setLoading({ loading: true });
-  //   }
 
-  //   if (user.password != user.confirmpassword) return;
 
-  //   try {
-  //     e.preventDefault();
-  //     const userresponse = {
-  //       name: user.name,
-  //       email: user.email,
-  //       contact: user.contact,
-  //       password: user.password,
-  //       gender: user.gender,
-  //     };
-  //     const response = await axios.post("/apiV1/registerca", userresponse);
-  //     const { data } = response;
-  //     if (response.status === 201) {
-  //       localStorage.setItem("user_id", data.user_id);
-  //       setLoading(false);
-  //       // setActive(false)
-  //     }
-  //     setLoading(false);
-  //     navigate("/verifyemail");
-  //   } catch (err) {
-  //     setLoading(false);
-  //     const { data } = err?.response;
-  //     console.log("register Error:", data);
-  //     var errorData = "";
-  //     if (data?.error == "user_not_verified") {
-  //       errorData = `Please verify your registered email. <a href=/verifyemail>Click Here.`;
-  //     } else {
-  //       for (var key in data) {
-  //         errorData += data[key] + "<br>";
-  //       }
-  //     }
-  //     setErrorMsg(errorData);
-  //     setError(true);
-  //     setLoading(false);
-  //   }
-  // };
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!confirm_err) {
+      setLoading({ loading: true });
+    }
+
+    if (user.password != user.confirmpassword) return;
+
+    try {
+      e.preventDefault();
+      const userresponse = {
+        name: user.name,
+        email: user.email,
+        contact: user.contact,
+        password: user.password,
+        gender: user.gender,
+      };
+      const response = await axios.post("http://localhost:8000/apiV1/registerca", userresponse);
+      const { data } = response;
+      console.log(data)
+      if (response.status === 201) {
+        localStorage.setItem("user_id", data.user_id);
+        setLoading(false);
+        // setActive(false)
+      }
+      setLoading(false);
+      navigate("/verifyemail");
+    } catch (err) {
+      setLoading(false);
+      const { data } = err?.response;
+      console.log("register Error:", data);
+      var errorData = "";
+      if (data?.error == "user_not_verified") {
+        errorData = `Please verify your registered email. <a href=/verifyemail>Click Here.`;
+      } else {
+        for (var key in data) {
+          errorData += data[key] + "<br>";
+        }
+      }
+      setErrorMsg(errorData);
+      setError(true);
+      setLoading(false);
+    }
+  };
+
+
+
+
+
 
   const confirm = (confirm) => {
     if (confirm === user.password) {
@@ -294,10 +304,8 @@ const PersonalDetails = () => {
         </div>
 
         <div className="personal-buttons">
-          <button onClick ={nextpage} className="personal-button-submit" disabled={!active} style={active == true ? {background: "#ff5c00"} : {background: "rgb(204, 204, 204)"}}>
-          
-                Next
-                
+          <button onClick ={nextpage} className="personal-button-submit" disabled={!active} style={active == true ? {background: "#ff5c00"} : {background: "#ff00c7"}}>
+                Submit
           </button>
           <button className="personal-button-clear" onClick={clearInput}>
             Clear
