@@ -9,11 +9,11 @@ import './CombinedLandingPage.css';
 const CombinedLandingPage = () => {
   return (
     <div className="combined-landing-page">
-      <section className="parallax-section" id="section1"><HeroSection /></section>
-      <section className="parallax-section" id="section2"><Landing2 /></section>
-      <section className="parallax-section" id="section5"><Landing5 /></section>
-      <section className="parallax-section" id="section3"><CampusAmbassador /></section>
-      <section className="parallax-section" id="section4"><Landing4 /></section>
+      <HeroSection />
+      <Landing2 />
+      <Landing5 />
+      <CampusAmbassador />
+      <Landing4 />
     </div>
   );
 };
