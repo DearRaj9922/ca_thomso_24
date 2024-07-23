@@ -2,17 +2,19 @@
     height: 100vh;
 }
 .ca-payment-list-container {
-    width: 680px;
-    height: 680px;
+    width: 45vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     position: relative;
     border: #111111 solid 2px ;
     border-radius: 10px 10px 0px 0px;
     overflow: scroll;
-    top: calc(100% - 660px);
+    top: 10vh;
     left: 10%;
+    background-color: white;
 }
+
 .ca-payment-list-container::-webkit-scrollbar{
     display: none;
 }
@@ -79,4 +81,7 @@
 }
 .ca-payment-list-content-sr{
 
+}
+li{
+    margin: 0;
 }
