@@ -1,7 +1,7 @@
 import React from "react";
 import "./Landing4.css";
 import { useNavigate, Link } from "react-router-dom";
-import landingbgdesk4 from "../../Assets/land4.webp";
+import landingbgdesk4 from "../../Assets/land4.svg";
 import landingbgmon4 from "../../Assets/land4-mobile.webp";
 import textimg from "../../Assets/WHAT ARE YOU WAITING FOR_.svg";
 import textimgmob from "../../Assets/land4text.svg";
@@ -10,7 +10,7 @@ import cloud4 from "../../Assets/cloud4.svg";
 function Landing4() {
   const navigate = useNavigate();
   return (
-    <>
+    <div className="relative">
     <img src={landingbgdesk4} className="bg_img_4" alt="land-bg-4"/>
     <img src={landingbgmon4} className="bg-mob-4" alt="land-bg-mob-4"/>
     <div className="landing4">
@@ -33,7 +33,7 @@ function Landing4() {
     <div className="landing4mobile">
       
       <div className="clouds">
-      <img src={cloud4} className="cloud4-1" alt="cloud-4-1"/>
+      <img src={cloud4} className="cloud4-1 " alt="cloud-4-1"/>
       <img src={cloud4} className="cloud4-2" alt="cloud-4-2"/>
       </div>
       
@@ -44,7 +44,7 @@ function Landing4() {
         <button onClick={() => navigate("/registration")} className="reg-button">Register Now!</button>
       </div>
     </div>
-    </>
+    </div>
   );
 }
 
