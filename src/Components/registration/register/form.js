@@ -15,6 +15,7 @@ import axios from "axios";
 export default function VerifyEmail() {
   // const [otp, setotp] = useState(Array(4).fill(""));
   const [active, setActive] = useState(false);
+  const [loaded, setLoaded] = useState(false);
   const [IsCorrectOtp, setIsCorrectOtp] = useState(true);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -39,7 +40,7 @@ export default function VerifyEmail() {
     setLoading({ loading: true });
 
     try {
-      const response = await axios.post(`/apiV1/verifyOTP`, {
+      const response = await axios.post(`http://127.0.0.1:8000/apiV1/verifyOTP`, {
         ...user,
         otp: Number(code),
       });
@@ -67,6 +68,7 @@ export default function VerifyEmail() {
       setActive(false);
     }
   }, [code]);
+  
   return (
     <div style={{ overflowY: "hidden" }}>
       {/* <Nav /> */}
