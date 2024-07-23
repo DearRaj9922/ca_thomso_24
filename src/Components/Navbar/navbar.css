@@ -1,4 +1,4 @@
-.navcontainer{
+.navcontainer {
     padding-block: 20px;
     padding-inline: 40px;
     display: flex;
@@ -7,7 +7,8 @@
     justify-content: space-between;
     align-items: center;
 }
-.rightcontainer{
+
+.rightcontainer {
     font-weight: bold;
     font-size: 22px;
     display: flex;
@@ -15,13 +16,29 @@
     justify-content: center;
     align-items: center;
 }
-.authbtn{
+
+.authbtn {
     background-color: white;
     border: 3px solid black;
     padding-inline: 18px;
     border-radius: 8px;
     padding-block: 5px;
 }
-.rightcontainer div{
+
+.rightcontainer div {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+    .navcontainer {
+        padding-inline: 20px;
+    }
+    .rightcontainer {
+        display: none;
+    }
+}
+@media only screen and (min-width: 800px) {
+    .hamburger{
+        display: none;
+    }
 }
