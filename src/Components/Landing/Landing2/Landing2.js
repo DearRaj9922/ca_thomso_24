@@ -12,9 +12,9 @@ export default function Landing2() {
       <img src={back2mob} className='bg_img_2_mob' alt="bg"/>
       <div className="landing2">
         <div className="landing2-text-box">
-        <div className="landing2-text">
+        <div className="landing2-text sansita-bold-italic">
           <h1>
-            What is Campus Ambassdor Program?
+            What is Campus Ambassador Program?
           </h1>
         </div>
         </div>

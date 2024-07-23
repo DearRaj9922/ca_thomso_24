@@ -1,9 +1,16 @@
-@import url(https://db.onlinewebfonts.com/c/5a6bcdf461365efd4a14cddf611bd176?family=NashvilleSerial-Bold);
+.sansita-bold-italic {
+    font-family: "Sansita", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
 
 .hero_wrapper{
-    background-image: url("../../Assets/background.svg");
-    height: 104vh;
-    width: 100%;
+    background-image: url("../../Assets/landing1.svg");
+    background-size:cover;
+    background-position:50% bottom;
+    background-repeat: no-repeat;
+    height: 90vh;
+    
     /* overflow: hidden;
     overflow-y: hidden; */
     /* height: 100vw; */
@@ -16,9 +23,8 @@
     place-content: center;
     text-align: center;
     line-height: 0;
-    margin-top: -2vw;
-    font-size: 5vw;
-    font-family: "NashvilleSerial-Bold";
+    margin-top: 0vw;
+    font-size: 4vw;
     color: #535252;
     text-shadow: 0.35vw 0.3vw 0px rgba(0, 0, 0, 0.25);
     -webkit-text-stroke-width: 0.1vw;
@@ -30,16 +36,16 @@
 }
 
 .hero-reg{
-    border-radius: 1.05069rem;
+    border-radius: 0.5rem;
     border: 0.25vw solid #515151;
     background: #FFF;
-    box-shadow: 0.4vw 0.7vw 0px 0px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 0.4vw 0.7vw 0px 0px rgba(0, 0, 0, 0.25); */
     margin-top: 1.5vw;
     color: #515151;
-    font-family: "NashvilleSerial-Bold";
-    font-size: 2vw;
+    /* font-family: "NashvilleSerial-Bold"; */
+    font-size: 1.5vw;
     font-style: normal;
-    font-weight: 700;
+    /* font-weight: 700; */
     line-height: 100%;
     letter-spacing: 0.10506rem;
     padding: 0.7vw 1vw;
@@ -81,21 +87,30 @@
 
 .hero_image{
     position:absolute;
+    /* object-fit: cover; */
+    height: 100vh;
+    width: 100vw;
+}
+
+/* .landingImage{
+
+    z-index: -2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     object-fit: fill;
-}
+    min-height: calc(100%-85px);
+    min-width: 100%;
+    background-position: center;
 
-.landingImage{
-    position: absolute;
     /* object-fit: fill; */
-    overflow-y: hidden;
-    object-fit: contain;
-    margin-left: -1.5vw;
+    /* overflow-y: hidden;
+    overflow-x: hidden; */
+    /* margin-left: -1.5vw; */
     /* display: none; */
-    height: 67vh;
-    width: 100vw !important;
-    margin-top: -28vh;
-
-}
+    /* margin-top: -28vh; */
 
 .hero-img img{
     

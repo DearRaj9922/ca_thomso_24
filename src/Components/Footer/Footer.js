@@ -127,7 +127,7 @@ const Footer = () => {
             Get Direction
             </div>
             <div className='footerText2'>
-            Thomso Office Multi Activity CentreIndian Institute of Technology,Roorkee 247667
+            Thomso Office Multi Activity Centre Indian Institute of Technology,Roorkee 247667
             </div>
           </div>
           <div className='footerRight' style={{display:"flex",flexDirection:"column",gap:"30px"}}>
