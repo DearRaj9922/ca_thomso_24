@@ -1,0 +1,113 @@
+.profilecard-container{
+    box-shadow: 10px 10px 3px 0px rgba(0,0,0,0.25);
+    padding:20px 15px ;
+    height: 60vh;
+    width: 30vw;
+    color: white;
+    background: #74005A;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.profilecard-userimg {
+    border-radius: 100%;
+    border: brown 4px solid;
+    position: absolute;
+    top: -8%;
+    left: -8%;
+    padding: 0;
+}
+
+.profilecard-userimg img {
+    width: 130px;
+}
+
+.profilecard-referral{
+    display: flex;
+    margin: 0 auto;
+    background: white;
+    width: 160px;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px #212121 solid;
+    padding: 5px 10px;
+    gap: 7px;
+}
+
+.profilecard-referral-text{
+    font-family: Karma;
+    color: #212121;
+    font-size: small;
+    margin: 0;
+}
+
+.profilecard-referral-code {
+    color: #965BD6;
+    font-size: medium;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profilecard-referral-code p{
+    margin: 0;
+}
+
+.profilecard-name {
+    font-size: xx-large;
+    font-weight: 600;
+    margin: 50px 0 30px;
+}
+
+.profilecard-details {
+    padding: 15px;
+    font-size: smaller;
+}
+
+.profilecard-details-div {
+    margin-bottom: 30px;
+}
+
+.profilecard-details-head {
+    text-decoration: underline;
+    font-size: small;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.profilecard-details-text {
+    display: flex;
+    gap: 50px;
+}
+
+.items-head {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.inputbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.inputbox input {
+    background: #74005A;
+    border: 2px white solid;
+    color: white;
+    border-radius: 5px;
+}
+
+.inputbox button {
+    background: limegreen;
+    border: 2px white solid;
+    border-radius: 5px;
+}
