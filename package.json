@@ -22,7 +22,7 @@
     "react-select": "^5.8.0",
     "redux": "^5.0.1",
     "simple-react-validator": "^1.6.2",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^3.1.0" 
   },
   "scripts": {
     "start": "react-scripts start",
@@ -54,7 +54,7 @@
     "@svgr/webpack": "^8.1.0",
     "ajv": "^7.2.4",
 
-    "tailwindcss": "^3.4.6"
+    "tailwindcss": "^3.4.6",
 
     "react-app-rewired": "^2.2.1"
 
