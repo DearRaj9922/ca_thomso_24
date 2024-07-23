@@ -10,11 +10,13 @@ import './CombinedLandingPage.css';
 const CombinedLandingPage = () => {
   return (
     <div className="combined-landing-page">
-      <HeroSection />
-      <Landing2 />
-      <Landing5 />
-      <CampusAmbassador />
-      <Landing4 />
+      <div className='combined-pages'>
+        <HeroSection />
+        <Landing2 />
+        <Landing5 />
+        <CampusAmbassador />
+        <Landing4 />
+      </div>
       <Footer />
     </div>
   );
