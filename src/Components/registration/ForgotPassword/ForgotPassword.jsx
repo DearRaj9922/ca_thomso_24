@@ -1,11 +1,16 @@
 import React, { useState,useEffect } from "react";
 import "./styles.css";
-import Nav from "../../web/NewNavbar/Nav";
-import welcomebckbg from "../../../assets/welcome.webp";
+// import Nav from "../../web/NewNavbar/Nav";
+// import Nav from "src\Components\registration\Navbar\Navbar.js"
+import Nav from "../Navbar/Navbar";
+import welcomebckbg from "../../../Components/Assets/Registration.svg";
 import axios from "axios";
 import SimpleReactValidator from "simple-react-validator";
-// import cawelcome from "../../../assets/caWelcome.webp";
+
+
 import { message } from "antd";
+// import background from "src\Components\Assets\Registration.svg";
+
 
 function ForgotPassword() {
   const [active, setActive] = useState(false);
@@ -46,8 +51,9 @@ function ForgotPassword() {
     <>
       <div id="bg">
         <Nav />
+        <div className="background">
         <img src={welcomebckbg} id="welcomebckbg" alt="" className="newBg" />
-        <img src={cawelcome} alt="" id="wel3" />
+        {/* <img src={cawelcome} alt="" id="wel3" /> */}
         <div id="log_bg1" className="fp_maindiv">
           {/* <img src={logbg1} id="wel_log_back" alt="" /> */}
           {/* <img src={logbg2} id="campus_ambd" /> */}
@@ -88,6 +94,9 @@ function ForgotPassword() {
             </form>
           </div>
         </div>
+        </div>
+        
+        
       </div>
     </>
   );
