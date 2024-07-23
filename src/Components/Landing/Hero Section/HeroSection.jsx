@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <div>
       {/* <Navbar/> */}
-      <div className="hero_wrapper">
+      <div className="hero_wrapper ">
         <div className="hero_content">
           <p>CAMPUS AMBASSADOR</p>
           <p className="program-text">PROGRAM</p>
@@ -18,7 +18,7 @@ const HeroSection = () => {
         <div className="hero-reg-btn">
           <Link
           to="/registration">
-              <button className="hero-reg">Register Now</button>
+              <button className="hero-reg ml-[50px]">Register Now</button>
           </Link>
           
         </div>

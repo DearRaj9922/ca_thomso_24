@@ -1,0 +1,41 @@
+.profile-milestone{
+    overflow-y: auto;
+    box-sizing: border-box;
+    color: black;
+    box-shadow: 10px 10px 3px 0px rgba(0,0,0,0.25);
+    padding: 15px 20px;
+    height: 60vh;
+    width: 250px;
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+.milestone-title{
+    font-size: large;
+}
+.milestone-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.milestone-score{
+    font-size: medium;
+    color: #15BF11;
+}
+.milestone-inner-text{
+    font-size: 17px;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.milestone-secondary{
+    font-size: 15px;
+    color: #505050;
+}
+.profile-milestone div hr{
+    color: rgba(0,0,0,0.12);
+    border: 1px solid rgba(0,0,0,0.12);
+}

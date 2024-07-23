@@ -13,7 +13,13 @@ import Emailverified from "./Components/registration/EmailVerify/EmailVerify.js"
 import Login from './Components/registration/login/login.js';
 import HeroSection from "./Components/Landing/Hero Section/HeroSection";
 import Footer from "./Components/Footer/Footer.js";
+
+import Profile from "./Components/Profile/Profile";
+
+
+
 import CombinedLandingPage from "./Components/CombinedLandingPage/CombinedLandingPage.js";
+
 
 function App() {
   return (
@@ -28,8 +34,12 @@ function App() {
           <Route path='/' element={<CombinedLandingPage />} />
           <Route path='/registration' element={<PersonalDetails />} />
           <Route path='/verify' element={<Emailverify />} />
-          <Route path='/emailverified' element={<Emailverified />} />
-          <Route path='/login' element={<Login />} />
+
+          <Route path='/emailverified' element={<Emailverified/>}/>
+          <Route path='/login' element={<Login/>}/>
+          <Route path='/profile' element={<Profile/>}/>
+
+
         </Routes>
       </Router>
     </div>

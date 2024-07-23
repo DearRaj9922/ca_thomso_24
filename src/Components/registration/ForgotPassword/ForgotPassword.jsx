@@ -7,7 +7,6 @@ import welcomebckbg from "../../../Components/Assets/Registration.svg";
 import axios from "axios";
 import SimpleReactValidator from "simple-react-validator";
 
-
 import { message } from "antd";
 // import background from "src\Components\Assets\Registration.svg";
 
