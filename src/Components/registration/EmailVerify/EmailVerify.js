@@ -7,7 +7,7 @@ import logbg1mob from "../../Assets/444.webp";
 import { Link, useNavigate } from "react-router-dom";
 
 const EmailVerify = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate() 
   return (
     <div id="emailroot">
       {/* <Nav id="navemailbar" /> */}

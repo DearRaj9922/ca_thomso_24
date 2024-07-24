@@ -1,10 +1,9 @@
 import "./App.css";
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ParallaxWrapper from "./Components/ParallaxWrapper/ParallaxWrapper.js";
-import CampusAmbassador from "./Components/Landing/Page_3/CampusAmbassador";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import CampusAmbassador from "./Components/Landing/Landing3/CampusAmbassador";
 import Landing4 from "./Components/Landing/Landing4/Landing4.js";
-import Landing1 from "./Components/Landing/Landing1/Landing1.js";
+// import Landing1 from "./Components/Landing/Landing1/Landing1.js";
 import Landing2 from "./Components/Landing/Landing2/Landing2.js";
 import PersonalDetails from './Components/registration/step1/personalDetails.jsx';
 import Landing5 from "./Components/Landing/Landing5/Landing5.js";
@@ -13,27 +12,42 @@ import Emailverified from "./Components/registration/EmailVerify/EmailVerify.js"
 import Login from './Components/registration/login/login.js';
 import HeroSection from "./Components/Landing/Hero Section/HeroSection";
 import Footer from "./Components/Footer/Footer.js";
+
+import Profile from "./Components/Profile/Profile";
+import ProfileDetails from "./Components/ProfileDetails/ProfileDetails.js";
+import Referrals from "./Components/Referrals/referrals.js";
+
+
 import CombinedLandingPage from "./Components/CombinedLandingPage/CombinedLandingPage.js";
+import Quizardry from "./Components/Quizardry/Quizardry";
+
 
 function App() {
-  return (
-    <div className="App">
-      <Router>
-        <Routes>
-          <Route path="/" element={<ParallaxWrapper><HeroSection className="parallax-element" data-speed="0.5" /></ParallaxWrapper>} />
-          <Route path="/landing2" element={<ParallaxWrapper><Landing2 className="parallax-element" data-speed="0.4" /></ParallaxWrapper>} />
-          <Route path='/landing3' element={<ParallaxWrapper><CampusAmbassador className="parallax-element" data-speed="0.2" /></ParallaxWrapper>} />
-          <Route path='/landing4' element={<ParallaxWrapper><Landing4 className="parallax-element" data-speed="0.3" /></ParallaxWrapper>} />
-          <Route path='/landing5' element={<ParallaxWrapper><Landing5 className="parallax-element" data-speed="0.1" /></ParallaxWrapper>} />
-          <Route path='/mainlanding' element={<CombinedLandingPage />} />
-          <Route path='/registration' element={<PersonalDetails />} />
-          <Route path='/verify' element={<Emailverify />} />
-          <Route path='/emailverified' element={<Emailverified />} />
-          <Route path='/login' element={<Login />} />
-        </Routes>
-      </Router>
-    </div>
-  );
-}
+    return (
+        <div className="App">
+            <Router>
+                <Routes>
+                    <Route path="/landing1" element={<HeroSection />} />
+                    <Route path="/landing2" element={<Landing2 />} />
+                    <Route path='/landing3' element={<CampusAmbassador />} />
+                    <Route path='/landing4' element={<Landing4 />} />
+                    <Route path='/landing5' element={<Landing5 />} />
+                    <Route path='/' element={<CombinedLandingPage />} />
+                    <Route path='/registration' element={<PersonalDetails />} />
+                    <Route path='/verify' element={<Emailverify />} />
+
+                    <Route path='/emailverified' element={<Emailverified/>}/>
+                    <Route path='/login' element={<Login/>}/>
+                    <Route path='/profile' element={<Profile/>}/>
+                    <Route path='/profiledetail' element={<ProfileDetails/>}/>
+                    <Route path='/referrals' element={<Referrals/>}/>
+
+                        {/*<Route path='/quizardry' element={<Quizardry/>}/>*/}
+
+                        </Routes>
+                        </Router>
+                        </div>
+                        );
+                    }
 
 export default App;

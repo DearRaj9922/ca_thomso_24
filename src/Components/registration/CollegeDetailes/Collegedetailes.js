@@ -57,7 +57,6 @@ const states = [
   value: state,
   label: state,
 }));
-
 const year_choice = [
   "first",
   "second",
@@ -73,7 +72,8 @@ const year_choice = [
 const CollegeDetails = ({name,email,gender,contact,password}) => {
   
   let navigate = useNavigate();
-
+  const [errorMail, setErrorMail] = useState(false)
+  const [loaded, setLoaded]= useState(false);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
@@ -87,7 +87,19 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
     degree: "",
     year: "",
   });
-
+  const userresponse = {
+    state: user.state,
+    district: user.district,
+    college: user.college,
+    degree: user.degree,
+    year: user.year,
+    name:name,
+    email:email,
+    gender:gender,
+    contact:contact,
+    password:password,
+    
+  };
   const clearInput = () => {
     setUser({
       state: "",
@@ -102,27 +114,19 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
 
+  
+  
   const formSubmit = async (e) => {
     e.preventDefault();
-
+    
     setLoading({ loading: true });
-
+    
     try {
-      const userresponse = {
-        state: user.state,
-        district: user.district,
-        college: user.college,
-        degree: user.degree,
-        year: user.year,
-        name:name,
-        email:email,
-        gender:gender,
-        contact:contact,
-        password:password,
-
-      };
-      const response = await axios.post("/apiV1/registerca", userresponse);
-          const { data } = response;
+      
+     
+      const response = await axios.post("http://127.0.0.1:8000/apiV1/registerca", userresponse).then(response => {console.log(response)});
+      
+      const { data } = response;
           if (response.status === 201) {
             localStorage.setItem("user_id", data.user_id);
             setLoading(false);
@@ -136,7 +140,10 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
           console.log("register Error:", data);
           var errorData = "";
           if (data?.error == "user_not_verified") {
-            errorData = `Please verify your registered email. <a href=/verifyemail>Click Here.`;
+            console.log(data);
+            
+            setErrorMail(true)
+            errorData = `${"Please verify your registered email. <a onClick={()=>sendmail()} href=/verifyemail>Click Here.</a>"}`;
           } else {
             for (var key in data) {
               errorData += data[key] + "<br>";
@@ -147,7 +154,16 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
           setLoading(false);
         }
   };
-
+  const sendmail= async () => {
+    try {
+      console.log("dhuaihdi")
+      const response = await axios.post('http://127.0.0.1:8000/apiV1/sendrealmail',{name:userresponse.name,email:userresponse.email,password:userresponse.password});
+      console.log(response)
+      setLoaded(true);
+    } catch (error) {
+      console.log(error.response.data)
+    }
+  }
   const handleChange1 = (state) => {
     setUser({ ...user, state: state?.value });
   };
@@ -319,15 +335,14 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
                   </div>
                 </div>
               </div>
-
-              {error && (
-              <div
-                className="text-danger"
-                style={{ marginTop: "-10px" }}
-                dangerouslySetInnerHTML={{ __html: errorMsg }}
-              ></div>
-            )}
-
+              
+                 
+              {
+              errorMail?
+              (
+                <div> Please verify your registered email. <p onClick={()=>sendmail()} >Click Here.</p></div>
+              ):(<></>)}
+   
               <div className="college-buttons">
                 <button type="submit" className="college-button-submit" disabled={!active} style={active == true ? {background: "#ff5c00"} : {background: "rgb(204, 204, 204)"}}>
                   {loading ? (
