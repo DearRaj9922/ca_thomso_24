@@ -4,6 +4,7 @@ import profilebackground from "../Assets/profilebackimg.webp";
 import Navbar from '../Navbar/Navbar';
 import ReferralList from "../Profile/CaPaymentList.jsx";
 import ProfileDetail from "../ProfileDetails/ProfileDetails.js";
+import Footer from "../Footer/Footer.js";
 
 export default function referrals() {
   return (
@@ -17,6 +18,10 @@ export default function referrals() {
             <ProfileDetail/>
         </div>
         </div>
+        <div className="fooetr-div">
+          <Footer/>
+        </div>
+
         {/* <img src={profilebackground} className='referral-bg' alt='bg'/> */}
       
     </div>
