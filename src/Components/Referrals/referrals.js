@@ -29,6 +29,9 @@ export default function referrals() {
     </div>
     <div className="referral-mob-div">
       <MobNavbar/>
+      <div className="referral-list">
+            <ReferralList/>
+        </div>
     </div>
     </>
   )

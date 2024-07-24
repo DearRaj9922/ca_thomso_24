@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap');
 .lauda{
     height: 49vw;
 }
@@ -12,6 +13,8 @@
     overflow: scroll;
     /* top: 10vh; */
     left: 10%;
+    font-family: Karma;
+    font-weight: 500;
     background-color: white;
 }
 
@@ -84,4 +87,28 @@
 }
 li{
     margin: 0;
+}
+@media only screen and (max-width:800px){
+    .ca-payment-list-header-id{
+        display:none;
+    }
+    .ca-payment-list-header-contact{
+        display:none;
+    }
+    .ca-payment-list-content-id{
+        display:none;
+    }
+    .ca-payment-list-content-contact{
+        display:none;
+    }
+    .ca-payment-list-container{
+        top:15vh;
+        width:80vw;
+        height:100vh;
+        background-color: white;
+    }
+    .lauda{
+        height:100vh;
+        overflow: hidden;
+    }
 }
