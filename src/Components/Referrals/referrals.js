@@ -5,9 +5,11 @@ import Navbar from '../Navbar/Navbar';
 import ReferralList from "../Profile/CaPaymentList.jsx";
 import ProfileDetail from "../ProfileDetails/ProfileDetails.js";
 import Footer from "../Footer/Footer.js";
+import MobNavbar from "../Navbar/mobnavbar.js";
 
 export default function referrals() {
   return (
+    <>
     <div className='referrals-main-div'>
         <Navbar/>
         <div className="refer-wrap">
@@ -25,5 +27,9 @@ export default function referrals() {
         {/* <img src={profilebackground} className='referral-bg' alt='bg'/> */}
       
     </div>
+    <div className="referral-mob-div">
+      <MobNavbar/>
+    </div>
+    </>
   )
 }
