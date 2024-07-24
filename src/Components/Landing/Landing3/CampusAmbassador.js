@@ -1,6 +1,6 @@
 import React from 'react';
 import './CampusAmbassador.css';
-import landingdesktop from '../../Assets/page3desktop.svg';
+// import landingdesktop from '../../Assets/page3desktop.svg';
 import cloud1 from '../../Assets/cloud2.svg';
 import cloud2 from '../../Assets/cloud2.svg';
 
@@ -8,7 +8,7 @@ function CampusAmbassador() {
 
   return (
     <div className='campus-ambassador-container'>
-      <img src={landingdesktop} className="bg_img" alt="landing-bg"/>
+      {/* <img src={landingdesktop} className="bg_img" alt="landing-bg"/> */}
       <div className="text-frame">
         <div className="text-item">
           <h1 id='certificates'>CERTIFICATES</h1>
