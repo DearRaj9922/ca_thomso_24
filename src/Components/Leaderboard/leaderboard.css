@@ -1,0 +1,36 @@
+.leaderboard-main-div{
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
+    margin:0;
+    padding: 0;
+    background-image: url(../Assets/profilebackimg.webp);
+    background-size: cover;
+    /* display: flex; */
+}
+.leaderboard-wrap{
+    display: flex;
+    margin-top: 20vw;
+    gap:7vw;
+    height:70vh;
+    align-items: end;
+}
+.profile-details{
+    /* position: absolute; */
+    z-index: 1;
+}
+.leaderboard-mob-div{
+    display: none;
+}
+@media only  screen and (max-width:800px){
+    .referrals-main-div{
+        display: none;;
+    }
+    .referral-mob-div{
+        display: block;
+        width:100vw;
+        height:100vh;
+        background-image: url(../Assets/profilemobbg.webp);
+        background-size: cover  ;
+    }
+}
