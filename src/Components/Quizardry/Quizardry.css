@@ -1,0 +1,9 @@
+.quizardrycard{
+    height: 200px;
+    width: 500px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.quizimg{
+    height: 175px;
+}
