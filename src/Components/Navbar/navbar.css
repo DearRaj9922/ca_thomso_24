@@ -28,6 +28,9 @@
 .rightcontainer div {
     cursor: pointer;
 }
+.mobview{
+    display: none;
+}
 
 @media only screen and (max-width: 800px) {
     .navcontainer {
@@ -35,6 +38,12 @@
     }
     .rightcontainer {
         display: none;
+    }
+    .navcontainer{
+        display: none;
+    }
+    .mobview{
+        display: block;
     }
 }
 @media only screen and (min-width: 800px) {
