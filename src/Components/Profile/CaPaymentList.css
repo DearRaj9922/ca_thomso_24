@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap');
+.lauda{
+    height: 49vw;
+}
+.ca-payment-list-container {
+    width: 45vw;
+    height: 49vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: #111111 solid 2px ;
+    border-radius: 10px 10px 0px 0px;
+    overflow: scroll;
+    /* top: 10vh; */
+    left: 10%;
+    font-family: Karma;
+    font-weight: 500;
+    background-color: white;
+}
+.ref-heading{
+    display: none;
+}
+
+.ca-payment-list-container::-webkit-scrollbar{
+    display: none;
+}
+.ca-payment-list-container li{
+    list-style: none;
+    text-align: left;
+}
+.ca-payment-list-header{
+    width: calc(100%- 20px);
+    align-content: center;
+    justify-content: center;
+    margin: 0px 10px 0px 10px;
+    border-bottom: #111111 4px solid;
+    position: sticky;
+    top: 0px;
+    background-color: #ffffff;
+}
+.ca-payment-list-header>ul{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+    /*position: fixed;*/
+    /*width: 100%;*/
+}
+.ca-payment-list-header-name{
+    width: 35% !important;
+}
+.ca-payment-list-content{
+    width: calc(100% - 20px);
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px 0px 10px;
+}
+.ca-payment-list-content-name{
+    width: 35% !important;
+}
+.ca-payment-list-content ul{
+    display: flex;
+    justify-content: space-between;
+}
+.ca-payment-list-header>ul>li{
+    width: 16%;
+    font-weight: 700;
+    text-align: center;
+
+}
+.ca-payment-list-content li{
+    width: 16%;
+    text-align: center;
+}
+.ca-payment-list-content-not-last{
+    border-bottom: #111111 1px solid;
+    padding: 0px 0px 10px 0px;
+}.ca-payment-list-content-last{
+    padding: 0px 0px 10px 0px;
+}
+.ca-payment-list-content-status-green{
+    color: #15BF11;
+    font-weight: 500;
+}
+.ca-payment-list-content-status-red{
+    color: red;
+    font-weight: 500;
+}
+.ca-payment-list-content-sr{
+
+}
+li{
+    margin: 0;
+}
+@media only screen and (max-width:800px){
+    .ca-payment-list-header-id{
+        display:none;
+    }
+    .ca-payment-list-header-contact{
+        display:none;
+    }
+    .ca-payment-list-content-id{
+        display:none;
+    }
+    .ca-payment-list-content-contact{
+        display:none;
+    }
+    .ca-payment-list-container{
+        top:15vh;
+        width:80vw;
+        height:100vh;
+        background-color: white;
+    }
+    .lauda{
+        height:100vh;
+        overflow: hidden;
+    }
+    .ref-heading{
+        display: block;
+        /* position: absolute; */
+        font-size: 6vw;
+        font-weight: 800;
+        margin:2vh 0 0 4vw;
+    }
+}

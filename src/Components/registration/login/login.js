@@ -51,8 +51,9 @@ const Login = (props) => {
     if (validator.allValid()) {
       setLoading(true);
       await axios
-        .post("/api-token-auth/", user)
+        .post("http://127.0.0.1:8000/api-token-auth/", user)
         .then((res) => {
+          console.log(res)
           if (res.status === 200) {
             if (res.data.status === "not_verified") {
               setLoading(false);
@@ -76,11 +77,12 @@ const Login = (props) => {
             setLoading(false);
           } else if (res.status === 400) {
             setError(true);
-            // console.log(res);
+            console.log(res);
             setLoading(false);
           }
         })
         .catch((err) => {
+          console.log(err);
           setLoading(false);
           setError(true);
         });
