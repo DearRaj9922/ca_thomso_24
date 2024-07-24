@@ -79,10 +79,23 @@
     align-items: center;
     list-style: none;
     font-size: 7vw;
-    gap:7vh;
-    margin-top:10vh;
+    gap:5vh;
+    margin-top:8vh;
     font-family: Sansita;
     color: #555555;
     font-weight: 800;
     /* text-decoration: none; */
+}
+.logout{
+    background-color: white;
+    border: 3px solid black;
+    padding-inline: 18px;
+    text-align: center;
+    border-radius: 8px;
+    padding-block: 5px;
+    cursor: pointer;
+}
+
+.page-opt li.active {
+    border-bottom: 3px solid #555555; /* or any other style you prefer */
 }
