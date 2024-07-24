@@ -10,7 +10,7 @@ import cloud4 from "../../Assets/cloud4.svg";
 function Landing4() {
   const navigate = useNavigate();
   return (
-    <>
+    <div className="relative">
     <img src={landingbgdesk4} className="bg_img_4" alt="land-bg-4"/>
     <img src={landingbgmon4} className="bg-mob-4" alt="land-bg-mob-4"/>
     <div className="landing4">
@@ -33,7 +33,7 @@ function Landing4() {
     <div className="landing4mobile">
       
       <div className="clouds">
-      <img src={cloud4} className="cloud4-1" alt="cloud-4-1"/>
+      <img src={cloud4} className="cloud4-1 " alt="cloud-4-1"/>
       <img src={cloud4} className="cloud4-2" alt="cloud-4-2"/>
       </div>
       
@@ -44,7 +44,7 @@ function Landing4() {
         <button onClick={() => navigate("/registration")} className="reg-button">Register Now!</button>
       </div>
     </div>
-    </>
+    </div>
   );
 }
 

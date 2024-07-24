@@ -54,7 +54,7 @@ body {
 
   /* opacity: 0;  */
   transition: transform 0.3s ease-in-out; 
-  padding: 15px;
+  /* padding: 15px; */
   border-radius: 12px;
   transition: transform 0.3s ease-in-out;
 }
@@ -70,14 +70,14 @@ body {
 .text-item h1 {
   color: #000;
   text-shadow: 8.593px 12.03px 3.437px rgba(0, 0, 0, 0.25);
-  -webkit-text-stroke-width: 1.807px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FFF;
   font-family: Noto serif;
-  font-size: 42.963px;
+  font-size: 30px;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 1000;
   line-height: 100%;
-  letter-spacing: 2.148px;
+  /* letter-spacing: 2.148px; */
   margin-top: 5px;
   margin-bottom: 20px;
 
@@ -104,7 +104,7 @@ body {
 }
 
 /* Cloud image styling */
-#cloud1, #cloud2 {
+/* #cloud1, #cloud2 {
   stroke-width: 3.437px;
   stroke: #595959;
   position: absolute;
@@ -123,7 +123,7 @@ body {
   height: 35.57px;
   top: 52px;
   right: 380px;
-}
+} */
 
 /* Media query for mobile view */
 @media (max-width: 768px) and (min-width: 300px) {
@@ -137,7 +137,8 @@ body {
   .text-frame {
     margin-left: 20px;
     margin-top: 50px;
-    width: 90%;
+    margin-right: 20px; 
+    width: calc(100% - 60px); 
   }
 
   .text-item {
@@ -167,6 +168,7 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    padding-right: 10px;
   }
 
   #cloud1 {

@@ -4,21 +4,52 @@
     font-style: italic;
   }
 
+
+
+@keyframes slideInTop {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInBottom {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 .hero_wrapper{
     background-image: url("../../Assets/landing1.svg");
     background-size:cover;
     background-position:50% bottom;
     background-repeat: no-repeat;
     height: 90vh;
-    
-    /* overflow: hidden;
-    overflow-y: hidden; */
-    /* height: 100vw; */
+    width: 100%;
     margin: 0;
     padding: 0;
 }
 
-.hero_content{
+.hero_content {
     display: grid;
     place-content: center;
     text-align: center;
@@ -32,7 +63,7 @@
     font-weight: bolder;
     font-stretch: expanded;
     letter-spacing: 0.24506rem;
-
+    animation: slideInTop 1s ease-out forwards;
 }
 
 .hero-reg{
@@ -51,7 +82,7 @@
     padding: 0.7vw 1vw;
 }
 
-.hero-reg:hover{
+.hero-reg:hover {
     cursor: pointer;
     transform: scale(1.02);
     background-color: #515151;
@@ -59,60 +90,50 @@
     border-color: #FFF;
 }
 
-.hero-reg:active{
+.hero-reg:active {
     transform: scale(0.97);
 }
 
-.program-text{
+.program-text {
     margin: 0;
     padding: 0;
 }
 
-.hero-reg-btn{
+.hero-reg-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     padding-top: 2vw;
+    opacity: 0;
+    animation: scaleIn 1s ease-out forwards 1s;
 }
 
-.clouds-landing{
+.clouds-landing {
     display: block;
     height: 28vh;
     width: 100vw;
     justify-content: stretch;
     margin-top: -2vw;
-
 }
 
 .hero_image{
     position:absolute;
-    /* object-fit: cover; */
     height: 100vh;
     width: 100vw;
 }
 
-/* .landingImage{
+.landingImage {
+    position: absolute;
+    overflow-y: hidden;
+    object-fit: contain;
+    margin-left: -1.5vw;
+    height: 67vh;
+    width: 100vw !important;
+    margin-top: -28vh;
+    animation: slideInBottom 1s ease-out forwards;
+}
 
-    z-index: -2;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    object-fit: fill;
-    min-height: calc(100%-85px);
-    min-width: 100%;
-    background-position: center;
-
-    /* object-fit: fill; */
-    /* overflow-y: hidden;
-    overflow-x: hidden; */
-    /* margin-left: -1.5vw; */
-    /* display: none; */
-    /* margin-top: -28vh; */
-
-.hero-img img{
-    
+.hero-img img {
     width: 100vw;
 }

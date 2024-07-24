@@ -1,0 +1,59 @@
+.navcontainer {
+    padding-block: 20px;
+    padding-inline: 40px;
+    display: flex;
+    height: 3rem;
+    /*width: 100%;*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightcontainer {
+    font-weight: bold;
+    font-size: 22px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.authbtn {
+    background-color: white;
+    border: 3px solid black;
+    padding-inline: 18px;
+    border-radius: 8px;
+    padding-block: 5px;
+}
+.authbtn:hover {
+   background: #E600DC;
+}
+
+.rightcontainer div {
+    cursor: pointer;
+}
+.mobview{
+    display: none;
+}
+.active {
+    border-bottom: 3px solid #000; /* or any other style you prefer */
+}
+
+@media only screen and (max-width: 800px) {
+    .navcontainer {
+        padding-inline: 20px;
+    }
+    .rightcontainer {
+        display: none;
+    }
+    .navcontainer{
+        display: none;
+    }
+    .mobview{
+        display: block;
+    }
+}
+@media only screen and (min-width: 800px) {
+    .hamburger{
+        display: none;
+    }
+}

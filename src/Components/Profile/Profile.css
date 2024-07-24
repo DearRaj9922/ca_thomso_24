@@ -1,0 +1,93 @@
+.main-container{
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('../Assets/profilebackground.png');
+}
+.container{
+    height: calc(100vh - 72px - 3rem - 40px);
+    padding-inline: 30px;
+    display: flex;
+    align-items: end;
+    justify-content: space-evenly;
+}
+.banner{
+    /*position: relative;*/
+    box-sizing: border-box;
+    padding-top: 35px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.banner-title{
+    font-weight: bold;
+    color: #DF3F39;
+    font-size: xx-large;
+}
+.banner img{
+    transform: scale(0.9);
+}
+
+.milestone-container{
+    color: #6E6D6D;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    font-weight: bold;
+}
+.banner-data-container{
+    position: relative;
+}
+.banner-data{
+    font-weight: bold;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    top: 15%;
+    left: 15%;
+    font-size: x-large;
+    color: #74005A;
+}
+.banner-section{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.banner-section div{
+    text-align: center;
+    width: 100%;
+}
+.banner-section div hr{
+    margin: 0;
+    padding: 0;
+    border: 1px solid #74005A;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .milestone-container{
+        display: none;
+    }
+    .banner{
+        display: none;
+    }
+    .container{
+           height: calc(100vh - 72px - 3rem - 40px);
+    padding-inline: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    }
+    .profilecard-container{
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+}
