@@ -106,9 +106,14 @@ body {
   right: 0;
   bottom: 0;
   opacity: 0;
+  transition: opacity 1s ease-out 3s;
   /* display: none; */
   animation: slideUp 1s ease-out 3s;
   animation-fill-mode: forwards;
+}
+
+.landing2-details[data-aos] {
+  opacity: 1 !important; /* Forces opacity to 1 when AOS animation triggers */
 }
 
 .landing2-details h1 {
