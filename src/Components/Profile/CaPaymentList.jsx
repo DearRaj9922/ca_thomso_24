@@ -279,7 +279,7 @@ const CaPaymentList = () =>{
             return(
                 <div className='lauda'>
                     <div className='ca-payment-list-container'>
-                        <div className="ref-heading">Referrals0</div>
+                        <div className="ref-heading">Referrals</div>
                         <div className='ca-payment-list-header'>
                             <ul>
                                 <li className='ca-payment-list-header-sr'>Sr. No.</li>

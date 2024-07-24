@@ -3,10 +3,12 @@ import thomsologo from '../Assets/thomsologo.svg'
 import './navbar.css';
 import hamburger from '../Assets/menu.svg';
 import { useNavigate } from 'react-router-dom';
+import Mobnavbar from './mobnavbar.js';
 
 export default function Navbar() {
     const navigate = useNavigate();
     return (
+        <>
         <div className="navcontainer">
             <img src={thomsologo}/>
             <div className="rightcontainer">
@@ -17,7 +19,11 @@ export default function Navbar() {
                 <div onClick={()=>navigate('/profile')}>CA Guide</div>
                 <div className="authbtn">Log Out</div>
             </div>
-            <div className="hamburger"><img src={hamburger} alt="ham"/></div>
+            {/* // <div className="hamburger"><img src={hamburger} alt="ham"/></div> */}
         </div>
+        <div className="mobview">
+            <Mobnavbar/>
+        </div>
+        </>
     )
 }
