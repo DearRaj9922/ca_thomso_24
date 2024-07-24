@@ -10,11 +10,29 @@
 }
 .refer-wrap{
     display: flex;
+    margin-top: 20vw;
     gap:7vw;
+    height:70vh;
+    align-items: end;
 }
 .profile-details{
     /* position: absolute; */
     z-index: 1;
+}
+.referral-mob-div{
+    display: none;
+}
+@media only  screen and (max-width:800px){
+    .referrals-main-div{
+        display: none;;
+    }
+    .referral-mob-div{
+        display: block;
+        width:100vw;
+        height:100vh;
+        background-image: url(../Assets/profilemobbg.webp);
+        background-size: cover  ;
+    }
 }
 /* .referral-bg{
     width:100vw;

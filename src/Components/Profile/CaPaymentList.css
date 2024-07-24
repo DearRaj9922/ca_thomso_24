@@ -1,5 +1,5 @@
 .lauda{
-    height: 100vh;
+    height: 49vw;
 }
 .ca-payment-list-container {
     width: 45vw;
@@ -10,7 +10,7 @@
     border: #111111 solid 2px ;
     border-radius: 10px 10px 0px 0px;
     overflow: scroll;
-    top: 10vh;
+    /* top: 10vh; */
     left: 10%;
     background-color: white;
 }
