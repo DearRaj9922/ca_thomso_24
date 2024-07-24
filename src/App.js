@@ -16,6 +16,8 @@ import Footer from "./Components/Footer/Footer.js";
 import Profile from "./Components/Profile/Profile";
 import ProfileDetails from "./Components/ProfileDetails/ProfileDetails.js";
 import Referrals from "./Components/Referrals/referrals.js";
+import Leaderboard from "./Components/Leaderboard/leaderboard.jsx"; 
+
 
 
 import CombinedLandingPage from "./Components/CombinedLandingPage/CombinedLandingPage.js";
@@ -40,6 +42,12 @@ function App() {
                     <Route path='/profile' element={<Profile/>}/>
                     <Route path='/profiledetail' element={<ProfileDetails/>}/>
                     <Route path='/referrals' element={<Referrals/>}/>
+          <Route path='/emailverified' element={<Emailverified/>}/>
+          <Route path='/login' element={<Login/>}/>
+          <Route path='/profile' element={<Profile/>}/>
+          <Route path='/profiledetail' element={<ProfileDetails/>}/>
+          <Route path='/referrals' element={<Referrals/>}/>
+          <Route path='/leaderboard' element={<Leaderboard/>}/>
 
                         {/*<Route path='/quizardry' element={<Quizardry/>}/>*/}
 

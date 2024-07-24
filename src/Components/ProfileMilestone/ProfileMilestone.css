@@ -1,4 +1,4 @@
-.profile-milestone{
+.profile-milestone {
     overflow-y: auto;
     box-sizing: border-box;
     color: black;
@@ -9,27 +9,40 @@
     background-color: white;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    scrollbar-width: none;
+    scrollbar-width: thin; 
+    scrollbar-color: #505050 transparent; 
     user-select: none;
+}
 
+.profile-milestone::-webkit-scrollbar {
+    width: 4px;
 }
-.profile-milestone::-webkit-scrollbar{
-    display: none;
-    width: 0;
+
+.profile-milestone::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #505050;
 }
-.milestone-title{
+
+.profile-milestone::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.milestone-title {
     font-size: large;
 }
-.milestone-item{
+
+.milestone-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.milestone-score{
+
+.milestone-score {
     font-size: medium;
     color: #15BF11;
 }
-.milestone-inner-text{
+
+.milestone-inner-text {
     font-size: 17px;
     font-weight: normal;
     display: flex;
@@ -37,11 +50,13 @@
     align-items: start;
     justify-content: center;
 }
-.milestone-secondary{
+
+.milestone-secondary {
     font-size: 15px;
     color: #505050;
 }
-.profile-milestone div hr{
+
+.profile-milestone div hr {
     color: rgba(0,0,0,0.12);
     border: 1px solid rgba(0,0,0,0.12);
 }

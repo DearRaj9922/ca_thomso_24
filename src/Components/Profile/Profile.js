@@ -9,35 +9,35 @@ import ProfileMilestone from "../ProfileMilestone/ProfileMilestone";
 function Profile(props) {
     return (
         <div className="main-container">
-            <Navbar/>
+            <Navbar />
 
             <div className="container">
-                <div><ProfileCard/></div>
+                <div><ProfileCard /></div>
                 <div className="banner">
 
                     <div className="banner-title">Achievements</div>
                     <div className="banner-data-container">
-                        <img src={banner} alt="banner"/>
+                        <img src={banner} alt="banner" />
 
                         <div className="banner-data">
                             <div className="banner-section">
                                 <div>11th</div>
                                 <div>
-                                    <hr/>
+                                    <hr />
                                 </div>
                                 <div>Ranking</div>
                             </div>
                             <div className="banner-section">
                                 <div>312</div>
                                 <div>
-                                    <hr/>
+                                    <hr />
                                 </div>
                                 <div>Score</div>
                             </div>
                             <div className="banner-section">
                                 <div>15</div>
                                 <div>
-                                    <hr/>
+                                    <hr />
                                 </div>
                                 <div>Referrals</div>
                             </div>
@@ -47,9 +47,10 @@ function Profile(props) {
                 </div>
                 <div className="milestone-container">
                     <div>Recent Milestones</div>
-                    <ProfileMilestone/></div>
+                    <ProfileMilestone />
+                </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     );
 }
