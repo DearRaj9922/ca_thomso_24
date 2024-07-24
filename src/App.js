@@ -19,7 +19,6 @@ import Referrals from "./Components/Referrals/referrals.js";
 
 
 import CombinedLandingPage from "./Components/CombinedLandingPage/CombinedLandingPage.js";
-import Quizardry from "./Components/Quizardry/Quizardry";
 
 
 function App() {
