@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap');
 .profilecard-container {
     box-shadow: 10px 10px 3px 0px rgba(0, 0, 0, 0.25);
     padding: 20px 15px;
@@ -9,6 +10,7 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     box-sizing: border-box;
+    font-family: Karma;
 
 }
 
@@ -173,6 +175,9 @@
         border-radius: 100%;
         border: brown 4px solid;
         position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         top: -8%;
         left: -8%;
         padding: 0;

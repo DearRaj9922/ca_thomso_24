@@ -17,6 +17,9 @@
     font-weight: 500;
     background-color: white;
 }
+.ref-heading{
+    display: none;
+}
 
 .ca-payment-list-container::-webkit-scrollbar{
     display: none;
@@ -110,5 +113,12 @@ li{
     .lauda{
         height:100vh;
         overflow: hidden;
+    }
+    .ref-heading{
+        display: block;
+        /* position: absolute; */
+        font-size: 6vw;
+        font-weight: 800;
+        margin:2vh 0 0 4vw;
     }
 }
