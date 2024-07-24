@@ -5,6 +5,7 @@
     background-image: url('../Assets/profilebackground.png');
 }
 .container{
+    margin-top: 20px;
     height: calc(100vh - 72px - 3rem - 40px);
     padding-inline: 30px;
     display: flex;
@@ -80,6 +81,7 @@
         display: none;
     }
     .container{
+        margin: 0;
            height: calc(100vh - 72px - 3rem - 40px);
     padding-inline: 30px;
     display: flex;
