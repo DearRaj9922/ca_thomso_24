@@ -14,6 +14,7 @@ import Login from './Components/registration/login/login.js';
 import HeroSection from "./Components/Landing/Hero Section/HeroSection";
 import Footer from "./Components/Footer/Footer.js";
 import CombinedLandingPage from "./Components/CombinedLandingPage/CombinedLandingPage.js";
+import ProfileMilestonemobile from "./Components/ProfileMilestone/ProfileMilestonemobile.js";
 
 function App() {
   return (
@@ -30,6 +31,8 @@ function App() {
           <Route path='/verify' element={<Emailverify />} />
           <Route path='/emailverified' element={<Emailverified />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/profilemilestonemobile' element={<ProfileMilestonemobile />} />
+
         </Routes>
       </Router>
     </div>
