@@ -33,12 +33,16 @@
   }
 }
 
+.relative{
+  position: relative;
+}
+
 /* Add this to your CSS to prevent scrolling */
-body {
+/* body {
   overflow: hidden;
   /* width: 100vw;
-  height: 100vh; */
-}
+  height: 100vh; 
+} */
 .bg_img_4 {
   z-index: -1;
   width: 100vw;
@@ -46,6 +50,20 @@ body {
   margin-top:0;
   position: absolute;
  
+
+ 
+}
+.hand{
+  width: 80vw;
+  height: 500px;
+ margin-left: -40px;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+ 
+  overflow: hidden;
+  bottom: -200px;
+
 }
 
 .landing4 {
