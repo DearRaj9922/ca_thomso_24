@@ -1,7 +1,7 @@
 import React from 'react'
 import "./leaderboard.css";
 import profilebackground from "../Assets/profilebackimg.webp";
-import Navbar from '../Navbar/Navbar';
+import Navbar from '../Navbar/Navbar.js';
 // import ReferralList from "../Profile/CaPaymentList.jsx";
 // import PositionCard from '../Profile/PositionCard.jsx';
 import ProfileDetail from "../ProfileDetails/ProfileDetails.js";
