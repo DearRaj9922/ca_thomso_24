@@ -3,7 +3,7 @@ import './Profile.css'
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import ProfileCard from "../ProfileCard/ProfileCard";
-import banner from '../Assets/bannermain.svg'
+import banner from '../Assets/bannermain.webp'
 import ProfileMilestone from "../ProfileMilestone/ProfileMilestone";
 import {useNavigate} from "react-router-dom";
 import axios from "axios";

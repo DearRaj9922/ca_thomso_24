@@ -11,8 +11,8 @@ import colleges from "./college";
 // import MobNavbar from "../../mobile/Navbar/MobNavbar";
 // import logbg1 from "../../../assets/WELCOME_BACK.svg";
 // import logbg2 from "../../../assets/Campus_Ambassador.svg";
-import welcomebckbg from "../../Assets/Registrationbg.svg";
-import cawelcome from "../../Assets/registrationbg-mobile.svg";
+import welcomebckbg from "../../Assets/Registrationbg.webp";
+import cawelcome from "../../Assets/registrationbg-mobile.webp";
 
 const states = [
   "Andaman and Nicobar Islands",

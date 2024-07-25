@@ -128,7 +128,7 @@ body {
 /* Media query for mobile view */
 @media (max-width: 768px) and (min-width: 300px) {
   .campus-ambassador-container {
-    background-image: url('../../Assets/page3mobile.svg');
+    background-image: url('../../Assets/page3mobile.webp');
     background-size: cover;
     background-position: center;
     min-height: 100vh;

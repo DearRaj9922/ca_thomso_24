@@ -1,7 +1,7 @@
 import React ,{useState} from 'react'
-import hamburger from '../Assets/menu.svg';
-import thomsologo from '../Assets/thomsologo.svg';
-import cross from "../Assets/cross.svg";
+import hamburger from '../Assets/menu.webp';
+import thomsologo from '../Assets/thomsologo.webp';
+import cross from "../Assets/cross.webp";
 import  "./mobnavbar.css";
 import {useLocation, useNavigate} from 'react-router-dom';
 

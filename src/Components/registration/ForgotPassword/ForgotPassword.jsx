@@ -3,7 +3,7 @@ import "./styles.css";
 // import Nav from "../../web/NewNavbar/Nav";
 // import Nav from "src\Components\registration\Navbar\Navbar.js"
 import Nav from "../Navbar/Navbar";
-import welcomebckbg from "../../../Components/Assets/Registration.svg";
+import welcomebckbg from "../../../Components/Assets/Registration.webp";
 import axios from "axios";
 import SimpleReactValidator from "simple-react-validator";
 

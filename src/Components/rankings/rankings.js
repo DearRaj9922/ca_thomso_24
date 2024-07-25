@@ -3,7 +3,7 @@ import './rankings.css';
 
 import profileBackgroundDesktop from '../Assets/profilebackground.webp';
 import profileBackgroundMobile from '../Assets/profilemobbg.webp';
-import avatarImage from '../Assets/avatar1.svg';
+import avatarImage from '../Assets/avatar1.webp';
 
 // Background images for desktop
 import desktopBackground1 from '../Assets/Group 48132-2.webp';

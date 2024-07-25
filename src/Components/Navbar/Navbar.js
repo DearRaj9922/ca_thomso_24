@@ -1,7 +1,7 @@
 import React from 'react'
-import thomsologo from '../Assets/thomsologo.svg'
+import thomsologo from '../Assets/thomsologo.webp';
 import './navbar.css';
-import hamburger from '../Assets/menu.svg';
+import hamburger from '../Assets/menu.webp';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Mobnavbar from './mobnavbar.js';
 

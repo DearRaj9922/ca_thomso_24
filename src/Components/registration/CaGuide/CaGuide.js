@@ -1,9 +1,9 @@
 import React from "react";
 import "./CaGuide.css";
-import Vector from "../../images/Vector.svg";
+import Vector from "../../images/Vector.webp";
 import Nav from "../../web/NewNavbar/Nav";
-import logbg1 from "../../../assets/WELCOME_BACK.svg";
-import logbg2 from "../../../assets/Campus_Ambassador.svg";
+import logbg1 from "../../../assets/WELCOME_BACK.webp";
+import logbg2 from "../../../assets/Campus_Ambassador.webp";
 import welcomebckbg from "../../../assets/welcomebckbg.webp";
 import LeftBar from "../../Profile/LeftBar";
 import profileBack from "../../../assets/Leaderboard.webp";

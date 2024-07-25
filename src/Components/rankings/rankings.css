@@ -1,6 +1,6 @@
 /* Background for desktop */
 .background {
-    background-image: url('../Assets/profilebackground.png');
+    background-image: url('../Assets/profilebackground.webp');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
