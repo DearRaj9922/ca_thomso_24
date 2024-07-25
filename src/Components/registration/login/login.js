@@ -71,7 +71,7 @@ const Login = (props) => {
               // props.fetchEvents();
               // localStorage.setItem("token", res.data?.access);
               // setAuthToken(localStorage.getItem("token"));
-              navigate(`/newprofile`);
+              navigate(`/profile`);
               // console.log(res);
             }
             setLoading(false);

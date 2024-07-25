@@ -1,14 +1,10 @@
 import React from 'react';
 import './CampusAmbassador.css';
-<<<<<<< HEAD
-// import landingdesktop from '../../Assets/page3desktop.svg';
-import page_3_bg from '../../Assets/page_3_bg.svg';
-=======
 
 // import landingdesktop from '../../Assets/page3desktop.svg'
 import page_3_bg from '../../Assets/page_3_bg.svg';
 
->>>>>>> 8cdaa45f282cce678d97a54b437a7fea5457f0bd
+
 import cloud1 from '../../Assets/cloud2.svg';
 import cloud2 from '../../Assets/cloud2.svg';
 
@@ -16,13 +12,10 @@ function CampusAmbassador() {
 
   return (
     <div className='campus-ambassador-container'>
-<<<<<<< HEAD
-      {/* <img src={landingdesktop} className="bg_img" alt="landing-bg"/> */}
-      <img src={page_3_bg} className="bg_img" alt="landing-bg"/>
-=======
+
       <img src={page_3_bg} className="bg_img" alt="landing-bg"/>
 
->>>>>>> 8cdaa45f282cce678d97a54b437a7fea5457f0bd
+
       <div className="text-frame">
         <div className="text-item">
           <h1 id='certificates'>CERTIFICATES</h1>

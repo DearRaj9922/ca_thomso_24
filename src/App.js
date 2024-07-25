@@ -16,7 +16,7 @@ import Footer from "./Components/Footer/Footer.js";
 import Profile from "./Components/Profile/Profile";
 import ProfileDetails from "./Components/ProfileDetails/ProfileDetails.js";
 import Referrals from "./Components/Referrals/referrals.js";
-import Leaderboard from "./Components/Leaderboard/leaderboard.jsx"; 
+import Leaderboard from "./Components/NewLeaderboard/leaderboard";
 
 
 
