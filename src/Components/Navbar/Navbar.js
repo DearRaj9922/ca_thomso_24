@@ -2,21 +2,22 @@ import React from 'react'
 import thomsologo from '../Assets/thomsologo.svg'
 import './navbar.css';
 import hamburger from '../Assets/menu.svg';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import Mobnavbar from './mobnavbar.js';
 
 export default function Navbar() {
     const navigate = useNavigate();
+    const location = useLocation();
     return (
         <>
         <div className="navcontainer">
             <img src={thomsologo}/>
             <div className="rightcontainer">
-                <div onClick={()=>navigate('/learderboard')}>Leaderboard</div>
-                <div onClick={()=>navigate('/feeds')}>Feeds</div>
-                <div onClick={()=>navigate('/referrals')}>Referrals</div>
-                <div onClick={()=>navigate('/profile')}>Profile</div>
-                <div onClick={()=>navigate('/profile')}>CA Guide</div>
+                <div className={location.pathname === '/leaderboard' ? 'active' : ''} onClick={()=>navigate('/learderboard')}>Leaderboard</div>
+                <div className={location.pathname === '/feeds' ? 'active' : ''} onClick={()=>navigate('/feeds')}>Feeds</div>
+                <div className={location.pathname === '/referrals' ? 'active' : ''} onClick={()=>navigate('/referrals')}>Referrals</div>
+                <div className={location.pathname === '/profile' ? 'active' : ''} onClick={()=>navigate('/profile')}>Profile</div>
+                <div className={location.pathname === '/Guide' ? 'active' : ''} onClick={()=>navigate('/Guide')}>CA Guide</div>
                 <div className="authbtn">Log Out</div>
             </div>
             {/* // <div className="hamburger"><img src={hamburger} alt="ham"/></div> */}
