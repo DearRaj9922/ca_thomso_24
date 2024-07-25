@@ -1,0 +1,90 @@
+/* Background for desktop */
+.background {
+    background-image: url('../Assets/profilebackground.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background for mobile */
+@media (max-width: 768px) {
+    .background {
+        background-image: url('../Assets/profilemobbg.webp');
+    }
+}
+
+.score-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.score-box {
+    width: 300px;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    color: #440035;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .score-box {
+        width: 100%;
+    }
+}
+
+.avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+.info h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.info p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.stats div {
+    text-align: center;
+}
+
+.stats h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.stats p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.position h1 {
+    margin: 0;
+    font-size: 36px;
+}

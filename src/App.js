@@ -21,6 +21,7 @@ import Referrals from "./Components/Referrals/referrals.js";
 import CombinedLandingPage from "./Components/CombinedLandingPage/CombinedLandingPage.js";
 import Quizardry from "./Components/Quizardry/Quizardry";
 
+import Rankings from "./Components/rankings/rankings.js";
 
 function App() {
     return (
@@ -41,6 +42,7 @@ function App() {
                     <Route path='/profile' element={<Profile/>}/>
                     <Route path='/profiledetail' element={<ProfileDetails/>}/>
                     <Route path='/referrals' element={<Referrals/>}/>
+                    <Route path='/rankings' element={<Rankings/>}/>
 
                         {/*<Route path='/quizardry' element={<Quizardry/>}/>*/}
 
