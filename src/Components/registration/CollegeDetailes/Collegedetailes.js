@@ -125,7 +125,7 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
       
      let status;
      let data;
-      const response = await axios.post("http://127.0.0.1:8000/apiV1/registerca", userresponse).then(response => {data = response.data; status = response.status});
+      const response = await axios.post("http://35.154.76.67/apiV1/registerca", userresponse).then(response => {data = response.data; status = response.status});
       
 
           if (status === 201) {
@@ -158,7 +158,7 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
   const sendmail= async () => {
     try {
       console.log("dhuaihdi")
-      const response = await axios.post('http://127.0.0.1:8000/apiV1/sendrealmail',{name:userresponse.name,email:userresponse.email,password:userresponse.password});
+      const response = await axios.post('http://35.154.76.67/apiV1/sendrealmail',{name:userresponse.name,email:userresponse.email,password:userresponse.password});
       console.log(response)
       setLoaded(true);
     } catch (error) {
