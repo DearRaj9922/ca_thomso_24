@@ -51,7 +51,7 @@ const Login = (props) => {
     if (validator.allValid()) {
       setLoading(true);
       await axios
-        .post("http://127.0.0.1:8000/api-token-auth/", user)
+        .post("http://35.154.76.67/api-token-auth/", user)
         .then((res) => {
           console.log(res)
           if (res.status === 200) {
