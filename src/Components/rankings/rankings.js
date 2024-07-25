@@ -1,7 +1,7 @@
 import React from 'react';
 import './rankings.css';
 
-import profileBackgroundDesktop from '../Assets/profilebackground.png';
+import profileBackgroundDesktop from '../Assets/profilebackground.webp';
 import profileBackgroundMobile from '../Assets/profilemobbg.webp';
 import avatarImage from '../Assets/avatar1.svg';
 

@@ -16,10 +16,11 @@ import Footer from "./Components/Footer/Footer.js";
 import Profile from "./Components/Profile/Profile";
 import ProfileDetails from "./Components/ProfileDetails/ProfileDetails.js";
 import Referrals from "./Components/Referrals/referrals.js";
+import Leaderboard from "./Components/NewLeaderboard/leaderboard";
+
 
 
 import CombinedLandingPage from "./Components/CombinedLandingPage/CombinedLandingPage.js";
-import Quizardry from "./Components/Quizardry/Quizardry";
 
 import Rankings from "./Components/rankings/rankings.js";
 
@@ -35,14 +36,22 @@ function App() {
                     <Route path='/landing5' element={<Landing5 />} />
                     <Route path='/' element={<CombinedLandingPage />} />
                     <Route path='/registration' element={<PersonalDetails />} />
-                    <Route path='/verify' element={<Emailverify />} />
-
+                    <Route path='/verifyemail' element={<Emailverify />} />
                     <Route path='/emailverified' element={<Emailverified/>}/>
                     <Route path='/login' element={<Login/>}/>
                     <Route path='/profile' element={<Profile/>}/>
                     <Route path='/profiledetail' element={<ProfileDetails/>}/>
                     <Route path='/referrals' element={<Referrals/>}/>
+<<<<<<< HEAD
                     <Route path='/rankings' element={<Rankings/>}/>
+=======
+          <Route path='/emailverified' element={<Emailverified/>}/>
+          <Route path='/login' element={<Login/>}/>
+          <Route path='/profile' element={<Profile/>}/>
+          <Route path='/profiledetail' element={<ProfileDetails/>}/>
+          <Route path='/referrals' element={<Referrals/>}/>
+          <Route path='/leaderboard' element={<Leaderboard/>}/>
+>>>>>>> ffa5cd1a42dc6109f91b62121a9b28b9a66254c9
 
                         {/*<Route path='/quizardry' element={<Quizardry/>}/>*/}
 

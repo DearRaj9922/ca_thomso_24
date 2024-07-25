@@ -1,42 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
-.profile-detail-div{
+
+.profile-detail-div {
     position: relative;
-    width:40vw;
-    height:49vw;
+    width: 40vw;
+    height: 49vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
-    gap:6vw;
+    gap: 6vw;
     /* top:10vh; */
     overflow: hidden;
     /* padding: 5px 0 0 0; */
 }
-.profile-detail-bg{
-    width:40vw;
+
+.profile-detail-bg {
+    width: 40vw;
     position: absolute;
     z-index: -5;
 }
-.detail-uppersec{
-    margin-top:1rem;
+
+.detail-uppersec {
+    margin-top: 1rem;
     display: flex;
     height: 20vw;
-    gap:2vw;
+    gap: 2vw;
 }
-.ach-banner{
-    width:5.8vw;
+
+.ach-banner {
+    width: 5.8vw;
     position: absolute;
     z-index: -1;
 }
-.user-details{
+
+.user-details {
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap:1vw;
-    margin-top:2vw; 
+    gap: 1vw;
+    margin-top: 2vw;
 }
-.user-name-section{
+
+.user-name-section {
     display: flex;
     color: white;
     justify-content: center;
@@ -44,33 +50,39 @@
     font-family: Karma;
     /* gap:1vw; */
 }
-.user-img{
-    width:10vw;
+
+.user-img {
+    width: 10vw;
 }
-.user-pic{
-    width:8vw;
+
+.user-pic {
+    width: 8vw;
 }
-.user-name{
+
+.user-name {
     display: flex;
     flex-direction: column;
-    gap:2vw;
+    gap: 2vw;
     justify-content: center;
-    width:15vw;
+    width: 15vw;
     /* height: 2vh; */
 }
-.user-name h3{
+
+.user-name h3 {
     height: 1vh;
-    padding:0;
+    padding: 0;
     margin: 0;
     font-size: 2vw;
 }
-.user-name h4{
-    margin:0;
+
+.user-name h4 {
+    margin: 0;
     line-height: 2vh;
     font-size: 1vw;
 }
-.user-score{
-    width:5.3vw;
+
+.user-score {
+    width: 5.3vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,32 +93,46 @@
     color: #74005a;
     margin-top: 2vw;
 }
-.ranking{
+
+.ranking {
     margin-top: 1vh;
 }
-.ranking,.scores,.referrals{
+
+.ranking,
+.scores,
+.referrals {
     display: flex;
     flex-direction: column;
     align-items: center;
     /* gap: 1vw; */
     /* margin:0 */
 }
-.ranking h3 ,.ranking p{
-    margin:0;
+
+.ranking h3,
+.ranking p {
+    margin: 0;
 }
-.ranking h3,.scores h3, .referrals h3{
-    width:3vw;
+
+.ranking h3,
+.scores h3,
+.referrals h3 {
+    width: 3vw;
     display: flex;
     justify-content: center;
     border-bottom: solid 2px #74005a;
 }
-.scores h3 ,.scores p{
-    margin:0;
+
+.scores h3,
+.scores p {
+    margin: 0;
 }
-.referrals h3 ,.referrals p{
-    margin:0;
+
+.referrals h3,
+.referrals p {
+    margin: 0;
 }
-.referal-code-sec{
+
+.referal-code-sec {
     display: flex;
     /* margin: 0 auto; */
     background: white;
@@ -118,10 +144,11 @@
     padding: 5px 10px;
     gap: 7px;
 }
-.profilecard-referral-text{
+
+.profilecard-referral-text {
     font-family: Karma;
     color: #212121;
-    font-size:1.8vw;
+    font-size: 1.8vw;
     margin: 0;
 }
 
@@ -132,20 +159,22 @@
     justify-content: space-between;
 }
 
-.profilecard-referral-code p{
+.profilecard-referral-code p {
     margin: 0;
-    font-size:1.2vw;
+    font-size: 1.2vw;
 }
-.more-info-sec{
-    width:8vw;
+
+.more-info-sec {
+    width: 8vw;
     border: #515151;
     border-width: 4px;
 }
-.more-info{
-    width:8vw;
+
+.more-info {
+    width: 8vw;
     font-size: 1.5vw;
     font-weight: 500;
-    border-radius:3px;
+    border-radius: 3px;
     border: #515151;
     border-width: 4px;
     color: #515151;
@@ -153,4 +182,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 500px) {}
+
+@media only screen and (max-width: 800px) {
+    .profilecard-referral-text {
+        
+        font-size: 2.3vw;
+        
+    }
+    .profilecard-referral-code p {
+       
+        font-size: 1.8vw;
+      }
+}
+
+@media only screen and (max-width: 500px) {
+    .profilecard-referral-text {
+        font-family: Karma;
+        color: #212121;
+        font-size: 2.8vw;
+        margin: 0;
+    }
+
+    .profilecard-referral-code p {
+        margin: 0;
+        font-size: 2.5vw;
+    }
 }

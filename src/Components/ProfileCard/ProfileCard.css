@@ -3,6 +3,7 @@
     box-shadow: 10px 10px 3px 0px rgba(0, 0, 0, 0.25);
     padding: 20px 15px;
     height: 60vh;
+    min-height: 500px;
     /*width: 30vw;*/
     width: 400px;
     color: white;
@@ -53,11 +54,12 @@
 
 .profilecard-details {
     padding: 15px;
+    padding-bottom: 0;
     font-size: smaller;
 }
 
 .profilecard-details-div {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .profilecard-details-head {
@@ -102,6 +104,11 @@
     background: limegreen;
     border: 2px white solid;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    padding: 3.5px;
 }
 
 
@@ -163,6 +170,15 @@
 
 }
 
+@media only screen and (min-width: 1600px){
+    .profilecard-container{
+        width: 30vw;
+    }
+    .profilecard-referral{
+        width: 50%;
+    }
+}
+
 @media only screen and (min-width: 500px) {
     .small-view{
         display: none;
@@ -185,5 +201,13 @@
 
     .profilecard-userimg img {
         width: 130px;
+    }
+}
+@media only screen and (max-width: 375px){
+    .profilecard-container{
+        width: 250px;
+    }
+    .profile-card-phoneinput{
+        width: 100px;
     }
 }

@@ -24,6 +24,9 @@
     border-radius: 8px;
     padding-block: 5px;
 }
+.authbtn:hover {
+   background: #E600DC;
+}
 
 .rightcontainer div {
     cursor: pointer;
@@ -31,8 +34,11 @@
 .mobview{
     display: none;
 }
+.active {
+    border-bottom: 3px solid #000; /* or any other style you prefer */
+}
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
     .navcontainer {
         padding-inline: 20px;
     }

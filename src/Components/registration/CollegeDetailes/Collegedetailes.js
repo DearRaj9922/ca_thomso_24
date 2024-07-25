@@ -123,11 +123,12 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
     
     try {
       
-     
-      const response = await axios.post("http://127.0.0.1:8000/apiV1/registerca", userresponse).then(response => {console.log(response)});
+     let status;
+     let data;
+      const response = await axios.post("http://35.154.76.67/apiV1/registerca", userresponse).then(response => {data = response.data; status = response.status});
       
-      const { data } = response;
-          if (response.status === 201) {
+
+          if (status === 201) {
             localStorage.setItem("user_id", data.user_id);
             setLoading(false);
             // setActive(false)
@@ -143,7 +144,7 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
             console.log(data);
             
             setErrorMail(true)
-            errorData = `${"Please verify your registered email. <a onClick={()=>sendmail()} href=/verifyemail>Click Here.</a>"}`;
+            errorData =  `Please verify your registered email. <a href=/verifyemail>Click Here.`;
           } else {
             for (var key in data) {
               errorData += data[key] + "<br>";
@@ -157,7 +158,7 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
   const sendmail= async () => {
     try {
       console.log("dhuaihdi")
-      const response = await axios.post('http://127.0.0.1:8000/apiV1/sendrealmail',{name:userresponse.name,email:userresponse.email,password:userresponse.password});
+      const response = await axios.post('http://35.154.76.67/apiV1/sendrealmail',{name:userresponse.name,email:userresponse.email,password:userresponse.password});
       console.log(response)
       setLoaded(true);
     } catch (error) {
@@ -335,13 +336,15 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
                   </div>
                 </div>
               </div>
-              
-                 
-              {
-              errorMail?
-              (
-                <div> Please verify your registered email. <p onClick={()=>sendmail()} >Click Here.</p></div>
-              ):(<></>)}
+
+
+              {error && (
+                  <div
+                      className="text-danger"
+                      style={{ marginTop: "-10px" }}
+                      dangerouslySetInnerHTML={{ __html: errorMsg }}
+                  ></div>
+              )}
    
               <div className="college-buttons">
                 <button type="submit" className="college-button-submit" disabled={!active} style={active == true ? {background: "#ff5c00"} : {background: "rgb(204, 204, 204)"}}>
