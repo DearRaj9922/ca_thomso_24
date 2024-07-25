@@ -7,7 +7,7 @@ function* getUser(action) {
   const { dispatch } = Store;
   try {
     axios
-      .get(`/apiV1/current_user_ca`)
+      .get(`http://35.154.76.67/apiV1/current_user_ca`)
       .then((res) => {
         // console.log("data", res.data);
         // localStorage.setItem("id", res.data.id);

@@ -1,9 +1,11 @@
 import "./App.css";
-import React from "react";
+import React, {useEffect} from "react";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import CampusAmbassador from "./Components/Landing/Landing3/CampusAmbassador";
 import Landing4 from "./Components/Landing/Landing4/Landing4.js";
+import { fetchUser } from "./Components/User/UserActions";
 // import Landing1 from "./Components/Landing/Landing1/Landing1.js";
+import { connect } from "react-redux";
 import Landing2 from "./Components/Landing/Landing2/Landing2.js";
 import PersonalDetails from './Components/registration/step1/personalDetails.jsx';
 import Landing5 from "./Components/Landing/Landing5/Landing5.js";
@@ -23,7 +25,15 @@ import Leaderboard from "./Components/NewLeaderboard/leaderboard";
 import CombinedLandingPage from "./Components/CombinedLandingPage/CombinedLandingPage.js";
 
 
-function App() {
+function App(props) {
+    useEffect(() => {
+        console.log(props)
+        const token = localStorage.getItem("token");
+        const userId = localStorage.getItem("user_id");
+        if (token) {
+            props?.userDetails && props?.fetchUsers({ id: userId });
+        }
+    }, []);
     return (
         <div className="App">
             <Router>
@@ -56,4 +66,20 @@ function App() {
                         );
                     }
 
-export default App;
+const mapStateToProps = (state) => {
+    let userDetails = state.user.user;
+    let loading = state.user.loading;
+
+    return {
+        userDetails,
+        loading,
+    };
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        fetchUsers: (params) => dispatch(fetchUser(params)),
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
