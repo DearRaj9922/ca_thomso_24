@@ -150,7 +150,7 @@ const PersonalDetails = () => {
    <>{!nextp ?( <>    
    {/* <Nav id="nav1bar"/> */}
     <img src={welcomebckbg} id="welcomebckbg12" alt="" />
-    <img src={bgimage123} alt="" className="bgimage123" />
+    <img src={bgimage123} alt="" className="bgimage-123" />
 
     <div className="personal">
       <div className="personal-steps">
@@ -268,7 +268,7 @@ const PersonalDetails = () => {
                   onChange={(e) => onInputChange(e)}
               />
             </div>
-            <div>
+            <div >
               <Input.Password
                 className="input-field"
                 type="password"
@@ -304,7 +304,7 @@ const PersonalDetails = () => {
         </div>
 
         <div className="personal-buttons">
-          <button onClick ={nextpage} className="personal-button-submit" disabled={!active} style={active == true ? {background: "#ff5c00"} : {background: "#ff00c7"}}>
+          <button onClick ={nextpage} className="personal-button-submit" disabled={!active} style={active == true ? {background: "#ff5c00"} : {background: "#ff00c6"}}>
                 Submit
           </button>
           <button className="personal-button-clear" onClick={clearInput}>

@@ -1,17 +1,28 @@
+.collegeRegBack{
+  width:100vw;
+  height:100vh;
+  /* margin-top: -35vh; */
+  position: fixed;
+  z-index: -1;
+}
 .college-detailes {
   overflow-x: hidden !important;
   overflow-y: hidden !important;
-  margin-top: 11vh;
+  /* background-image: url(../../Assets/Registrationbg.svg); */
+  /* background-size: cover; */
+  height:100vh;
+  width:100vw;
+  /* margin-top: 11vh; */
 }
 
 .collegeRegBack{
-  height: 89vh !important;
+  height: 100vh !important;
   overflow-x: hidden;
 }
 
 .college {
   height: auto !important;
-  width: 45vw !important;
+  width: 34vw !important;
   background-color: #ffffff;
   border: 2px solid #000000;
   border-radius: 8px;
@@ -36,6 +47,7 @@
   flex-direction: row;
   gap: 9.28vw;
 }
+
 
 .college-step1,
 .college-step2 {
@@ -226,10 +238,12 @@
 }
 
 
-#welcomebckbg {
+/* #welcomebckbg {
   z-index: -1;
   position: absolute;
-}
+  width:100vw;
+  height:100vh;
+} */
 
 .select-option {
   border: 1.5px solid #505050;
@@ -310,7 +324,38 @@
 /* //////////////////////// */
 
 
+@media only screen and (max-width:1200px){
+  .input-field {
+    width: 100% !important;
+  }
+  .select-option{
+    width: 274px !important;
+  }
+  .select-option-2{
+    width: 100% !important;
+  }
+}
 
+@media only screen and (max-width:953px) {
+  
+  /* #welcomebckbg {
+    height: 100vh !important;
+  } */
+
+  #log_bg1 {
+    padding-bottom: 0 ;
+  }
+}
+@media (max-width:800px) {
+  .select-option{
+    width: 100% !important;
+  }
+}
+@media (max-width:320px) {
+  .college{
+    width: 250px !important;
+  }
+}
 
 
 @media screen and (max-width: 800px) {
@@ -411,36 +456,4 @@
 }
 #wel3 {
   display: none;
-}
-@media only screen and (max-width:1200px){
-  .input-field {
-    width: 100% !important;
-  }
-  .select-option{
-    width: 243px !important;
-  }
-  .select-option-2{
-    width: 100% !important;
-  }
-}
-
-@media only screen and (max-width:953px) {
-  
-  /* #welcomebckbg {
-    height: 100vh !important;
-  } */
-
-  #log_bg1 {
-    padding-bottom: 0 ;
-  }
-}
-@media (max-width:800px) {
-  .select-option{
-    width: 100% !important;
-  }
-}
-@media (max-width:320px) {
-  .college{
-    width: 250px !important;
-  }
 }
