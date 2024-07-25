@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.b9d02641.css",
-    "main.js": "/static/js/main.2e2d6c8a.js",
+    "main.css": "/static/css/main.7ecb8367.css",
+    "main.js": "/static/js/main.0116fb30.js",
     "static/js/488.0a81433a.chunk.js": "/static/js/488.0a81433a.chunk.js",
     "static/media/page_3_bg.svg": "/static/media/page_3_bg.53baaa0477237d32d01b673bcda5169e.svg",
     "static/media/page3mobile.svg": "/static/media/page3mobile.71f193a96303bd6084d4.svg",
     "static/media/background_img_l3.svg": "/static/media/background_img_l3.19ccdf23060a0a73a92f.svg",
     "static/media/land2.svg": "/static/media/land2.734e4816ddaa47e4e0373f156d25a115.svg",
-    "static/media/Landing page image.svg": "/static/media/Landing page image.13dc519ee393f10bcc30d8bc03dc78fc.svg",
     "static/media/land4.svg": "/static/media/land4.79a5e6586eb3eb01bfaa6631e41cbda0.svg",
     "static/media/registrationbg-mobile.svg": "/static/media/registrationbg-mobile.ea456f8a01e4eb9975816d8e9086b60f.svg",
-    "static/media/Registrationbg.svg": "/static/media/Registrationbg.0cc95938f52dad07a852205c6c645ea5.svg",
     "static/media/profilebackground.png": "/static/media/profilebackground.346b63af8f68d2a51dfd.png",
     "static/media/scooter.svg": "/static/media/scooter.5ca69439f81640ee91c9780c91cdd440.svg",
-    "static/media/background.svg": "/static/media/background.392767fcf175acb22827.svg",
+    "static/media/landing1.webp": "/static/media/landing1.071b7c7685621664ce5e.webp",
     "static/media/land2textmob.svg": "/static/media/land2textmob.05ba9c473267e16f9ac683183b131766.svg",
+    "static/media/landing1mob.webp": "/static/media/landing1mob.10008b3b2fddc646549f.webp",
     "static/media/WHAT ARE YOU WAITING FOR_.svg": "/static/media/WHAT ARE YOU WAITING FOR_.89a266e5778210313ee7d675ca26382c.svg",
     "static/media/land4text.svg": "/static/media/land4text.5278d44f0880255fdea4020b7eafdbc5.svg",
     "static/media/login.webp": "/static/media/login.ae50fb49abb6dcf1891f.webp",
@@ -29,12 +28,11 @@
     "static/media/Nashville-Serial Bold.ttf": "/static/media/Nashville-Serial Bold.bfa9d0d33ce568c2b91d.ttf",
     "static/media/thomsologo.svg": "/static/media/thomsologo.aa1fea4ae431756cf857024d681e0c96.svg",
     "static/media/Logo.svg": "/static/media/Logo.b81184dfc0f74a16a14c82ff1ae7215b.svg",
-    "static/media/ThomsoLogoBlack.svg": "/static/media/ThomsoLogoBlack.85670c97c6d1373f72aebab186158ad6.svg",
     "static/media/guyprofile.svg": "/static/media/guyprofile.555c9e7349193efddaf34f6b6021b08a.svg",
     "static/media/Welcome Back-text.webp": "/static/media/Welcome Back-text.0376ae803270a48dec6d.webp",
     "static/media/cam-ambasdor-tex.webp": "/static/media/cam-ambasdor-tex.5a479fd362ef60f1ce86.webp",
     "static/media/land5-mobile.webp": "/static/media/land5-mobile.3256874ef466cf3a590d.webp",
-    "static/media/clouds-hero.svg": "/static/media/clouds-hero.ed947137afa8c5d89296cd4e49da4d75.svg",
+    "static/media/ThomsoLogoBlack.webp": "/static/media/ThomsoLogoBlack.d0d3844b82f8b4c84b62.webp",
     "static/media/insta.svg": "/static/media/insta.f52a73bdfa07f0cee6153e9404e6b695.svg",
     "static/media/instaLite.svg": "/static/media/instaLite.935e17fffce805ac9345744788eec9c8.svg",
     "static/media/twitter.svg": "/static/media/twitter.6f0bb61fa819bdc3cae3a359aeb42e58.svg",
@@ -55,12 +53,12 @@
     "static/media/copy.svg": "/static/media/copy.88512f6836fdfd9d1a23655c66cf94f1.svg",
     "static/media/cloud2.svg": "/static/media/cloud2.2b7189e04c24978f96a2b101be5f4b72.svg",
     "static/media/cloud4.svg": "/static/media/cloud4.ad8bbfab1ede7c41ca9cf29aa55bf454.svg",
-    "main.b9d02641.css.map": "/static/css/main.b9d02641.css.map",
-    "main.2e2d6c8a.js.map": "/static/js/main.2e2d6c8a.js.map",
+    "main.7ecb8367.css.map": "/static/css/main.7ecb8367.css.map",
+    "main.0116fb30.js.map": "/static/js/main.0116fb30.js.map",
     "488.0a81433a.chunk.js.map": "/static/js/488.0a81433a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9d02641.css",
-    "static/js/main.2e2d6c8a.js"
+    "static/css/main.7ecb8367.css",
+    "static/js/main.0116fb30.js"
   ]
 }
