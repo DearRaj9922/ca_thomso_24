@@ -13,7 +13,7 @@ function Profile(props) {
 const navigate = useNavigate();
 const [User, setUser] = useState(null);
 const getUser = async()=>{
-    const res = await axios.get(`http://127.0.0.1:8000/apiV1/registerca/${localStorage.getItem("user_id")}`);
+    const res = await axios.get(`http://35.154.76.67/apiV1/registerca/${localStorage.getItem("user_id")}`);
     console.log(res.data)
     setUser(res.data);
     // setUser(res.data);
@@ -22,10 +22,10 @@ const getUser = async()=>{
         getUser()
     }, []);
     return (
-        <div className="main-container">
+        <div className="profile-main-container">
             <Navbar />
 
-            <div className="container">
+            <div className="profile-container">
                 {User?
                     (
                 <div><ProfileCard User={User} /></div>
