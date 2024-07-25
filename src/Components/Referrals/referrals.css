@@ -22,7 +22,7 @@
 .referral-mob-div{
     display: none;
 }
-@media only  screen and (max-width:800px){
+@media only  screen and (max-width:1024px){
     .referrals-main-div{
         display: none;;
     }
