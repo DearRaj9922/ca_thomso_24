@@ -1,22 +1,23 @@
 .Nav-Wrapper{
-    background-image: url("../../Assets/background.svg");
+    /* background-image: url("../../Assets/background.svg"); */
     display: flex;
     justify-content:space-between;
     /* padding: 0 1vw; */
     align-items: center;
     /* width: 100vw; */
     overflow: hidden; 
-    height: 10vw;
+    height: 10vh;
 
 }
 
-.nav-logo{
+.nav-logo-div{
+    width:8vw;
+    margin-left: 3vw;
     overflow: hidden;
 }
 
-.nav-logo img{
-    height: 2vw;
-    width: auto;
+.nav-logo-div img{
+    width:6vw
     /* overflow: hidden; */
 }
 
