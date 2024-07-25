@@ -33,8 +33,7 @@ function App() {
                     <Route path='/landing5' element={<Landing5 />} />
                     <Route path='/' element={<CombinedLandingPage />} />
                     <Route path='/registration' element={<PersonalDetails />} />
-                    <Route path='/verify' element={<Emailverify />} />
-
+                    <Route path='/verifyemail' element={<Emailverify />} />
                     <Route path='/emailverified' element={<Emailverified/>}/>
                     <Route path='/login' element={<Login/>}/>
                     <Route path='/profile' element={<Profile/>}/>
