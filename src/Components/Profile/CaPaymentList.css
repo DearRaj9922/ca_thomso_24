@@ -91,7 +91,7 @@
 li{
     margin: 0;
 }
-@media only screen and (max-width:800px){
+@media only screen and (max-width:1024px){
     .ca-payment-list-header-id{
         display:none;
     }
@@ -107,8 +107,10 @@ li{
     .ca-payment-list-container{
         top:15vh;
         width:80vw;
-        height:100vh;
+        height: 82vh;
         background-color: white;
+        border-radius: 15px;
+        border-width: 5px;
     }
     .lauda{
         height:100vh;

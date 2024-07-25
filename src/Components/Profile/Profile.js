@@ -22,10 +22,10 @@ const getUser = async()=>{
         getUser()
     }, []);
     return (
-        <div className="main-container">
+        <div className="profile-main-container">
             <Navbar />
 
-            <div className="container">
+            <div className="profile-container">
                 {User?
                     (
                 <div><ProfileCard User={User} /></div>

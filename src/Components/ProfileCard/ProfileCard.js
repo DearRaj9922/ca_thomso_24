@@ -5,7 +5,7 @@ import profileImage from '../Assets/guyprofile.svg';
 import editbtn from '../Assets/editbtn.svg'
 
 function ProfileCard(props) {
-    const [User,setUser] = useState(props.User)
+    const [User, setUser] = useState(props.User)
     const [phoneNumber, setPhoneNumber] = useState(User.contact);
 
     const handleChange = (e) => {
@@ -16,7 +16,7 @@ function ProfileCard(props) {
         }
     };
     useEffect(() => {
-        setUser({...User, thomso_id:"ThCA-24"+("0000" + String(User.id)).slice(-5)})
+        setUser({...User, thomso_id: "ThCA-24" + ("0000" + String(User.id)).slice(-5)})
 
     }, []);
     return (
@@ -24,13 +24,13 @@ function ProfileCard(props) {
 
             <div className="profilecard-container large-view">
                 <div className="profilecard-userimg">
-                    <img src={profileImage} alt="profile" />
+                    <img src={profileImage} alt="profile"/>
                 </div>
                 <div className='profilecard-referral'>
                     <p className="profilecard-referral-text">Referral Code</p>
                     <div className="profilecard-referral-code">
                         <p>{User.thomso_id}</p>
-                        <img src={Copy} alt="copy" />
+                        <img src={Copy} alt="copy"/>
                     </div>
                 </div>
                 <div className='profilecard-name'>{User?.name}</div>
@@ -60,7 +60,7 @@ function ProfileCard(props) {
                             <div className="items">
                                 <div>{User?.user?.email}</div>
                                 <div className="inputbox">
-                                    <div><input value={phoneNumber} /></div>
+                                    <div><input className="profile-card-phoneinput" value={phoneNumber}/></div>
                                     <button>Save</button>
                                 </div>
                             </div>
@@ -70,11 +70,13 @@ function ProfileCard(props) {
 
             </div>
 
+            {/*small view*/}
+
 
             <div className="profilecard-container small-view">
                 <div className="profilecard-top-section">
                     <div className="profilecard-userimg">
-                        <img src={User} alt="profile" />
+                        <img src={profileImage} alt="profile"/>
                     </div>
                     <div className="profilecard-topright-section">
                         <div className='profilecard-name'>Dhruv Bhatia</div>
@@ -82,7 +84,7 @@ function ProfileCard(props) {
                             <p className="profilecard-referral-text">Referral Code</p>
                             <div className="profilecard-referral-code">
                                 <p>165GZXV4</p>
-                                <img src={Copy} alt="copy" />
+                                <img src={Copy} alt="copy"/>
                             </div>
                         </div>
                     </div>
@@ -111,10 +113,10 @@ function ProfileCard(props) {
                             <div className="items">
                                 <div>{User.user.email}</div>
                                 <div className="inputbox">
-                                    <div> <input
+                                    <div><input
                                         type="tel"
                                         id="phoneInput"
-                                        className="phone-input"
+                                        className="profile-card-phoneinput"
                                         value={phoneNumber}
                                         onChange={handleChange}
                                         placeholder="Enter phone number"
@@ -126,7 +128,7 @@ function ProfileCard(props) {
                                         save
                                     </button>
                                     <div className="profilecard-button2">
-                                        <div><img src={editbtn} alt="editbtn" /></div>
+                                        <div><img src={editbtn} alt="editbtn"/></div>
                                     </div>
                                 </div>
                             </div>

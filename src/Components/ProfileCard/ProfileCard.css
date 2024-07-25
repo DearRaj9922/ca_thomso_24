@@ -2,7 +2,8 @@
 .profilecard-container {
     box-shadow: 10px 10px 3px 0px rgba(0, 0, 0, 0.25);
     padding: 20px 15px;
-    height: auto;
+    height: 60vh;
+    min-height: 500px;
     /*width: 30vw;*/
     width: 400px;
     color: white;
@@ -169,6 +170,15 @@
 
 }
 
+@media only screen and (min-width: 1600px){
+    .profilecard-container{
+        width: 30vw;
+    }
+    .profilecard-referral{
+        width: 50%;
+    }
+}
+
 @media only screen and (min-width: 500px) {
     .small-view{
         display: none;
@@ -191,5 +201,13 @@
 
     .profilecard-userimg img {
         width: 130px;
+    }
+}
+@media only screen and (max-width: 375px){
+    .profilecard-container{
+        width: 250px;
+    }
+    .profile-card-phoneinput{
+        width: 100px;
     }
 }
