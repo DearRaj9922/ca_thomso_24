@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import './ProfileCard.css';
 import Copy from '../Assets/copy.svg';
-import User from '../Assets/guyprofile.svg';
+import profileImage from '../Assets/guyprofile.svg';
 import editbtn from '../Assets/editbtn.svg'
 
 function ProfileCard(props) {
-    const [phoneNumber, setPhoneNumber] = useState('');
+    const [User,setUser] = useState(props.User)
+    const [phoneNumber, setPhoneNumber] = useState(User.contact);
 
     const handleChange = (e) => {
         const value = e.target.value;
@@ -14,32 +15,38 @@ function ProfileCard(props) {
             setPhoneNumber(value);
         }
     };
+    useEffect(() => {
+        setUser({...User, thomso_id:"ThCA-24"+("0000" + String(User.id)).slice(-5)})
+
+    }, []);
     return (
         <>
 
             <div className="profilecard-container large-view">
                 <div className="profilecard-userimg">
-                    <img src={User} alt="profile" />
+                    <img src={profileImage} alt="profile" />
                 </div>
                 <div className='profilecard-referral'>
                     <p className="profilecard-referral-text">Referral Code</p>
                     <div className="profilecard-referral-code">
-                        <p>165GZXV4</p>
+                        <p>{User.thomso_id}</p>
                         <img src={Copy} alt="copy" />
                     </div>
                 </div>
-                <div className='profilecard-name'>Dhruv Bhatia</div>
+                <div className='profilecard-name'>{User?.name}</div>
                 <div className='profilecard-details'>
                     <div className='profilecard-details-div'>
                         <div className='profilecard-details-head'>Education Details</div>
                         <div className='profilecard-details-text'>
                             <div className="items-head">
                                 <div>College</div>
-                                <div>Degree and Year</div>
+                                <div>Degree</div>
+                                <div>Year</div>
                             </div>
                             <div className="items">
-                                <div>Indian Institute of Technology Roorkee</div>
-                                <div>B.Arch 3rd</div>
+                                <div>{User?.college}</div>
+                                <div>{User?.degree}</div>
+                                <div>{User?.year}</div>
                             </div>
                         </div>
                     </div>
@@ -51,9 +58,9 @@ function ProfileCard(props) {
                                 <div>Phone no.</div>
                             </div>
                             <div className="items">
-                                <div>abc@gmail.com</div>
+                                <div>{User?.user?.email}</div>
                                 <div className="inputbox">
-                                    <div><input /></div>
+                                    <div><input value={phoneNumber} /></div>
                                     <button>Save</button>
                                 </div>
                             </div>
@@ -102,7 +109,7 @@ function ProfileCard(props) {
                                 <div>Phone no.</div>
                             </div>
                             <div className="items">
-                                <div>abc@gmail.com</div>
+                                <div>{User.user.email}</div>
                                 <div className="inputbox">
                                     <div> <input
                                         type="tel"

@@ -1,18 +1,39 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './Profile.css'
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import ProfileCard from "../ProfileCard/ProfileCard";
 import banner from '../Assets/bannermain.svg'
 import ProfileMilestone from "../ProfileMilestone/ProfileMilestone";
+import {useNavigate} from "react-router-dom";
+import axios from "axios";
+
 
 function Profile(props) {
+const navigate = useNavigate();
+const [User, setUser] = useState(null);
+const getUser = async()=>{
+    const res = await axios.get(`http://127.0.0.1:8000/apiV1/registerca/${localStorage.getItem("user_id")}`);
+    console.log(res.data)
+    setUser(res.data);
+    // setUser(res.data);
+}
+    useEffect(() => {
+        getUser()
+    }, []);
     return (
         <div className="main-container">
             <Navbar />
 
             <div className="container">
-                <div><ProfileCard /></div>
+                {User?
+                    (
+                <div><ProfileCard User={User} /></div>
+
+                    ):
+                    (
+                        <></>
+                    )}
                 <div className="banner">
 
                     <div className="banner-title">Achievements</div>
