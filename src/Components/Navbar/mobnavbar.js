@@ -10,6 +10,13 @@ export default function Mobnavbar() {
 const navigate=useNavigate();
 const location = useLocation();
 const [isOpen, setIsOpen] = useState(false);
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("user_id");
+    localStorage.removeItem("state");
+    localStorage.removeItem("id");
+    navigate("/");
+  };
 const toggleNav = () => {
       setIsOpen(!isOpen);
   }; 
@@ -32,7 +39,7 @@ const toggleNav = () => {
             <li className={location.pathname === '/referrals' ? 'active' : ''} onClick={()=>navigate('/referrals')}>Referrals</li>
             <li className={location.pathname === '/profile' ? 'active' : ''} onClick={()=>navigate('/profile')}>Profile</li>
             <li className={location.pathname === '/profile' ? 'active' : ''} onClick={()=>navigate('/profile')}>CA Guide</li>
-            <li className='logout' onClick={()=>navigate('/logout')}>Logout</li>
+            <li className='logout' onClick={handleLogout}>Logout</li>
         </ul>
     </div>
     </>
