@@ -22,8 +22,12 @@ const composeEnhancers =
   compose;
 const Store = createStore(
   state,
+  persistedState,
   composeEnhancers(applyMiddleware(sagaMiddleware)),
 );
+Store.subscribe(() => {
+    saveState(Store.getState());
+});
 sagaMiddleware.run(RootSaga);
 
 export { Store };
