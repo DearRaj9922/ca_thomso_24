@@ -5,9 +5,6 @@ import profileImage from '../Assets/guyprofile.svg';
 import editbtn from '../Assets/editbtn.svg'
 import {fetchReferrals, fetchUser, logout} from "../User/UserActions";
 import {connect} from "react-redux";
-
-import {fetchReferrals, fetchUser, logout} from "../User/UserActions";
-import {connect} from "react-redux";
 import {message} from "antd";
 
 
