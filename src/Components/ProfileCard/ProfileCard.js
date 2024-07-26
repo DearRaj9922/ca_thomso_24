@@ -3,6 +3,8 @@ import './ProfileCard.css';
 import Copy from '../Assets/copy.svg';
 import profileImage from '../Assets/guyprofile.svg';
 import editbtn from '../Assets/editbtn.svg'
+import {fetchReferrals, fetchUser, logout} from "../User/UserActions";
+import {connect} from "react-redux";
 
 function ProfileCard(props) {
     const [User, setUser] = useState(props.User)
@@ -16,7 +18,8 @@ function ProfileCard(props) {
         }
     };
     useEffect(() => {
-        setUser({...User, thomso_id: "ThCA-24" + ("0000" + String(User.id)).slice(-5)})
+        console.log('card',props)
+        setUser(props.userDetails)
 
     }, []);
     return (
@@ -58,7 +61,7 @@ function ProfileCard(props) {
                                 <div>Phone no.</div>
                             </div>
                             <div className="items">
-                                <div>{User?.user?.email}</div>
+                                <div>{User?.email}</div>
                                 <div className="inputbox">
                                     <div><input className="profile-card-phoneinput" value={phoneNumber}/></div>
                                     <button>Save</button>
@@ -111,7 +114,7 @@ function ProfileCard(props) {
                                 <div>Phone no.</div>
                             </div>
                             <div className="items">
-                                <div>{User.user.email}</div>
+                                <div>{User.email}</div>
                                 <div className="inputbox">
                                     <div><input
                                         type="tel"
@@ -144,4 +147,24 @@ function ProfileCard(props) {
     );
 }
 
-export default ProfileCard;
+const mapStateToProps = (state) => {
+    let userDetails = state.user.user;
+    let loading = state.user.loading;
+    let referrals = state.user.referrals;
+
+    return {
+        userDetails,
+        loading,
+        referrals
+    };
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        fetchUsers: (params) => dispatch(fetchUser(params)),
+        logouts: (params) => dispatch(logout(params)),
+        fetchReferral: (params)=>dispatch(fetchReferrals(params))
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(ProfileCard);

@@ -78,6 +78,7 @@ const getUser = async()=>{
     useEffect(() => {
         getUser()
         // console.log("abc",props.userData)
+        console.log('props',props)
         tmkc();
     }, []);
     return (
@@ -101,21 +102,21 @@ const getUser = async()=>{
 
                         <div className="banner-data">
                             <div className="banner-section">
-                                <div>{rank? rank: "-"}</div>
+                                <div>{props?getNumberWithOrdinal(props.userDetails?.rank):"-"}</div>
                                 <div>
                                     <hr />
                                 </div>
                                 <div>Ranking</div>
                             </div>
                             <div className="banner-section">
-                                <div>{User? User?.total_score : "-"}</div>
+                                <div>{props?props.userDetails.total_score:"-"}</div>
                                 <div>
                                     <hr />
                                 </div>
                                 <div>Score</div>
                             </div>
                             <div className="banner-section">
-                                <div>{User? User?.referral_score:"-"}</div>
+                                <div>{props?props.userDetails.referral_score:"-"}</div>
                                 <div>
                                     <hr />
                                 </div>
