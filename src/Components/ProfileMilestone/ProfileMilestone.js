@@ -23,14 +23,10 @@ const ReferralData = [
     { score: 20, name: "Mukul Dhiman" },
 ];
 
-function ProfileMilestone({ fetchReferral, referrals}) {
-      useEffect(() => {
-    fetchReferral()
-          console.log("referrals", referrals)
-  }, []);
+function ProfileMilestone(props) {
     return (
         <div className="profile-milestone">
-            {referrals.map((item, index) => (
+            {props.referrals.map((item, index) => (
                 <React.Fragment key={index}>
                     <div className="milestone-item">
                         <div className="milestone-score">+{item.points}</div>

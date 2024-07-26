@@ -5,8 +5,11 @@ import profileimg from "../Assets/guyprofile.svg";
 import achbanner from "../Assets/bannermain.svg";
 import Copy from '../Assets/copy.svg';
 import Milestone from "../ProfileMilestone/ProfileMilestone.js"
+import {fetchReferrals, fetchUser, logout} from "../User/UserActions";
+import {connect} from "react-redux";
+import {getNumberWithOrdinal} from "../Profile/helper";
 
-export default function ProfileDetails() {
+function ProfileDetails(props) {
   return (
     <div className='profile-detail-div'>
       <img src={detailsbg} className='profile-detail-bg' alt='profilebg'/>
@@ -17,14 +20,14 @@ export default function ProfileDetails() {
                     <img src={profileimg} className='user-pic' alt='user-pic'/>
                 </div>
                 <div className="user-name">
-                    <h3>Dhruv Bhatia</h3>
-                    <h4>India Institute of Technology Roorkee</h4>
+                    <h3>{props.userDetails? props.userDetails.name: "-"}</h3>
+                    <h4>{props.userDetails? props.userDetails.college: "-"}</h4>
                 </div>
             </div>
             <div className="referal-code-sec">
             <p className="profilecard-referral-text">Referral Code</p>
                 <div className="profilecard-referral-code">
-                    <p>165GZXV4</p>
+                    <p>{props.userDetails? props.userDetails.thomso_id: "-"}</p>
                     <img src={Copy} style={{width:"2vw"}} alt="copy" />
                 </div>
             </div>
@@ -35,15 +38,15 @@ export default function ProfileDetails() {
         <div className="user-score">
             <img src={achbanner} className='ach-banner' alt="scores"/>
             <div className='ranking'>
-                <h3>11th</h3>
+                <h3>{props.userDetails? getNumberWithOrdinal(props.userDetails.rank): '-'}</h3>
                 <p>Ranking</p>
             </div>
             <div className='scores'>
-                <h3>312</h3>
+                <h3>{props.userDetails? props.userDetails.total_score: "-"}</h3>
                 <p>Score</p>
             </div>
             <div className='referrals'>
-                <h3>15</h3>
+                <h3>{props.userDetails? props.userDetails.referral_score: "-"}</h3>
                 <p>Referrals</p>
             </div>
         </div>
@@ -54,3 +57,24 @@ export default function ProfileDetails() {
     </div>
   )
 }
+const mapStateToProps = (state) => {
+    let userDetails = state.user.user;
+    let loading = state.user.loading;
+    let referrals = state.user.referrals;
+
+    return {
+        userDetails,
+        loading,
+        referrals
+    };
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        fetchUsers: (params) => dispatch(fetchUser(params)),
+        logouts: (params) => dispatch(logout(params)),
+        fetchReferral: (params)=>dispatch(fetchReferrals(params))
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(ProfileDetails);
