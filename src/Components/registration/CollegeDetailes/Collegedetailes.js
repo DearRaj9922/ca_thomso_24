@@ -11,7 +11,7 @@ import colleges from "./college";
 // import MobNavbar from "../../mobile/Navbar/MobNavbar";
 // import logbg1 from "../../../assets/WELCOME_BACK.svg";
 // import logbg2 from "../../../assets/Campus_Ambassador.svg";
-import welcomebckbg from "../../Assets/Registrationbg.svg";
+import welcomebckbg from "../../Assets/Registrationbg.webp";
 import cawelcome from "../../Assets/registrationbg-mobile.svg";
 
 const states = [
@@ -188,8 +188,9 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
   return (
     <>
       {/* <Nav /> */}
+      <img src={welcomebckbg} className="collegeRegBack" alt="" />
       <div className="college-detailes">
-        <img src={welcomebckbg} className="collegeRegBack wel2" id="welcomebckbg" alt="" />
+        
         <img src={cawelcome} alt="" id="wel3" />
         <div id="log_bg1">
           {/* <img src={logbg1} id="wel_log_back" alt="" />

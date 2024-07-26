@@ -74,7 +74,7 @@ function* getReferrals() {
       });
     } else {
       // const ca_id = getState().user.user.id;
-      axios.get(`/apiV1/ca_activity?ca_id=${localStorage.getItem('id')}`).then((res) => {
+      axios.get(`http://35.154.76.67/apiV1/ca_activity?ca_id=${localStorage.getItem('id')}`).then((res) => {
         dispatch({
           type: ACTIONS.FETCH_REFERRALS_SUCCESS,
           payload: res.data,
@@ -99,7 +99,7 @@ function* getFeeds() {
       });
     } else {
       // const ca_id = getState().user.user.id;
-      axios.get(`/apiV1/get_all_posts?ca_id=${localStorage.getItem('id')}`).then((res) => {
+      axios.get(`http://35.154.76.67/apiV1/get_all_posts?ca_id=${localStorage.getItem('id')}`).then((res) => {
         dispatch({
           type: ACTIONS.FETCH_FEEDS_SUCCESS,
           payload: res.data,

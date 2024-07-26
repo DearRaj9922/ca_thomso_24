@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import "./referrals.css";
 import profilebackground from "../Assets/profilebackimg.webp";
 import Navbar from '../Navbar/Navbar';
@@ -6,8 +6,13 @@ import ReferralList from "../Profile/CaPaymentList.jsx";
 import ProfileDetail from "../ProfileDetails/ProfileDetails.js";
 import Footer from "../Footer/Footer.js";
 import MobNavbar from "../Navbar/mobnavbar.js";
+import {fetchReferrals, fetchUser, logout} from "../User/UserActions";
+import {connect} from "react-redux";
 
-export default function referrals() {
+ function Referrals(props) {
+    useEffect(()=>{
+        console.log("reff",props)
+    },[])
   return (
     <>
     <div className='referrals-main-div'>
@@ -36,3 +41,24 @@ export default function referrals() {
     </>
   )
 }
+const mapStateToProps = (state) => {
+    let userDetails = state.user.user;
+    let loading = state.user.loading;
+    let referrals = state.user.referrals;
+
+    return {
+        userDetails,
+        loading,
+        referrals
+    };
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        fetchUsers: (params) => dispatch(fetchUser(params)),
+        logouts: (params) => dispatch(logout(params)),
+        fetchReferral: (params)=>dispatch(fetchReferrals(params))
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Referrals);

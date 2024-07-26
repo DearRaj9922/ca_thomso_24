@@ -6,13 +6,15 @@ import ProfileCard from "../ProfileCard/ProfileCard";
 import banner from '../Assets/bannermain.svg'
 import ProfileMilestone from "../ProfileMilestone/ProfileMilestone";
 import {useNavigate} from "react-router-dom";
-import { fetchUser, logout } from "../User/UserActions";
+import {fetchReferrals, fetchUser, logout} from "../User/UserActions";
 import axios from "axios";
 import { Store } from "../../Config/Store";
 import { connect } from "react-redux";
+import {getNumberWithOrdinal} from "./helper";
 
 function Profile(props) {
     const { dispatch } = Store;
+    const [rank, setRank] = useState()
     const [display, setDisplay] = useState(true);
     const [logoutModal, setLogoutModal] = useState(false);
     // const [editModal, setEditModal] = useState(false);
@@ -37,7 +39,7 @@ const onSubmit = async (e) => {
         const { dispatch } = Store;
         try {
             const response = await axios.put(
-                `/apiV1/registerca/${localStorage.getItem("user_id")}`,
+                `http://35.154.76.67/apiV1/registerca/${localStorage.getItem("user_id")}`,
                 User
             );
             const { data } = response;
@@ -63,17 +65,20 @@ const onSubmit = async (e) => {
 
 const getUser = async()=>{
     const res = await axios.get(`http://35.154.76.67/apiV1/registerca/${localStorage.getItem("user_id")}`);
-    console.log(res.data)
+    // console.log(res.data)
     dispatch(fetchUser());
     setUser(res.data);
     // setUser(res.data);
 }
     const tmkc = async()=>{
-    const res = await axios.get("http://127.0.0.1:8000/apiV1/current_user_ca");
-    console.log(res)
+    const res = await axios.get("http://35.154.76.67/apiV1/current_user_ca");
+    setRank(getNumberWithOrdinal(res.data.rank))
+        // console.log(res.data.rank)
     }
     useEffect(() => {
         getUser()
+        // console.log("abc",props.userData)
+        console.log('props',props)
         tmkc();
     }, []);
     return (
@@ -97,21 +102,21 @@ const getUser = async()=>{
 
                         <div className="banner-data">
                             <div className="banner-section">
-                                <div>11th</div>
+                                <div>{props?getNumberWithOrdinal(props.userDetails?.rank):"-"}</div>
                                 <div>
                                     <hr />
                                 </div>
                                 <div>Ranking</div>
                             </div>
                             <div className="banner-section">
-                                <div>{User? User?.total_score : "-"}</div>
+                                <div>{props?props.userDetails.total_score:"-"}</div>
                                 <div>
                                     <hr />
                                 </div>
                                 <div>Score</div>
                             </div>
                             <div className="banner-section">
-                                <div>{User? User?.referral_score:"-"}</div>
+                                <div>{props?props.userDetails.referral_score:"-"}</div>
                                 <div>
                                     <hr />
                                 </div>
@@ -134,10 +139,12 @@ const getUser = async()=>{
 const mapStateToProps = (state) => {
     let userDetails = state.user.user;
     let loading = state.user.loading;
+    let referrals = state.user.referrals;
 
     return {
         userDetails,
         loading,
+        referrals
     };
 };
 
@@ -145,6 +152,7 @@ const mapDispatchToProps = (dispatch) => {
     return {
         fetchUsers: (params) => dispatch(fetchUser(params)),
         logouts: (params) => dispatch(logout(params)),
+        fetchReferral: (params)=>dispatch(fetchReferrals(params))
     };
 };
 
