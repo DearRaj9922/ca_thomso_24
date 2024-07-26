@@ -5,7 +5,7 @@ import CampusAmbassador from "./Components/Landing/Landing3/CampusAmbassador";
 import Landing4 from "./Components/Landing/Landing4/Landing4.js";
 import { fetchUser } from "./Components/User/UserActions";
 // import Landing1 from "./Components/Landing/Landing1/Landing1.js";
-import { connect } from "react-redux";
+import { connect,useDispatch } from "react-redux";
 import Landing2 from "./Components/Landing/Landing2/Landing2.js";
 import PersonalDetails from './Components/registration/step1/personalDetails.jsx';
 import Landing5 from "./Components/Landing/Landing5/Landing5.js";
@@ -26,11 +26,14 @@ import CombinedLandingPage from "./Components/CombinedLandingPage/CombinedLandin
 
 
 function App(props) {
+    const dispatch = useDispatch()
     useEffect(() => {
-        console.log(props)
+        console.log("main", props)
+
         const token = localStorage.getItem("token");
         const userId = localStorage.getItem("user_id");
         if (token) {
+            dispatch(fetchUser({id:userId}))
             props?.userDetails && props?.fetchUsers({ id: userId });
         }
     }, []);

@@ -4,9 +4,10 @@ import './index.css';
 import { Provider } from 'react-redux';
 import App from './App';
 import axios from "axios";
-import store from './store.js';
+// import store from './store.js';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserHistory } from "history";
+import {Store} from "./Config/Store";
 const history = createBrowserHistory();
 // axios.defaults.baseURL = "https://api1.thomso.in";
 axios.defaults.headers.common.Authorization = `${
@@ -17,7 +18,7 @@ axios.defaults.headers.common.Authorization = `${
 axios.defaults.headers.post["Content-Type"] = "application/json";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Provider store={store}>
+    <Provider store={Store}>
         <App history={history}/>
     </Provider>
  
