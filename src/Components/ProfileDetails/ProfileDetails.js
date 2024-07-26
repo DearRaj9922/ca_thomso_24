@@ -8,8 +8,13 @@ import Milestone from "../ProfileMilestone/ProfileMilestone.js"
 import {fetchReferrals, fetchUser, logout} from "../User/UserActions";
 import {connect} from "react-redux";
 import {getNumberWithOrdinal} from "../Profile/helper";
+import { message } from "antd";
 
 function ProfileDetails(props) {
+ const getCode = () => {
+    navigator.clipboard.writeText(props.userDetails?.thomso_id);
+    message.success("Code copied to clipboard");
+  };
   return (
     <div className='profile-detail-div'>
       <img src={detailsbg} className='profile-detail-bg' alt='profilebg'/>
@@ -28,7 +33,7 @@ function ProfileDetails(props) {
             <p className="profilecard-referral-text">Referral Code</p>
                 <div className="profilecard-referral-code">
                     <p>{props.userDetails? props.userDetails.thomso_id: "-"}</p>
-                    <img src={Copy} style={{width:"2vw"}} alt="copy" />
+                    <div onClick={()=>getCode()}><img src={Copy} style={{width:"2vw"}} alt="copy" /></div>
                 </div>
             </div>
             <div className="more-info-secc">

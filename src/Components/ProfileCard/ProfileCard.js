@@ -4,7 +4,16 @@ import Copy from '../Assets/copy.svg';
 import profileImage from '../Assets/guyprofile.svg';
 import editbtn from '../Assets/editbtn.svg'
 
+import {fetchReferrals, fetchUser, logout} from "../User/UserActions";
+import {connect} from "react-redux";
+import {message} from "antd";
+
+
 function ProfileCard(props) {
+    const getCode = () => {
+    navigator.clipboard.writeText(props.userDetails?.thomso_id);
+    message.success("Code copied to clipboard");
+  };
     const [User, setUser] = useState(props.User)
     const [phoneNumber, setPhoneNumber] = useState(User.contact);
 
@@ -30,7 +39,7 @@ function ProfileCard(props) {
                     <p className="profilecard-referral-text">Referral Code</p>
                     <div className="profilecard-referral-code">
                         <p>{User.thomso_id}</p>
-                        <img src={Copy} alt="copy"/>
+                        <div onClick={()=>getCode()}><img src={Copy} alt="copy"/></div>
                     </div>
                 </div>
                 <div className='profilecard-name'>{User?.name}</div>
