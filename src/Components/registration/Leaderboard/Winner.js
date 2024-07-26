@@ -1,13 +1,42 @@
 import React from "react";
-import first from "../../../assets/1st.png";
-import second from "../../../assets/2nd.png";
-import third from "../../../assets/3rd.png";
-import mobfirst from "../../../assets/mob-1st.png";
-import mobsecond from "../../../assets/mob-2nd.png";
-import mobthird from "../../../assets/mob-3rd.png";
-import "./Leaderboard.scss";
+import first from "../../Assets/first.webp";
+import second from "../../Assets/second.webp";
+import third from "../../Assets/third.webp";
+import mobfirst from "../../Assets/firstmob.webp";
+import mobsecond from "../../Assets/secondmob.webp";
+import mobthird from "../../Assets/thirdmob.webp";
+import "./Leaderboard.css";
+// import profileimg from "../../Assets/guyprofile.svg"
 
-function Winner({ users }) {
+function Winner() {
+  const users=[
+    {
+      name:"Rahul",
+      college:"Indian  Institute of Technology Roorkee",
+      total_score:100,
+      referral_score:50,
+
+    }
+    ,
+    {
+      name:"Rahul",
+      college:"Indian  Institute of Technology Roorkee",
+      total_score:90,
+      referral_score:50,
+
+    }
+    ,    {
+      name:"Rahul",
+      college:"Indian  Institute of Technology Roorkee",
+      total_score:80,
+      referral_score:50,
+
+    }
+  
+     
+  ]
+
+  console.log(users); 
   let top_3 = [];
 
   for (let i = 0; i < 3; i++) {
@@ -16,23 +45,26 @@ function Winner({ users }) {
     }
   }
   return (
-    <div className="winners">
+    <div className="winners"  style={{color:"#440035"}}>
       {top_3.length !== 0 && (
         <>
           <div className="win-bg leader-2">
             <img src={second} alt="" />
             <div className="info">
-              <h2>{top_3[1].name}</h2>
+              <h2 >
+                {top_3[1].name}
+
+              </h2>
               <h4>{top_3[1].college.slice(0,25)}... </h4>
             </div>
             <div className="details6">
               <div className="score">
-                <h1>{top_3[1].total_score}</h1>
+                <h1 style={{margin:0}}>{top_3[1].total_score}</h1>
                 <hr className="line6" />
                 Score
               </div>
               <div className="ref">
-                <h1>{top_3[1].referral_score}</h1>
+                <h1 style={{margin:0}}>{top_3[1].referral_score}</h1>
                 <hr className="line6" />
                 Referrals
               </div>
@@ -47,12 +79,12 @@ function Winner({ users }) {
             </div>
             <div className="details7">
               <div className="score">
-                <h1>{top_3[0].total_score} </h1>
+                <h1 style={{margin:0}}>{top_3[0].total_score} </h1>
                 <hr className="line6" />
                 Score
               </div>
               <div className="ref">
-                <h1>{top_3[0].referral_score}</h1>
+                <h1  style={{margin:0}}>{top_3[0].referral_score}</h1>
                 <hr className="line6" />
                 Referrals
               </div>
@@ -66,15 +98,33 @@ function Winner({ users }) {
             </div>
             <div className="details8">
               <div className="score">
-                <h1>{top_3[2].total_score}</h1>
+                <h1 style={{margin:0}}>{top_3[2].total_score}</h1>
                 <hr className="line6" />
                 Score
               </div>
               <div className="ref">
-                <h1>{top_3[2].referral_score}</h1>
+                <h1 style={{margin:0}}>{top_3[2].referral_score}</h1>
                 <hr className="line6" />
                 Referrals
               </div>
+            </div>
+          </div>
+          <div className="mob-sec-winner" style={{display:"flex",
+            flexDirection:"column",
+            justifyContent:"center",
+            alignItems:"center",
+            gap:"3vw",
+            marginTop:"10vh"
+          }}>
+
+          <div className="mob-win-bg mob-leader-1">
+            <img src={mobfirst} alt="" />
+            <div className="info">
+              <h2>{top_3[0].name}</h2>
+              <h4 className="hideKro">{top_3[0].college}</h4>
+            </div>
+            <div className="points">
+              <h5>{top_3[0].total_score} pts</h5>
             </div>
           </div>
           <div className="mob-win-bg mob-leader-2">
@@ -86,17 +136,7 @@ function Winner({ users }) {
             <div className="points">
               <h5>{top_3[1].total_score} pts</h5>
             </div>
-          </div>
-          <div className="mob-win-bg mob-leader-1">
-            <img src={mobfirst} alt="" />
-            <div className="info">
-              <h2>{top_3[0].name}</h2>
-              <h4 className="hideKro">{top_3[0].college}</h4>
-            </div>
-            <div className="points">
-              <h5>{top_3[0].total_score} pts</h5>
-            </div>
-          </div>
+          </div>          
           <div className="mob-win-bg mob-leader-3">
             <img src={mobthird} alt="" />
             <div className="info">
@@ -107,8 +147,9 @@ function Winner({ users }) {
               <h5>{top_3[2].total_score} pts</h5>
             </div>
           </div>
+          </div>
         </>
-      )}
+      )} 
     </div>
   );
 }

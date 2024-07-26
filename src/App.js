@@ -17,6 +17,7 @@ import Profile from "./Components/Profile/Profile";
 import ProfileDetails from "./Components/ProfileDetails/ProfileDetails.js";
 import Referrals from "./Components/Referrals/referrals.js";
 import Leaderboard from "./Components/NewLeaderboard/leaderboard";
+import Winner from "./Components/registration/Leaderboard/Winner.js";
 
 
 
@@ -41,12 +42,8 @@ function App() {
                     <Route path='/profile' element={<Profile/>}/>
                     <Route path='/profiledetail' element={<ProfileDetails/>}/>
                     <Route path='/referrals' element={<Referrals/>}/>
-          <Route path='/emailverified' element={<Emailverified/>}/>
-          <Route path='/login' element={<Login/>}/>
-          <Route path='/profile' element={<Profile/>}/>
-          <Route path='/profiledetail' element={<ProfileDetails/>}/>
-          <Route path='/referrals' element={<Referrals/>}/>
-          <Route path='/leaderboard' element={<Leaderboard/>}/>
+                    <Route path='/leaderboard' element={<Leaderboard/>}/>
+                    <Route path='/winners' element={<Winner/>}/>
 
                         {/*<Route path='/quizardry' element={<Quizardry/>}/>*/}
 
