@@ -39,7 +39,7 @@ const onSubmit = async (e) => {
         const { dispatch } = Store;
         try {
             const response = await axios.put(
-                `http://35.154.76.67/apiV1/registerca/${localStorage.getItem("user_id")}`,
+                `https://api2.thomso.in/apiV1/registerca/${localStorage.getItem("user_id")}`,
                 User
             );
             const { data } = response;
@@ -64,14 +64,14 @@ const onSubmit = async (e) => {
     };
 
 const getUser = async()=>{
-    const res = await axios.get(`http://35.154.76.67/apiV1/registerca/${localStorage.getItem("user_id")}`);
+    const res = await axios.get(`https://api2.thomso.in/apiV1/registerca/${localStorage.getItem("user_id")}`);
     // console.log(res.data)
     dispatch(fetchUser());
     setUser(res.data);
     // setUser(res.data);
 }
     const tmkc = async()=>{
-    const res = await axios.get("http://35.154.76.67/apiV1/current_user_ca");
+    const res = await axios.get("https://api2.thomso.in/apiV1/current_user_ca");
     setRank(getNumberWithOrdinal(res.data.rank))
         // console.log(res.data.rank)
     }
