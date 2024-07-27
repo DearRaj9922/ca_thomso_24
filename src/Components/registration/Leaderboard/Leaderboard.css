@@ -529,7 +529,7 @@ letter-spacing: 0.24px;
   }
   .hideKro
   {
-    display: none;
+    display: block;
   }
   .leaderboard1 {
     left: 10.3vw;
