@@ -1,27 +1,27 @@
-.Nav-Wrapper{
+.Nav-Wrapper {
     /* background-image: url("../../Assets/background.svg"); */
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     /* padding: 0 1vw; */
     align-items: center;
     /* width: 100vw; */
-    overflow: hidden; 
+    overflow: hidden;
     height: 10vh;
 
 }
 
-.nav-logo-div{
-    width:8vw;
+.nav-logo-div {
+    /* width:8vw; */
     margin-left: 3vw;
     overflow: hidden;
 }
 
-.nav-logo-div img{
-    width:6vw
-    /* overflow: hidden; */
+.nav-logo-div img {
+    width: 8vw
+        /* overflow: hidden; */
 }
 
-.login-nav{
+.login-nav {
     /* flex:1;
     height: 100%; */
 }
