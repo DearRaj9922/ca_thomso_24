@@ -160,8 +160,8 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
             setErrorMail(true)
             errorData =  `Please verify your registered email. <a href=/verifyemail>Click Here.`;
           } else {
-            message.warning("Email does not exist.Please enter correct email");
             window.location.reload(false);
+            message.warning("Email does not exist.Please enter correct email");
             for (var key in data) {
               errorData += data[key];
             }
