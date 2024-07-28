@@ -13,7 +13,7 @@ import colleges from "./college";
 // import logbg2 from "../../../assets/Campus_Ambassador.svg";
 import welcomebckbg from "../../Assets/Registrationbg.webp";
 
-import cawelcome from "../../Assets/registrationbg-mobile.svg";
+import cawelcome from "../../Assets/registrationbg-mobile.webp";
 import { message } from "antd";
 
 
