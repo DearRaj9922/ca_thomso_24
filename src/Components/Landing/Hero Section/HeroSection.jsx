@@ -13,7 +13,7 @@ const HeroSection = () => {
       <Navbar/>
       <div className="hero_wrapper ">
         <div className="hero_content">
-          <p>CAMPUS AMBASSADOR</p>
+          <p>CAMPUS AMBASSADOR </p>
           <p className="program-text">PROGRAM</p>
         </div>
 
@@ -38,7 +38,7 @@ const HeroSection = () => {
         <div className="hero_content">
           <p>CAMPUS</p>
           <p>AMBASSADOR</p>
-          <p className="program-text" style={{marginTop:"10vh"}}>PROGRAM</p>
+          <p className="program-text" style={{marginTop:"5vh"}}>PROGRAM</p>
         </div>
 
         <div className="hero-reg-btn">

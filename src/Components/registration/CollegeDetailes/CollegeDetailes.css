@@ -59,9 +59,9 @@
   justify-content: center;
   align-items: center;
   width: 32px;
-  height: 32px;
+  /* height: 32px; */
   border: 1.19px solid #111111;
-  border-radius: 5px;
+  border-radius: 100%;
   background-color: #12c459;
   box-shadow: 1.19px 2.38px 0px 0px #111111;
 }
@@ -111,10 +111,10 @@
   justify-content: center;
   align-items: center;
   width: 32px;
-  height: 32px;
+  /* height: 32px; */
   border: 1.19px solid #111111;
-  border-radius: 5px;
-  background-color: #ff5c00;
+  border-radius: 100%;
+  background-color: #ff00c6;
   box-shadow: 1.19px 2.38px 0px 0px #111111;
 }
 

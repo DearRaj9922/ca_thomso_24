@@ -46,6 +46,10 @@
 .profilecard-referral-code p {
     margin: 0;
 }
+.profilecard-referral-code img{
+    width: 20px;
+    margin-left: 5px;
+}
 
 .profilecard-name {
     font-size: xx-large;
@@ -110,6 +114,9 @@
     align-items: center;
     /* text-align: center; */
     padding: 3.5px;
+}
+.profilecard-button2 img{
+    width: 35px;
 }
 
 

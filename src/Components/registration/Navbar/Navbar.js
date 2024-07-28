@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-import NavLogo from '../../../Components/Assets/navbarLeft.svg'
+import NavLogo from '../../../Components/Assets/navbarLeft.webp'
 const Navbar = () => {
   return (
     <div className='navMain' style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginRight: "40px" }}>
