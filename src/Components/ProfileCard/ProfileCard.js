@@ -38,7 +38,7 @@ function ProfileCard(props) {
                 <div className='profilecard-referral'>
                     <p className="profilecard-referral-text">Referral Code</p>
                     <div className="profilecard-referral-code">
-                        <p>{User.thomso_id}</p>
+                        <p>{User?.thomso_id}</p>
                         <div onClick={()=>getCode()}><img src={Copy} alt="copy"/></div>
                     </div>
                 </div>
@@ -88,11 +88,11 @@ function ProfileCard(props) {
                         <img src={profileImage} alt="profile"/>
                     </div>
                     <div className="profilecard-topright-section">
-                        <div className='profilecard-name'>Dhruv Bhatia</div>
+                        <div className='profilecard-name'>{User?.name}</div>
                         <div className='profilecard-referral'>
                             <p className="profilecard-referral-text">Referral Code</p>
                             <div className="profilecard-referral-code">
-                                <p>165GZXV4</p>
+                                <p>{User?.thomso_id}</p>
                                 <img src={Copy} alt="copy"/>
                             </div>
                         </div>
@@ -107,8 +107,8 @@ function ProfileCard(props) {
                                 <div>Degree and Year</div>
                             </div>
                             <div className="items">
-                                <div>Indian Institute of Technology Roorkee</div>
-                                <div>B.Arch 3rd</div>
+                                <div>{User?.college}</div>
+                                <div>{User?.degree} {User?.year}</div>
                             </div>
                         </div>
                     </div>
@@ -120,7 +120,7 @@ function ProfileCard(props) {
                                 <div>Phone no.</div>
                             </div>
                             <div className="items">
-                                <div>{User.email}</div>
+                                <div>{User?.email}</div>
                                 <div className="inputbox">
                                     <div><input
                                         type="tel"
