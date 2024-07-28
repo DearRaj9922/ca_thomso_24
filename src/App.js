@@ -1,6 +1,7 @@
 import "./App.css";
-import React, {useEffect} from "react";
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import React from "react";
+import {HashRouter as Router, Routes, Route} from "react-router-dom";
+
 import CampusAmbassador from "./Components/Landing/Landing3/CampusAmbassador";
 import Landing4 from "./Components/Landing/Landing4/Landing4.js";
 import { fetchUser } from "./Components/User/UserActions";
@@ -20,6 +21,7 @@ import ProfileDetails from "./Components/ProfileDetails/ProfileDetails.js";
 import Referrals from "./Components/Referrals/referrals.js";
 import Leaderboard from "./Components/NewLeaderboard/leaderboard";
 import Winner from "./Components/registration/Leaderboard/Winner.js";
+import Feed from "./Components/Feed/FeedData.js";
 
 
 
@@ -57,6 +59,7 @@ function App(props) {
                     <Route path='/referrals' element={<Referrals/>}/>
                     <Route path='/leaderboard' element={<Leaderboard/>}/>
                     <Route path='/winners' element={<Winner/>}/>
+                    {/* <Route path='/feed' element={<Feed/>}/> */}
 
                         {/*<Route path='/quizardry' element={<Quizardry/>}/>*/}
 

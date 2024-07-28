@@ -31,7 +31,7 @@ const HeroSection = () => {
           
         </div>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
     <div className="lan-one-mob">
       <img src={landingmob} className="lan-mob-bg" alt= "bg-mob"/>
@@ -40,7 +40,7 @@ const HeroSection = () => {
         <div className="hero_content">
           <p>CAMPUS</p>
           <p>AMBASSADOR</p>
-          <p className="program-text">PROGRAM</p>
+          <p className="program-text" style={{marginTop:"10vh"}}>PROGRAM</p>
         </div>
 
         <div className="hero-reg-btn">
