@@ -3,9 +3,9 @@ import "./Landing4.css";
 import { useNavigate, Link } from "react-router-dom";
 import landingbgdesk4 from "../../Assets/Page-6.webp";
 import landingbgmon4 from "../../Assets/land4-mobile.webp";
-import textimg from "../../Assets/WHAT ARE YOU WAITING FOR_.svg";
-import textimgmob from "../../Assets/land4text.svg";
-import cloud4 from "../../Assets/cloud4.svg";
+import textimg from "../../Assets/WHAT ARE YOU WAITING FOR_.webp";
+import textimgmob from "../../Assets/land4text.webp";
+import cloud4 from "../../Assets/cloud4.webp";
 import hand from '../../Assets/hand.svg';
 
 function Landing4() {
