@@ -3,12 +3,20 @@ import hamburger from '../Assets/menu.svg';
 import thomsologo from '../Assets/thomsologo.svg';
 import cross from "../Assets/cross.svg";
 import  "./mobnavbar.css";
-import { useNavigate} from 'react-router-dom';
+import {useLocation, useNavigate} from 'react-router-dom';
 
 export default function Mobnavbar() {
 
 const navigate=useNavigate();
+const location = useLocation();
 const [isOpen, setIsOpen] = useState(false);
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("user_id");
+    localStorage.removeItem("state");
+    localStorage.removeItem("id");
+    navigate("/");
+  };
 const toggleNav = () => {
       setIsOpen(!isOpen);
   }; 
@@ -26,11 +34,12 @@ const toggleNav = () => {
     </div>
     <div id="sideNav" className={isOpen ? 'visible' : 'hidden'}>
         <ul className='page-opt'>
-            <li onClick={()=>navigate('/leaderboard')}>Leaderboard</li>
-            <li onClick={()=>navigate('/feeds')}>Feeds</li>
-            <li onClick={()=>navigate('/referrals')}>Referrals</li>
-            <li onClick={()=>navigate('/profile')}>Profile</li>
-            <li onClick={()=>navigate('/profile')}>CA Guide</li>
+            <li className={location.pathname === '/leaderboard' ? 'active' : ''} onClick={()=>navigate('/leaderboard')}>Leaderboard</li>
+            <li className={location.pathname === '/feeds' ? 'active' : ''} onClick={()=>navigate('/feeds')}>Feeds</li>
+            <li className={location.pathname === '/referrals' ? 'active' : ''} onClick={()=>navigate('/referrals')}>Referrals</li>
+            <li className={location.pathname === '/profile' ? 'active' : ''} onClick={()=>navigate('/profile')}>Profile</li>
+            <li className={location.pathname === '/profile' ? 'active' : ''} onClick={()=>navigate('/profile')}>CA Guide</li>
+            <li className='logout' onClick={handleLogout}>Logout</li>
         </ul>
     </div>
     </>

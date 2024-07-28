@@ -11,7 +11,7 @@ import colleges from "./college";
 // import MobNavbar from "../../mobile/Navbar/MobNavbar";
 // import logbg1 from "../../../assets/WELCOME_BACK.svg";
 // import logbg2 from "../../../assets/Campus_Ambassador.svg";
-import welcomebckbg from "../../Assets/Registrationbg.svg";
+import welcomebckbg from "../../Assets/Registrationbg.webp";
 import cawelcome from "../../Assets/registrationbg-mobile.svg";
 
 const states = [
@@ -123,11 +123,12 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
     
     try {
       
-     
-      const response = await axios.post("http://127.0.0.1:8000/apiV1/registerca", userresponse).then(response => {console.log(response)});
+     let status;
+     let data;
+      const response = await axios.post("https://api2.thomso.in/apiV1/registerca", userresponse).then(response => {data = response.data; status = response.status});
       
-      const { data } = response;
-          if (response.status === 201) {
+
+          if (status === 201) {
             localStorage.setItem("user_id", data.user_id);
             setLoading(false);
             // setActive(false)
@@ -143,7 +144,7 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
             console.log(data);
             
             setErrorMail(true)
-            errorData = `${"Please verify your registered email. <a onClick={()=>sendmail()} href=/verifyemail>Click Here.</a>"}`;
+            errorData =  `Please verify your registered email. <a href=/verifyemail>Click Here.`;
           } else {
             for (var key in data) {
               errorData += data[key] + "<br>";
@@ -157,7 +158,7 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
   const sendmail= async () => {
     try {
       console.log("dhuaihdi")
-      const response = await axios.post('http://127.0.0.1:8000/apiV1/sendrealmail',{name:userresponse.name,email:userresponse.email,password:userresponse.password});
+      const response = await axios.post('https://api2.thomso.in/apiV1/sendrealmail',{name:userresponse.name,email:userresponse.email,password:userresponse.password});
       console.log(response)
       setLoaded(true);
     } catch (error) {
@@ -187,8 +188,9 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
   return (
     <>
       {/* <Nav /> */}
+      <img src={welcomebckbg} className="collegeRegBack" alt="" />
       <div className="college-detailes">
-        <img src={welcomebckbg} className="collegeRegBack wel2" id="welcomebckbg" alt="" />
+        
         <img src={cawelcome} alt="" id="wel3" />
         <div id="log_bg1">
           {/* <img src={logbg1} id="wel_log_back" alt="" />
@@ -335,13 +337,15 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
                   </div>
                 </div>
               </div>
-              
-                 
-              {
-              errorMail?
-              (
-                <div> Please verify your registered email. <p onClick={()=>sendmail()} >Click Here.</p></div>
-              ):(<></>)}
+
+
+              {error && (
+                  <div
+                      className="text-danger"
+                      style={{ marginTop: "-10px" }}
+                      dangerouslySetInnerHTML={{ __html: errorMsg }}
+                  ></div>
+              )}
    
               <div className="college-buttons">
                 <button type="submit" className="college-button-submit" disabled={!active} style={active == true ? {background: "#ff5c00"} : {background: "rgb(204, 204, 204)"}}>

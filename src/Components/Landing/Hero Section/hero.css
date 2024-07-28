@@ -34,8 +34,14 @@
     }
 }
 
+.landingImage{
+    width:100vw;
+    height:100vh;
+    position: absolute;
+    z-index: -1;
+}
 .hero_wrapper {
-    background-image: url("../../Assets/background.svg");
+    /* background-image: url("../../Assets/background.svg"); */
     height: 104vh;
     width: 100%;
     margin: 0;
@@ -43,6 +49,7 @@
 }
 
 .hero_content {
+    padding-top:5vh;
     display: grid;
     place-content: center;
     text-align: center;
@@ -61,14 +68,14 @@
 }
 
 .hero-reg {
-    border-radius: 1.05069rem;
+    border-radius: 12px;
     border: 0.25vw solid #515151;
     background: #FFF;
     box-shadow: 0.4vw 0.7vw 0px 0px rgba(0, 0, 0, 0.25);
-    margin-top: 1.5vw;
+    margin-top: 3vh;
     color: #515151;
     font-family: "NashvilleSerial-Bold";
-    font-size: 2vw;
+    font-size: 3vw;
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
@@ -116,7 +123,7 @@
     object-fit: fill;
 }
 
-.landingImage {
+/* .landingImage {
     position: absolute;
     overflow-y: hidden;
     object-fit: contain;
@@ -125,8 +132,39 @@
     width: 100vw !important;
     margin-top: -28vh;
     animation: slideInBottom 1s ease-out forwards;
-}
+} */
 
 .hero-img img {
     width: 100vw;
+}
+.lan-one-mob{
+    display: none;
+}
+@media only screen and (max-width:800px){
+    .lan-one{
+        display: none;
+    }
+    .lan-one-mob{
+        display: block;
+        width:100vw;
+        height:100vh;
+    }
+    .lan-mob-bg{
+        width:100vw;
+        height:100vh;
+        position:absolute;
+        z-index:-1;
+    }
+    .hero_content{
+        padding-top: 8vh;
+    }
+    .hero_content p{
+        margin: 5vw;
+        padding: 0;
+        font-size: 8vw;
+    }
+    .hero-reg{
+        font-size: 6vw;
+        border-radius: 2vw;
+    }
 }

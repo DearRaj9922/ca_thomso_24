@@ -21,11 +21,10 @@ export default function VerifyEmail() {
   const [loading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
   const [user, setUser] = useState({
-    otp: "",
     type: "ca",
     user_id: localStorage.getItem("user_id"),
   });
-  const [code, setCode] = useState("");
+  const [code, setCode] = useState(0);
 
   const handleChange = (code) => {
     setCode(code);
@@ -40,7 +39,7 @@ export default function VerifyEmail() {
     setLoading({ loading: true });
 
     try {
-      const response = await axios.post(`http://127.0.0.1:8000/apiV1/verifyOTP`, {
+      const response = await axios.post(`https://api2.thomso.in/apiV1/verifyOTP`, {
         ...user,
         otp: Number(code),
       });
