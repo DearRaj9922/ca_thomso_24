@@ -25,8 +25,16 @@ const CombinedLandingPage = () => {
           const nextSectionIndex = parseInt(entry.target.dataset.index);
           if (nextSectionIndex !== currentSection) {
             setTransitioning(true);
+            sections[currentSection].classList.add('active-exit');
+            sections[nextSectionIndex].classList.add('active-enter');
             setTimeout(() => {
               setCurrentSection(nextSectionIndex);
+              sections.forEach((section, index) => {
+                section.classList.remove('active', 'active-enter', 'active-exit');
+                if (index === nextSectionIndex) {
+                  section.classList.add('active');
+                }
+              });
               setTransitioning(false);
             }, 500); // Duration of the exit animation
           }
@@ -52,7 +60,7 @@ const CombinedLandingPage = () => {
           <HeroSection />
         </div>
         <div className={`landing-section ${currentSection === 1 ? 'active' : ''}`} data-index="1">
-          <Landing2 />
+          <Landing2 isActive={currentSection === 1} />
         </div>
         <div className={`landing-section ${currentSection === 2 ? 'active' : ''}`} data-index="2">
           <Landing5 />

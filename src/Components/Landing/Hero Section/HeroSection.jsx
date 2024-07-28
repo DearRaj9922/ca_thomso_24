@@ -2,7 +2,6 @@ import React from "react";
 import "./hero.css";
 // import clouds from "../../Assets/clouds-hero.webp";
 import landing from "../../Assets/landing1.webp";
-import Footer from "../../Footer/Footer";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import landingmob from "../../Assets/landing1mob.webp";
@@ -31,7 +30,6 @@ const HeroSection = () => {
           
         </div>
       </div>
-      <Footer />
     </div>
     <div className="lan-one-mob">
       <img src={landingmob} className="lan-mob-bg" alt= "bg-mob"/>
