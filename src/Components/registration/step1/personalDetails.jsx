@@ -251,7 +251,7 @@ const PersonalDetails = () => {
           </div>
           <div className="personal-input3">
             <div>
-              <Input.Password
+              <Input
                 className="input-field"
                 type="password"
                 iconRender={(visible) =>
@@ -269,7 +269,7 @@ const PersonalDetails = () => {
               />
             </div>
             <div >
-              <Input.Password
+              <Input
                 className="input-field"
                 type="password"
 

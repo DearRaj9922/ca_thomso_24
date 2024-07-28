@@ -57,8 +57,8 @@ cursor: pointer;
     transform: translateY(15%);
   }
 
-  .footerText1{
-    color: #FFF;
+.footerText1{
+color: #FFF;
 font-family: Comic Sans MS;
 font-size: 16px;
 font-style: normal;
@@ -75,6 +75,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 140%;
 letter-spacing: 0.8px;
+margin-bottom: 15px;
   }
 
   .footerBoxBSub1{

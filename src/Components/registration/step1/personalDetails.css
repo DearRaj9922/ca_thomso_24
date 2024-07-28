@@ -10,6 +10,9 @@
   height: 100vh;
 
 } */
+ /* .personal-detwrap{
+  overflow-y: scroll!important;
+ } */
 #welcomebckbg12 {
   z-index: -1;
   width: 100vw;
@@ -225,7 +228,7 @@ select option [value="Gender 1"] {
 }
 @media only screen and (width:1200px){
   .input-field{
-    width:274px;
+    width:50%;
   }
 }
 @media screen and (max-width: 800px) {

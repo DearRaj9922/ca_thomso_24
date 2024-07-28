@@ -112,6 +112,10 @@ body {
 }
 .reg-button:hover{
   cursor: pointer;
+  transform: scale(1.02);
+  background-color: #515151;
+  color: #FFF;
+  border-color: #FFF;
 }
 /* .clouds{
   position: relative;
