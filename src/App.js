@@ -26,7 +26,6 @@ import Feed from "./Components/Feed/FeedData.js";
 
 
 import CombinedLandingPage from "./Components/CombinedLandingPage/CombinedLandingPage.js";
-import { useEffect } from "react";
 
 
 function App(props) {
