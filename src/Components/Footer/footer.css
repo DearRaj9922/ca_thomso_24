@@ -1,9 +1,10 @@
 .footerBox{
     width: 100%;
     background: #000;
+
     height:8vh;
     position: fixed;
-    bottom: 0;
+    bottom:0;
     transition: transform 1s ease-in-out;
     transform: translateY(10%);
     z-index: 999;
@@ -34,20 +35,31 @@
   height: 8vh;
   position: relative;
   z-index: 20;
+  height:100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   padding: 0 2% 0  2%;
   background: #000;
 
 }
+
 .footerSub1 button{
 background: transparent;
 border: none;
 cursor: pointer;
 }
+
+.footerSub1img1,.footerSub1img2,.footerSub1img3,.footerSub1img4{
+  object-fit:cover;
+  height:6vh;
+  width:auto;
+}
+
 .open {
   transition: transform 1s ease-in-out;
+
 
     transform: translateY(-100%);
   }
