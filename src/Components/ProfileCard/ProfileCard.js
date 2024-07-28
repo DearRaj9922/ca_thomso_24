@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import './ProfileCard.css';
-import Copy from '../Assets/copy.svg';
-import profileImage from '../Assets/guyprofile.svg';
-import editbtn from '../Assets/editbtn.svg'
+import Copy from '../Assets/copy.webp';
+import profileImage from '../Assets/guyprofile.webp';
+import editbtn from '../Assets/editbtn.webp'
 import {fetchReferrals, fetchUser, logout} from "../User/UserActions";
 import {connect} from "react-redux";
 import {message} from "antd";

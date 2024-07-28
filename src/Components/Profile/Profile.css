@@ -2,7 +2,7 @@
     min-height: 100vh;
     background-size: cover;
     background-attachment: fixed;
-    background-image: url('../Assets/profilebackground.png');
+    background-image: url('../Assets/profilebackground.webp');
 }
 
 .profile-container {
@@ -34,6 +34,7 @@
 
 .banner img {
     transform: scale(0.9);
+    width: 150px;
 }
 
 .milestone-container {
