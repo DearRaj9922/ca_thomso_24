@@ -63,13 +63,13 @@ const CombinedLandingPage = () => {
           <Landing2 isActive={currentSection === 1} />
         </div>
         <div className={`landing-section ${currentSection === 2 ? 'active' : ''}`} data-index="2">
-          <Landing5 />
+          <Landing5 isActive={currentSection === 2} />
         </div>
         <div className={`landing-section ${currentSection === 3 ? 'active' : ''}`} data-index="3">
-          <CampusAmbassador />
+          <CampusAmbassador isActive={currentSection === 3} />
         </div>
         <div className={`landing-section ${currentSection === 4 ? 'active' : ''}`} data-index="4">
-          <Landing4 />
+          <Landing4 isActive={currentSection === 4} />
         </div>
       </div>
       <Footer />
