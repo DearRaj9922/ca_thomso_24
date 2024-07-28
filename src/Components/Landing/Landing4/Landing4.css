@@ -1,35 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap'); 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
 @keyframes slideInTop {
   from {
-      transform: translateY(-100px);
-      opacity: 0;
+    transform: translateY(-100px);
+    opacity: 0;
   }
   to {
-      transform: translateY(0);
-      opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
 @keyframes slideInBottom {
   from {
-      transform: translateY(100px);
-      opacity: 0;
+    transform: translateY(100px);
+    opacity: 0;
   }
   to {
-      transform: translateY(0);
-      opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
 @keyframes scaleIn {
   from {
-      transform: scale(0);
-      opacity: 0;
+    transform: scale(0);
+    opacity: 0;
   }
   to {
-      transform: scale(1);
-      opacity: 1;
+    transform: scale(1);
+    opacity: 1;
   }
 }
 
@@ -38,14 +38,16 @@ body {
   overflow: hidden;
   /* width: 100vw;
   height: 100vh; */
+  background-image: url("../../Assets/newPageLanding4.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .bg_img_4 {
   z-index: -1;
   width: 100vw;
   height: 100vh;
-  margin-top:0;
+  margin-top: 0;
   position: absolute;
- 
 }
 
 .landing4 {
@@ -53,30 +55,29 @@ body {
   height: 100vh;
   /* margin: -8px; */
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
   object-fit: cover;
 }
-.clouds .landing4mobile img{
+.clouds .landing4mobile img {
   max-height: 100%;
   max-width: 100%;
   /* object-fit:contain; */
 }
 
-
-.text-div{
-  width:100vw;
+.text-div {
+  width: 100vw;
   display: flex;
   justify-content: center;
-  margin-top:10vh;
+  margin-top: 10vh;
 }
-.head-text{
+.head-text {
   position: relative;
   z-index: 1;
   /* color:#535353; */
   display: flex;
   justify-content: center;
   align-items: center;
-  width:80vw;
+  width: 80vw;
   animation: slideInTop 1s ease-out forwards;
 
   /* font-size: 5vw; */
@@ -84,7 +85,7 @@ body {
   /* text-shadow: 6px 0 #aeacac, 0 6px #aeacac,2px 0 #aeacac, 0 -2px #aeacac; */
   /* -webkit-text-stroke: 3px #ffffff;  */
 }
-.reg-button-div{
+.reg-button-div {
   margin-top: 7vh;
   display: flex;
   justify-content: center;
@@ -93,9 +94,8 @@ body {
   opacity: 0;
   filter: drop-shadow(8px 8px 0px rgba(0, 0, 0, 0.4));
   animation: scaleIn 1s ease-out forwards 1s;
-
 }
-.reg-button{
+.reg-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,57 +110,57 @@ body {
   font-weight: 700;
   color: #515151;
 }
-.reg-button:hover{
+.reg-button:hover {
   cursor: pointer;
 }
 /* .clouds{
   position: relative;
   z-index: 2;
 } */
-.cloud4-1{
+.cloud4-1 {
   position: relative;
   z-index: 2;
   width: 12vw;
-  margin :-12vh 0 0 6vw;
+  margin: -12vh 0 0 6vw;
 }
-.cloud4-2{
+.cloud4-2 {
   position: relative;
   z-index: 2;
   width: 6vw;
-  margin :-6vh 0 -5vh 11vw;
+  margin: -6vh 0 -5vh 11vw;
 }
-.cloud4-3{
+.cloud4-3 {
   position: relative;
   z-index: 2;
   width: 9vw;
-  margin :-30vh 0 11vh 70vw;
+  margin: -30vh 0 11vh 70vw;
 }
-.cloud4-4{
+.cloud4-4 {
   position: relative;
   z-index: 2;
   width: 12vw;
-  margin :-30vh 0 0 84vw;
+  margin: -30vh 0 0 84vw;
 }
-.landing4mobile{
+.landing4mobile {
   display: none;
 }
-.bg-mob-4{
+.bg-mob-4 {
   display: none;
 }
-.head-text-mob{
+.head-text-mob {
   display: none;
 }
-  @media only screen and (max-width:768px){
-  .landing4{
+@media only screen and (max-width: 768px) {
+  .landing4 {
     display: none;
   }
-  .bg_img_4{
+  .bg_img_4 {
     display: none;
   }
-  .landing4mobile{
+  .landing4mobile {
     display: block;
   }
-  .landing4mobile{
+  .landing4mobile {
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -171,13 +171,13 @@ body {
     z-index: -1;
     width: 100vw;
     height: 100vh;
-    margin-top:0;
+    margin-top: 0;
     position: fixed;
   }
-  .head-text{
+  .head-text {
     display: none;
   }
-  .head-text-mob{
+  .head-text-mob {
     display: block;
     position: relative;
     z-index: 5;
@@ -185,7 +185,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width:70vw;
+    width: 70vw;
   }
   .cloud4-2 {
     position: relative;
@@ -193,19 +193,17 @@ body {
     width: 13vw;
     margin: -6vh 0 -5vh 11vw;
   }
-  .cloud4-1{
+  .cloud4-1 {
     position: relative;
     z-index: 2;
     width: 21vw;
-    margin :4vh 0 0 61vw;
+    margin: 4vh 0 0 61vw;
   }
-  .text-div{
+  .text-div {
     margin-top: 5vh;
   }
-  .reg-button{
+  .reg-button {
     width: 35vw;
     font-size: 4.2vw;
   }
-  
-  
 }
