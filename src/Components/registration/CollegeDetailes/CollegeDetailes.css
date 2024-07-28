@@ -1,21 +1,21 @@
-.collegeRegBack{
-  width:100vw;
-  height:100vh;
+.collegeRegBack {
+  width: 100vw;
+  height: 100vh;
   /* margin-top: -35vh; */
   position: fixed;
   z-index: -1;
 }
 .college-detailes {
   overflow-x: hidden !important;
-  overflow-y: hidden !important;
+  /* overflow-y: hidden !important; */
   /* background-image: url(../../Assets/Registrationbg.svg); */
   /* background-size: cover; */
-  height:100vh;
-  width:100vw;
+  height: 100vh;
+  width: 100vw;
   /* margin-top: 11vh; */
 }
 
-.collegeRegBack{
+.collegeRegBack {
   height: 100vh !important;
   overflow-x: hidden;
 }
@@ -41,13 +41,11 @@
   width: 18vw !important;
 }
 
-
 .college-steps {
   display: flex;
   flex-direction: row;
   gap: 9.28vw;
 }
-
 
 .college-step1,
 .college-step2 {
@@ -237,7 +235,6 @@
   box-shadow: 1.5px 3px 0px 0px #111111;
 }
 
-
 /* #welcomebckbg {
   z-index: -1;
   position: absolute;
@@ -302,7 +299,6 @@
   color: #111111;
 }
 
-
 .select-college {
   border: 1.5px solid #505050;
   border-radius: 6px;
@@ -323,40 +319,37 @@
 
 /* //////////////////////// */
 
-
-@media only screen and (max-width:1200px){
+@media only screen and (max-width: 1200px) {
   .input-field {
     width: 100% !important;
   }
-  .select-option{
+  .select-option {
     width: 274px !important;
   }
-  .select-option-2{
+  .select-option-2 {
     width: 100% !important;
   }
 }
 
-@media only screen and (max-width:953px) {
-  
+@media only screen and (max-width: 953px) {
   /* #welcomebckbg {
     height: 100vh !important;
   } */
 
   #log_bg1 {
-    padding-bottom: 0 ;
+    padding-bottom: 0;
   }
 }
-@media (max-width:800px) {
-  .select-option{
+@media (max-width: 800px) {
+  .select-option {
     width: 100% !important;
   }
 }
-@media (max-width:320px) {
-  .college{
+@media (max-width: 320px) {
+  .college {
     width: 250px !important;
   }
 }
-
 
 @media screen and (max-width: 800px) {
   .college {
@@ -431,13 +424,13 @@
   #rgs-district-uks {
     width: 77vw;
   }
-  .college-detailes{
+  .college-detailes {
     margin-top: 0;
   }
-  .wel2{
+  .wel2 {
     display: none;
-   }
-   #wel3{
+  }
+  #wel3 {
     position: absolute;
     z-index: -1;
     height: 100vh;
@@ -446,13 +439,12 @@
     overflow-x: hidden;
     display: block !important;
     top: 76px;
-   }
-   .college {
+  }
+  .college {
     /* height: 68vh !important; */
     width: 320px !important;
     margin-bottom: 10vh;
   }
- 
 }
 #wel3 {
   display: none;
