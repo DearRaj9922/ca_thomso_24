@@ -1,5 +1,5 @@
 import "./App.css";
-import React from "react";
+import React , {useEffect} from "react";
 import {HashRouter as Router, Routes, Route} from "react-router-dom";
 
 import CampusAmbassador from "./Components/Landing/Landing3/CampusAmbassador";
@@ -26,6 +26,7 @@ import Feed from "./Components/Feed/FeedData.js";
 
 
 import CombinedLandingPage from "./Components/CombinedLandingPage/CombinedLandingPage.js";
+import { useEffect } from "react";
 
 
 function App(props) {
