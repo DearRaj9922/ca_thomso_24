@@ -2,11 +2,9 @@ import React from 'react';
 import './CampusAmbassador.css';
 
 // import landingdesktop from '../../Assets/page3desktop.svg'
-import page_3_bg from '../../Assets/page_3_bg.svg';
+import page_3_bg from '../../Assets/page_3_bg.webp';
 
 
-import cloud1 from '../../Assets/cloud2.svg';
-import cloud2 from '../../Assets/cloud2.svg';
 
 function CampusAmbassador() {
 
