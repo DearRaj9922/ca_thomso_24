@@ -3,6 +3,7 @@ import { createStore, applyMiddleware, compose } from "redux";
 import RootReducer from "./RootReducer";
 import createSagaMiddleware from "redux-saga";
 import { RootSaga } from "./RootSaga";
+import {loadState,saveState} from "./localstorage";
 
 let state = RootReducer;
 let sagaMiddleware = createSagaMiddleware({
@@ -11,7 +12,7 @@ let sagaMiddleware = createSagaMiddleware({
     console.error("ERROR", err);
   },
 });
-
+const persistedState = loadState()
 const composeEnhancers =
   (window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ &&
     window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
@@ -21,8 +22,12 @@ const composeEnhancers =
   compose;
 const Store = createStore(
   state,
-  composeEnhancers(applyMiddleware(sagaMiddleware))
+  persistedState,
+  composeEnhancers(applyMiddleware(sagaMiddleware)),
 );
+Store.subscribe(() => {
+    saveState(Store.getState());
+});
 sagaMiddleware.run(RootSaga);
 
 export { Store };

@@ -1,6 +1,8 @@
 import React, { useState,useEffect } from "react";
 import './CaPaymentList.css'
-const CaPaymentList = () =>{
+import {fetchReferrals, fetchUser, logout} from "../User/UserActions";
+import {connect} from "react-redux";
+const CaPaymentList = (props) =>{
     const data = [
         {
             "Sr. no.": 1,
@@ -290,7 +292,7 @@ const CaPaymentList = () =>{
                             </ul>
                         </div>
                         <div className='ca-payment-list-content'>
-                            {data.map((item, index) => {
+                            {props.referrals.map((item, index) => {
                                 if(index == 0){
                                     return (<ul className='ca-payment-list-content-first ca-payment-list-content-not-last'>
                                         <li className='ca-payment-list-content-sr'>{index + 1}</li>
@@ -323,4 +325,24 @@ const CaPaymentList = () =>{
 
             )
 }
-export default CaPaymentList;
+const mapStateToProps = (state) => {
+    let userDetails = state.user.user;
+    let loading = state.user.loading;
+    let referrals = state.user.referrals;
+
+    return {
+        userDetails,
+        loading,
+        referrals
+    };
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        fetchUsers: (params) => dispatch(fetchUser(params)),
+        logouts: (params) => dispatch(logout(params)),
+        fetchReferral: (params)=>dispatch(fetchReferrals(params))
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(CaPaymentList);
