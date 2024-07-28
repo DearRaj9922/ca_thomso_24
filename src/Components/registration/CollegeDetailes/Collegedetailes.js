@@ -13,6 +13,7 @@ import colleges from "./college";
 // import logbg2 from "../../../assets/Campus_Ambassador.svg";
 import welcomebckbg from "../../Assets/Registrationbg.webp";
 import cawelcome from "../../Assets/registrationbg-mobile.svg";
+import { message } from "antd";
 
 const states = [
   "Andaman and Nicobar Islands",
@@ -157,6 +158,8 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
             setErrorMail(true)
             errorData =  `Please verify your registered email. <a href=/verifyemail>Click Here.`;
           } else {
+            message.warning("Email does not exist.Please enter correct email");
+            window.location.reload(false);
             for (var key in data) {
               errorData += data[key];
             }
