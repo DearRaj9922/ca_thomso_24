@@ -125,14 +125,25 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
       
      let status;
      let data;
-      const response = await axios.post("https://api2.thomso.in/apiV1/registerca", userresponse).then(response => {data = response.data; status = response.status});
+      await axios.post("https://api2.thomso.in/apiV1/registerca", userresponse).then(response => {data = response.data; status = response.status});
+      //  await axios.post("https://api2.thomso.in/apiV1/registerca", userresponse).then(response => {data = response.data; status = response.status});
       
+      console.log(userresponse);
 
           if (status === 201) {
             localStorage.setItem("user_id", data.user_id);
             setLoading(false);
             // setActive(false)
           }
+          else{
+            // await axios.post("https://api2.thomso.in/apiV1/registerca", userresponse).then(response => {data = response.data; status = response.status});
+            // if (status === 201) {
+            //   localStorage.setItem("user_id", data.user_id);
+            //   setLoading(false);
+            //   // setActive(false)
+            // }
+          }
+          // console.log(data);
           setLoading(false);
           navigate("/verifyemail");
         } catch (err) {
@@ -147,7 +158,7 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
             errorData =  `Please verify your registered email. <a href=/verifyemail>Click Here.`;
           } else {
             for (var key in data) {
-              errorData += data[key] + "<br>";
+              errorData += data[key];
             }
           }
           setErrorMsg(errorData);
@@ -339,13 +350,13 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
               </div>
 
 
-              {error && (
+              {/* {error && (
                   <div
                       className="text-danger"
                       style={{ marginTop: "-10px" }}
                       dangerouslySetInnerHTML={{ __html: errorMsg }}
                   ></div>
-              )}
+              )} */}
    
               <div className="college-buttons">
                 <button type="submit" className="college-button-submit" disabled={!active} style={active == true ? {background: "#ff5c00"} : {background: "rgb(204, 204, 204)"}}>
