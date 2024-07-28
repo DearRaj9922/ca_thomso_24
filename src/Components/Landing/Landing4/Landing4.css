@@ -70,6 +70,17 @@ body {
   justify-content: center;
   margin-top: 10vh;
 }
+.reg-button:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  background-color: #515151;
+  color: #FFF;
+  border-color: #FFF;
+}
+
+.reg-button:active {
+  transform: scale(0.97);
+}
 .head-text {
   position: relative;
   z-index: 1;
@@ -78,12 +89,15 @@ body {
   justify-content: center;
   align-items: center;
   width: 80vw;
-  animation: slideInTop 1s ease-out forwards;
-
+  opacity: 0;
+  
   /* font-size: 5vw; */
   /* text-shadow: 5px 0 #ffffff, 0 5px #ffffff, 5px 0 #ffffff, 0 -5px #ffffff; */
   /* text-shadow: 6px 0 #aeacac, 0 6px #aeacac,2px 0 #aeacac, 0 -2px #aeacac; */
   /* -webkit-text-stroke: 3px #ffffff;  */
+}
+.active .head-text {
+  animation: slideInTop 1s ease-out forwards;
 }
 .reg-button-div {
   margin-top: 7vh;
@@ -93,7 +107,9 @@ body {
   z-index: 1;
   opacity: 0;
   filter: drop-shadow(8px 8px 0px rgba(0, 0, 0, 0.4));
-  animation: scaleIn 1s ease-out forwards 1s;
+}
+.active .reg-button-div {
+  animation: scaleIn 1s ease-out forwards 0.5s;
 }
 .reg-button {
   display: flex;
@@ -154,6 +170,16 @@ body {
 .head-text-mob {
   display: none;
 }
+.hand {
+  position: absolute;
+  z-index: 2;
+  margin-left: -7vw;
+  opacity: 0;
+}
+.active .hand {
+  animation: slideInBottom 1s ease-in forwards;
+}
+
 @media only screen and (max-width: 768px) {
   .landing4 {
     display: none;
@@ -169,6 +195,9 @@ body {
     height: 100vh;
     margin: 0;
     overflow: hidden;
+  }
+  .hand {
+    display: none;
   }
   .bg-mob-4 {
     display: block;

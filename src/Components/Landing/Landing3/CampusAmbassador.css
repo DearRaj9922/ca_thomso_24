@@ -1,209 +1,97 @@
-@import url(https://db.onlinewebfonts.com/c/5a6bcdf461365efd4a14cddf611bd176?family=NashvilleSerial-Bold);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
-@keyframes slideInRight {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
+@keyframes slideInTop {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
+@keyframes slideInBottom {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Add this to your CSS to prevent scrolling */
 body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  overflow: hidden;
+  background-image: url("../../Assets/newPageLanding4.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-/* .campus-ambassador-container {
-    width: 100%;
-    min-height: 100vh;
-    flex-shrink: 0;
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 16px;
-    position: relative; 
-} */
-
-/* .bg_img {
-    width: 100vw;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    object-position: right center;
-    top: 0;
-    left: 0;
-    z-index: -1;
-} */
+.bg_img {
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 0;
+  position: absolute;
+}
 
 .campus-ambassador-container {
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../../Assets/background_img_l3.webp');
-    background-size: cover;
-    background-position: bottom center top center;
-    background-repeat: no-repeat;
-    position: relative;
-    overflow-y: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
-
-/* Text frame styling */
 .text-frame {
-    margin-left: 50px;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    display: inline-flex;
-    flex-direction: column;
-    /* gap: 10px; */
-    height: 100%;
-    width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .text-item {
-    padding: 4px;
-    border-radius: 12px;
-    transition: transform 0.3s ease-in-out;
-    animation: slideInRight 0.5s ease-out forwards;
+  margin: 20px;
+  opacity: 0;
 }
 
-.text-item:nth-child(1) {
-    animation-delay: 0.2s;
+.active .text-item {
+  animation: slideInBottom 1s ease-out forwards;
 }
 
-.text-item:nth-child(2) {
-    animation-delay: 0.4s;
+.active .text-item:nth-child(1) {
+  animation-delay: 0.5s;
 }
 
-.text-item:nth-child(3) {
-    animation-delay: 0.6s;
+.active .text-item:nth-child(2) {
+  animation-delay: 1s;
 }
 
-.text-item:nth-child(4) {
-    animation-delay: 0.8s;
+.active .text-item:nth-child(3) {
+  animation-delay: 1.5s;
 }
 
-.text-item:nth-child(5) {
-    animation-delay: 1s;
+.active .text-item:nth-child(4) {
+  animation-delay: 2s;
 }
 
-.text-item:hover {
-    transform: translateY(-5px);
-}
-
-.text-item h1 {
-    color: #000;
-    text-shadow: 8.593px 12.03px 3.437px rgba(0, 0, 0, 0.25);
-    -webkit-text-stroke-width: 1.807px;
-    -webkit-text-stroke-color: #FFF;
-    font-family: Noto serif;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 100%;
-    letter-spacing: 2.148px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-}
-
-.text-item ul, .text-item li {
-    color: #000;
-    text-align: justify;
-    font-family: Noto serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 2px;
-    margin-bottom: 2px;
-}
-
-#certificate-text,
-#leadershipQualities-text,
-#freeEntry-text,
-#internshipOpportunity-text,
-#workshops-text {
-    width: 100%;
-}
-
-/* Cloud image styling */
-#cloud1, #cloud2 {
-    stroke-width: 3.437px;
-    stroke: #595959;
-    position: absolute;
-}
-
-#cloud1 {
-    width: 167.556px;
-    height: 57.57px;
-    top: 89.4px;
-    left: 668px;
-}
-
-#cloud2 {
-    width: 100px;
-    height: 35.57px;
-    top: 52px;
-    right: 380px;
-}
-
-/* Media query for mobile view */
-@media (max-width: 768px) and (min-width: 300px) {
-    .campus-ambassador-container {
-        background-image: url('../../Assets/page3mobile.webp');
-        background-size: cover;
-        background-position: center;
-        min-height: 100vh;
-    }
-
-    .text-frame {
-        margin-left: 20px;
-        margin-top: 50px;
-        width: 90%;
-    }
-
-    .text-item {
-        padding: 10px;
-        border-radius: 12px;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .text-item h1 {
-        color: #303030;
-        text-shadow: 8.593px 12.03px 3.437px rgba(0, 0, 0, 0.25);
-        -webkit-text-stroke-width: 1.01px;
-        -webkit-text-stroke-color: #FFF;
-        font-family: Noto serif;
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: 100%;
-        letter-spacing: 1.25px;
-    }
-
-    .text-item ul, .text-item li {
-        color: #000;
-        text-align: justify;
-        font-family: Noto serif;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-
-    #cloud1 {
-        width: 100px;
-        height: 34.542px;
-        top: 550px;
-        left: 40px;
-    }
-
-    #cloud2 {
-        width: 100px;
-        height: 34.542px;
-        top: 36px;
-        right: 40px;
-    }
+.active .text-item:nth-child(5) {
+  animation-delay: 2.5s;
 }

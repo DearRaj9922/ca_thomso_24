@@ -1,19 +1,11 @@
 import React from 'react';
 import './CampusAmbassador.css';
-
-// import landingdesktop from '../../Assets/page3desktop.svg'
 import page_3_bg from '../../Assets/page_3_bg.webp';
 
-
-
-function CampusAmbassador() {
-
+const CampusAmbassador = ({ isActive }) => {
   return (
-    <div className='campus-ambassador-container'>
-
-      <img src={page_3_bg} className="bg_img" alt="landing-bg"/>
-
-
+    <div className={`campus-ambassador-container ${isActive ? 'active' : ''}`}>
+      <img src={page_3_bg} className="bg_img" alt="landing-bg" />
       <div className="text-frame">
         <div className="text-item">
           <h1 id='certificates'>CERTIFICATES</h1>
@@ -46,10 +38,8 @@ function CampusAmbassador() {
           </ul>
         </div>
       </div>
-      {/* <img src={cloud1} alt="cloud1" id='cloud1'/> */}
-      {/* <img src={cloud2} alt="cloud2" id='cloud2'/> */}
     </div>
   );
 }
 
-export default CampusAmbassador
+export default CampusAmbassador;
