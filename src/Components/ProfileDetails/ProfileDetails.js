@@ -1,9 +1,9 @@
 import React from 'react'
 import "./ProfileDetails.css";
 import detailsbg from "../Assets/profiledetailbg.webp";
-import profileimg from "../Assets/guyprofile.svg";
-import achbanner from "../Assets/bannermain.svg";
-import Copy from '../Assets/copy.svg';
+import profileimg from "../Assets/guyprofile.webp";
+import achbanner from "../Assets/bannermain.webp";
+import Copy from '../Assets/copy.webp';
 import Milestone from "../ProfileMilestone/ProfileMilestone.js"
 import {fetchReferrals, fetchUser, logout} from "../User/UserActions";
 import {connect} from "react-redux";

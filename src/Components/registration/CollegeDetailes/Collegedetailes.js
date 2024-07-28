@@ -12,8 +12,10 @@ import colleges from "./college";
 // import logbg1 from "../../../assets/WELCOME_BACK.svg";
 // import logbg2 from "../../../assets/Campus_Ambassador.svg";
 import welcomebckbg from "../../Assets/Registrationbg.webp";
+
 import cawelcome from "../../Assets/registrationbg-mobile.svg";
 import { message } from "antd";
+
 
 const states = [
   "Andaman and Nicobar Islands",
