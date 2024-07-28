@@ -50,6 +50,13 @@ background: transparent;
 border: none;
 cursor: pointer;
 }
+
+.footerSub1img1,.footerSub1img2,.footerSub1img3,.footerSub1img4{
+  object-fit:cover;
+  height:6vh;
+  width:auto;
+}
+
 .open {
   transition: transform 1s ease-in-out;
 
