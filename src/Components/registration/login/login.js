@@ -51,7 +51,7 @@ const Login = (props) => {
     if (validator.allValid()) {
       setLoading(true);
       await axios
-        .post("http://127.0.0.1:8000/api-token-auth/", user)
+        .post("https://api2.thomso.in/api-token-auth/", user)
         .then((res) => {
           console.log(res)
           if (res.status === 200) {
@@ -71,7 +71,7 @@ const Login = (props) => {
               // props.fetchEvents();
               // localStorage.setItem("token", res.data?.access);
               // setAuthToken(localStorage.getItem("token"));
-              navigate(`/newprofile`);
+              navigate(`/profile`);
               // console.log(res);
             }
             setLoading(false);

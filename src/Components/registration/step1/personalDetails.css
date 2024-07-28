@@ -133,6 +133,7 @@
   gap: 3.33vw;
 }
 
+
 .input-field,
 select-option {
   box-sizing: border-box;
@@ -216,11 +217,16 @@ select option [value="Gender 1"] {
   box-shadow: 1.5px 3px 0px 0px #111111;
 }
 
-.bgimage123 {
+.bgimage-123 {
   display: none !important;
 }
 #log_bg1{
   padding-bottom: 0;
+}
+@media only screen and (width:1200px){
+  .input-field{
+    width:274px;
+  }
 }
 @media screen and (max-width: 800px) {
   .personal {
@@ -235,7 +241,7 @@ select option [value="Gender 1"] {
     display: none !important;
   }
 
-  .bgimage123 {
+  .bgimage-123 {
     display: block !important;
     z-index: -1;
     width: 100vw;

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { fetchReferrals } from "../../User/UserActions";
 import axios from "axios";
-import "./Leaderboard.scss";
+import "./Leaderboard.css";
 
 function Referralbox({ fetchReferral, referrals,val }) {
   const [user, setUser] = useState({});

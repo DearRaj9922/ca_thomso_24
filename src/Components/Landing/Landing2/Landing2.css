@@ -157,7 +157,7 @@ body {
   animation: moveRight 1s ease-out 2s;
   animation-fill-mode: forwards;
   width: 40vw;
-  margin-bottom: -60vh;
+  margin-top: -8vw;
 }
 
 .bg_img_2_mob {
@@ -177,7 +177,10 @@ body {
 @media only screen and (max-width: 932px) {
   .landing2-text {
     width: 70vw;
+    animation:lideInBottom 1s ease-out ;
   }
+
+ 
 }
 
 @media only screen and (max-width: 863px) {
@@ -196,6 +199,9 @@ body {
 @media only screen and (max-width: 768px) {
   .landing2 {
     display: none;
+  }
+  .scooter-img-div{
+    animation: none;
   }
   .bg_img_2 {
     display: none;
@@ -217,7 +223,7 @@ body {
   .landing2-text-box {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    /* width: 100vw; */
     margin-top: 10vh;
   }
   .landing2-text {
@@ -225,6 +231,9 @@ body {
     justify-content: center;
     width: 70vw;
     height: auto;
+    animation:lideInBottom 1s ease-out ;
+    margin-left: 0;
+    
   }
   .land2text-img {
     width: 70vw;

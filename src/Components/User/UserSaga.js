@@ -7,7 +7,7 @@ function* getUser(action) {
   const { dispatch } = Store;
   try {
     axios
-      .get(`/apiV1/current_user_ca`)
+      .get(`https://api2.thomso.in/apiV1/current_user_ca`)
       .then((res) => {
         // console.log("data", res.data);
         // localStorage.setItem("id", res.data.id);
@@ -74,7 +74,7 @@ function* getReferrals() {
       });
     } else {
       // const ca_id = getState().user.user.id;
-      axios.get(`/apiV1/ca_activity?ca_id=${localStorage.getItem('id')}`).then((res) => {
+      axios.get(`https://api2.thomso.in/apiV1/ca_activity?ca_id=${localStorage.getItem('id')}`).then((res) => {
         dispatch({
           type: ACTIONS.FETCH_REFERRALS_SUCCESS,
           payload: res.data,
@@ -99,7 +99,7 @@ function* getFeeds() {
       });
     } else {
       // const ca_id = getState().user.user.id;
-      axios.get(`/apiV1/get_all_posts?ca_id=${localStorage.getItem('id')}`).then((res) => {
+      axios.get(`https://api2.thomso.in/apiV1/get_all_posts?ca_id=${localStorage.getItem('id')}`).then((res) => {
         dispatch({
           type: ACTIONS.FETCH_FEEDS_SUCCESS,
           payload: res.data,

@@ -1,14 +1,19 @@
 import React from 'react';
 import './CampusAmbassador.css';
-import page_3_bg from '../../Assets/page_3_bg.svg';
-import cloud1 from '../../Assets/cloud2.svg';
-import cloud2 from '../../Assets/cloud2.svg';
+
+// import landingdesktop from '../../Assets/page3desktop.svg'
+import page_3_bg from '../../Assets/page_3_bg.webp';
+
+
 
 function CampusAmbassador() {
 
   return (
     <div className='campus-ambassador-container'>
+
       <img src={page_3_bg} className="bg_img" alt="landing-bg"/>
+
+
       <div className="text-frame">
         <div className="text-item">
           <h1 id='certificates'>CERTIFICATES</h1>

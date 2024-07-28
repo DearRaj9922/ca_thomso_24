@@ -13,10 +13,11 @@
 
 body {
     margin: 0;
+    padding: 0;
     overflow: hidden;
 }
 
-.campus-ambassador-container {
+/* .campus-ambassador-container {
     width: 100%;
     min-height: 100vh;
     flex-shrink: 0;
@@ -24,9 +25,9 @@ body {
     background-position: center;
     padding-bottom: 16px;
     position: relative; 
-}
+} */
 
-.bg_img {
+/* .bg_img {
     width: 100vw;
     height: 100%;
     object-fit: cover;
@@ -35,22 +36,34 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
+} */
+
+.campus-ambassador-container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../Assets/background_img_l3.svg');
+    background-size: cover;
+    background-position: bottom center top center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow-y: hidden;
 }
+
 
 /* Text frame styling */
 .text-frame {
     margin-left: 50px;
-    margin-top: 30px;
+    margin-top: 100px;
     margin-bottom: 50px;
     display: inline-flex;
     flex-direction: column;
-    gap: 10px;
+    /* gap: 10px; */
     height: 100%;
     width: 500px;
 }
 
 .text-item {
-    padding: 15px;
+    padding: 4px;
     border-radius: 12px;
     transition: transform 0.3s ease-in-out;
     animation: slideInRight 0.5s ease-out forwards;
@@ -86,7 +99,7 @@ body {
     -webkit-text-stroke-width: 1.807px;
     -webkit-text-stroke-color: #FFF;
     font-family: Noto serif;
-    font-size: 42.963px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 900;
     line-height: 100%;
@@ -99,12 +112,12 @@ body {
     color: #000;
     text-align: justify;
     font-family: Noto serif;
-    font-size: 18.341px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 #certificate-text,
