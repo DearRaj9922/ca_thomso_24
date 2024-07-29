@@ -137,19 +137,17 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
           if (status === 201) {
             localStorage.setItem("user_id", data.user_id);
             setLoading(false);
+            navigate("/verifyemail");
             // setActive(false)
-          }
-          else{
-            // await axios.post("https://api2.thomso.in/apiV1/registerca", userresponse).then(response => {data = response.data; status = response.status});
-            // if (status === 201) {
-            //   localStorage.setItem("user_id", data.user_id);
-            //   setLoading(false);
-            //   // setActive(false)
-            // }
+          // }else if(status === 400){
+          //   message.warning("Please verify your registered email.");
+          //   navigate("/verifyemail")
+          // }else{
+          //   message.warning("System is not responding");
           }
           // console.log(data);
           setLoading(false);
-          navigate("/verifyemail");
+          
         } catch (err) {
           setLoading(false);
           const { data } = err?.response;
@@ -159,11 +157,11 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
             console.log(data);
             
             setErrorMail(true)
-            errorData =  `Please verify your registered email. <a href=/verifyemail>Click Here.`;
+            errorData =  `Please verify your registered email. <a href=/#/verifyemail>Click Here.`;
           } else {
             setMes(true);
-            window.location.reload(false);
-            message.warning("Email does not exist.Please enter correct email");
+            // window.location.reload(false);
+            // message.warning("Email does not exist.Please enter correct email");
             for (var key in data) {
               errorData += data[key];
             }
@@ -358,16 +356,16 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
               </div>
 
 
-              {/* {error && (
+              {error && (
                   <div
                       className="text-danger"
-                      style={{ marginTop: "-10px" }}
+                      style={{ margin:"0 0 30px 0" }}
                       dangerouslySetInnerHTML={{ __html: errorMsg }}
                   ></div>
-              )} */}
+              )}
    
               <div className="college-buttons">
-                <button type="submit" className="college-button-submit" disabled={!active} style={active == true ? {background: "##ff00c6"} : {background: "rgb(204, 204, 204)"}}>
+                <button type="submit" className="college-button-submit" disabled={!active} style={active == true ? {background: "#ff00c6"} : {background: "#959595"}}>
                   {loading ? (
                     <CircularProgress color="inherit" size={20} />
                   ) : (
