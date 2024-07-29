@@ -6,7 +6,7 @@
 }
 
 .Landing2wrapper{
-    background-image: url("../../Assets/background.webp");
+    /* background-image: url("../../Assets/background.webp"); */
     height: 100vh;
     width: 100%;
     margin: 0;
@@ -38,6 +38,15 @@
   }
   to {
     transform: translateX(0);
+  }
+}
+
+@keyframes moveUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50px);
   }
 }
 
@@ -213,6 +222,25 @@ body {
     position: fixed;
   }
 
+  .landing2-text {
+    width: 90vw;
+  }
+
+  .landing2-details {
+    
+  }
+
+  .landing2-text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    position: relative;
+    z-index: 2;
+    flex-direction: column;
+    /* transform: translateY(50px) */
+  }
+
   .landing2-mobile {
     display: block;
     width: 100vw;
@@ -223,8 +251,13 @@ body {
 
   .landing2-text-box {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 10vh;
+    height: 26vh;
+    padding-top: 0;
+    gap: 5vh;
   }
 
   .landing2-text {
@@ -237,12 +270,54 @@ body {
   }
 
   .land2text-img {
+    opacity: 0;
+  }
+
+  .landing2-details {
+    width: 90vw;
+    margin: 4vh auto 0;
+    padding: 0 5vw;
+  }
+
+  .landing2-details h1 {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .land2text-img {
     width: 70vw;
     height: auto;
   }
 
+  .scooter-div {
+    margin-top: 31vh;
+    height: 30vh;
+  }
+
+  .scooter-img-div {
+    display: flex;
+    align-items: baseline;
+    height: 30vh;
+  }
+
   .scooter-img {
-    margin-bottom: -41vh;
+    margin-top: auto;
+  }
+
+  .active .land2text-img {
+    animation: slideUp 1s ease-in-out 0.3s;
+    animation-fill-mode: forwards;
+  }
+  
+  .active .landing2-details {
+    animation: slideUp 1s ease-out 1.3s;
+    animation-fill-mode: forwards;
+  }
+  
+  .active .scooter-img-div {
+    animation: moveRight 1s ease-out 1.3s;
+    animation-fill-mode: forwards;
   }
 }
 

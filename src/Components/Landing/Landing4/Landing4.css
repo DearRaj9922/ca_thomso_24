@@ -84,17 +84,11 @@ body {
 .head-text {
   position: relative;
   z-index: 1;
-  /* color:#535353; */
   display: flex;
   justify-content: center;
   align-items: center;
   width: 80vw;
   opacity: 0;
-  
-  /* font-size: 5vw; */
-  /* text-shadow: 5px 0 #ffffff, 0 5px #ffffff, 5px 0 #ffffff, 0 -5px #ffffff; */
-  /* text-shadow: 6px 0 #aeacac, 0 6px #aeacac,2px 0 #aeacac, 0 -2px #aeacac; */
-  /* -webkit-text-stroke: 3px #ffffff;  */
 }
 .active .head-text {
   animation: slideInTop 1s ease-out forwards;
@@ -173,8 +167,9 @@ body {
 .hand {
   position: absolute;
   z-index: 2;
-  margin-left: -7vw;
+  margin-left: -12vw;
   opacity: 0;
+  width: 100vw;
 }
 .active .hand {
   animation: slideInBottom 1s ease-in forwards;

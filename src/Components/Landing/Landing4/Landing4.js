@@ -4,7 +4,7 @@ import { useNavigate, Link } from "react-router-dom";
 import landingbgdesk4 from "../../Assets/Page-6.webp";
 import landingbgmon4 from "../../Assets/land4-mobile.webp";
 import textimg from "../../Assets/WHAT ARE YOU WAITING FOR_.webp";
-import textimgmob from "../../Assets/land4text.webp";
+import textimgmob from "../../Assets/WHAT ARE YOU WAITING FOR_.svg";
 import cloud4 from "../../Assets/cloud4.webp";
 import hand from '../../Assets/hand.svg';
 
