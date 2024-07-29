@@ -49,6 +49,11 @@ body {
   position: absolute;
 }
 
+.point_img {
+  width: 70px;
+  height: 70px;
+}
+
 .campus-ambassador-container {
   width: 100vw;
   height: 100vh;
@@ -56,20 +61,44 @@ body {
   overflow: hidden;
 }
 
+.background-web {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Text frame styling */
 .text-frame {
+    position: relative;
+    z-index: 5;
+    margin-left: 50px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: inline-flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    height: 100%;
+    width: 50vw;
+}
+
+.whatdoweoffer {
+  width: 60vw;
+  margin-bottom: 5vh;
+}
+
+.text-items {
   display: flex;
+  gap: 1vh;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  z-index: 1;
 }
 
 .text-item {
-  margin: 20px;
   opacity: 0;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  font-size: large;
+  font-family: Karma;
 }
 
 .active .text-item {
@@ -77,21 +106,167 @@ body {
 }
 
 .active .text-item:nth-child(1) {
-  animation-delay: 0.5s;
+  animation-delay: 0.3s;
 }
 
 .active .text-item:nth-child(2) {
-  animation-delay: 1s;
+  animation-delay: 0.6s;
 }
 
 .active .text-item:nth-child(3) {
-  animation-delay: 1.5s;
+  animation-delay: 0.9s;
 }
 
 .active .text-item:nth-child(4) {
-  animation-delay: 2s;
+  animation-delay: 1.2s;
 }
 
 .active .text-item:nth-child(5) {
-  animation-delay: 2.5s;
+  animation-delay: 1.5s;
+}
+
+.text-item:hover {
+    transform: translateY(-5px);
+}
+
+.text-item h1 {
+    color: #000;
+    text-shadow: 8.593px 12.03px 3.437px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke-width: 1.807px;
+    -webkit-text-stroke-color: #FFF;
+    font-family: Noto serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: 2.148px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.text-item ul,
+.text-item li {
+    color: #000;
+    text-align: justify;
+    font-family: Noto serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#certificate-text,
+#leadershipQualities-text,
+#freeEntry-text,
+#internshipOpportunity-text,
+#workshops-text {
+    width: 100%;
+}
+
+/* Cloud image styling */
+#cloud1,
+#cloud2 {
+    stroke-width: 3.437px;
+    stroke: #595959;
+    position: absolute;
+}
+
+#cloud1 {
+    width: 167.556px;
+    height: 57.57px;
+    top: 89.4px;
+    left: 668px;
+}
+
+#cloud2 {
+    width: 100px;
+    height: 35.57px;
+    top: 52px;
+    right: 380px;
+}
+
+.background-mob {
+  display: none;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .background-web {
+      display: none;
+    }
+    .background-mob {
+      display: block;
+      position: absolute;
+      height: 100vh;
+      width: 100vw;
+    }
+    .whatdoweoffer {
+      display: none;
+    }
+    .campus-ambassador-container {
+        background-image: url('../../Assets/page3mobile.webp');
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+    }
+
+    .text-frame {
+        margin-left: 20px;
+        margin-top: 50px;
+        width: 90%;
+    }
+    .text-items {
+      gap: 0.5vh;
+    }
+    .point_img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .text-item {
+        /* padding: 10px; */
+        font-size: medium;
+        border-radius: 12px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .text-item h1 {
+        color: #303030;
+        text-shadow: 8.593px 12.03px 3.437px rgba(0, 0, 0, 0.25);
+        -webkit-text-stroke-width: 1.01px;
+        -webkit-text-stroke-color: #FFF;
+        font-family: Noto serif;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 100%;
+        letter-spacing: 1.25px;
+    }
+
+    .text-item ul,
+    .text-item li {
+        color: #000;
+        text-align: justify;
+        font-family: Noto serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    #cloud1 {
+        width: 100px;
+        height: 34.542px;
+        top: 550px;
+        left: 40px;
+    }
+
+    #cloud2 {
+        width: 100px;
+        height: 34.542px;
+        top: 36px;
+        right: 40px;
+    }
 }

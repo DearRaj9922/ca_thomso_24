@@ -1,4 +1,3 @@
-
 @import url(https://db.onlinewebfonts.com/c/5a6bcdf461365efd4a14cddf611bd176?family=NashvilleSerial-Bold);
 
 @keyframes slideInTop {
@@ -6,6 +5,7 @@
         transform: translateY(-100px);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
@@ -17,6 +17,7 @@
         transform: translateY(100px);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
@@ -28,18 +29,20 @@
         transform: scale(0);
         opacity: 0;
     }
+
     to {
         transform: scale(1);
         opacity: 1;
     }
 }
 
-.landingImage{
-    width:100vw;
-    height:100vh;
+.landingImage {
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     z-index: -1;
 }
+
 .hero_wrapper {
     /* background-image: url("../../Assets/background.svg"); */
     height: 104vh;
@@ -49,7 +52,7 @@
 }
 
 .hero_content {
-    padding-top:5vh;
+    padding-top: 5vh;
     display: grid;
     place-content: center;
     text-align: center;
@@ -137,28 +140,34 @@
 .hero-img img {
     width: 100vw;
 }
-.lan-one-mob{
+
+.lan-one-mob {
     display: none;
 }
-@media only screen and (max-width:800px){
-    .lan-one{
+
+@media only screen and (max-width:800px) {
+    .lan-one {
         display: none;
     }
-    .lan-one-mob{
+
+    .lan-one-mob {
         display: block;
-        width:100vw;
-        height:100vh;
+        width: 100vw;
+        height: 100vh;
     }
-    .lan-mob-bg{
-        width:100vw;
-        height:100vh;
-        position:absolute;
-        z-index:-1;
+
+    .lan-mob-bg {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
     }
-    .hero_content{
+
+    .hero_content {
         padding-top: 8vh;
     }
-    .hero_content p{
+
+    .hero_content p {
         margin: 5vw;
         padding: 0;
         font-size: 8vw;
