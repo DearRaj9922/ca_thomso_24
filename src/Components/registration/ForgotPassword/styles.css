@@ -113,15 +113,15 @@
 }
 .background{
   
-  z-index: -1;
+  /* z-index: -1; */
   height: 100vh;
   width: 100vw;
   
 }
 
 #welcomebckbg {
-  /* z-index: -1; */
-  /* position: absolute; */
+  z-index: -1;
+  position: absolute;
   height: 100vh;
   width: 100vw;
   position: fixed;
