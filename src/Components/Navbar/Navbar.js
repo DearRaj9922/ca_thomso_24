@@ -34,7 +34,7 @@ export default function Navbar() {
                     </div>
                     {/* <Link to="/login"> */}
                     <div>
-                    <a href="https://drive.google.com/file/d/1-x6Ki3dwDX9EtAK-ePOTZDwlMMgWw1BP/view?usp=sharing">CA Guide</a>
+                    <p onClick={()=>window.open('https://drive.google.com/file/d/1-x6Ki3dwDX9EtAK-ePOTZDwlMMgWw1BP/view?usp=sharing','_blank')}>CA Guide</p>
                         
                     </div>
                     

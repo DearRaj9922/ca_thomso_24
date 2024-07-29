@@ -6,11 +6,11 @@ import { useNavigate,Link } from 'react-router-dom';
 const Navbar = ({display, classs}) => {
   const navigate = useNavigate();
 
-  const handleLogout = () => {
-    navigate("/");
-    localStorage.removeItem("token");
-    localStorage.removeItem("user_id");
-  };
+  // const handleLogout = () => {
+  //   navigate("/");
+  //   localStorage.removeItem("token");
+  //   localStorage.removeItem("user_id");
+  // };
   return (
     <div className={`Nav-Wrapper ${classs}`}>
         <div className="nav-logo-div">
@@ -19,17 +19,10 @@ const Navbar = ({display, classs}) => {
         </div>
 
         <div className="login-nav">
-        {localStorage.getItem("token") ? (
-        <div className="Mobnav-top" onClick={handleLogout}>
-          <a className="btn-top">
-            LOG OUT
-          </a>
-        </div>
-      ) : (
         <div className="Mobnav-top">
           <button onClick={()=>navigate('/login')}className="login ">LOG IN</button>          
         </div>
-      )}
+      
             {/* <button className="nav-login">Log In</button> */}
         </div>
     </div>
