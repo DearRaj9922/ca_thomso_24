@@ -4,6 +4,9 @@
     position: fixed;
 
 }
+.landing-5-wrapper{
+    margin-top: 200px;
+}
 .land5-bg-mob{
     display: none;
 }

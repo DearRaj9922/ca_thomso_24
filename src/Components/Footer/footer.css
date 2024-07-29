@@ -16,13 +16,18 @@
     cursor: pointer;
     z-index: 1000;
 }
+.footerButton:hover{
 
+}
+.downarrow{
+  width: 20px;
+}
 
 .footerBoxB{
   position: relative;
   z-index: 1;
   width: 100%;
-  height:35vh;
+  height:42vh;
   background: #000;
   transform: translateY(-10%);
   display: flex;
@@ -95,6 +100,11 @@ margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     width:300px;
+  }
+  .footerBoxBSub1 img{
+    width: 120px;
+    object-fit: cover;
+    /* height: 80px; */
   }
 
   .footerContactUs{
