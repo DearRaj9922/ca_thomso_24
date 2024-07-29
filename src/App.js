@@ -1,6 +1,6 @@
 import "./App.css";
 import React , {useEffect} from "react";
-import {HashRouter as Router, Routes, Route} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 import CampusAmbassador from "./Components/Landing/Landing3/CampusAmbassador";
 import Landing4 from "./Components/Landing/Landing4/Landing4.js";

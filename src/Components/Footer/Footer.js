@@ -149,7 +149,7 @@ const Footer = () => {
             tech@thomso.in
             </div>
             <div className='footerText2'>
-            pramod.thomso@gmail.com
+            draj56227@gmail.com
             </div>
           </div>
 
