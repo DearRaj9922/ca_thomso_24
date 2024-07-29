@@ -297,7 +297,7 @@ const PersonalDetails = () => {
           {error && (
               <div
                 className="text-danger"
-                style={{ marginTop: "-10px" }}
+                style={{ margin:"0 0 30px 0" }}
                 dangerouslySetInnerHTML={{ __html: errorMsg }}
               ></div>
             )}
