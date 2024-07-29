@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3a7491cc.css",
-    "main.js": "/static/js/main.1c8e854c.js",
+    "main.css": "/static/css/main.9d1444b6.css",
+    "main.js": "/static/js/main.718e621f.js",
     "static/js/488.0a81433a.chunk.js": "/static/js/488.0a81433a.chunk.js",
     "static/media/hand.svg": "/static/media/hand.8759d5ed2a5bcfc3652f53d404eb55f3.svg",
     "static/media/certificate.svg": "/static/media/certificate.96e53003d2cdeacba6353d67d3c30ef5.svg",
@@ -45,13 +45,13 @@
     "static/media/cam-ambasdor-tex.webp": "/static/media/cam-ambasdor-tex.5a479fd362ef60f1ce86.webp",
     "static/media/vacancy.svg": "/static/media/vacancy.59bd11a882bae26e1f424a819a2e0973.svg",
     "static/media/guyprofile.webp": "/static/media/guyprofile.36b5390f578bed846b9a.webp",
+    "static/media/Logo-White.webp": "/static/media/Logo-White.0aa74884d2f6fe1beb3b.webp",
     "static/media/thomsologo.webp": "/static/media/thomsologo.56b2bef7178559c070f7.webp",
-    "static/media/ThomsoLogoBlack.webp": "/static/media/ThomsoLogoBlack.d0d3844b82f8b4c84b62.webp",
     "static/media/bannermain.webp": "/static/media/bannermain.12e0fc6b867af920d5c7.webp",
     "static/media/presentation.svg": "/static/media/presentation.c5340811aaa3d89929d7e564e66be17c.svg",
+    "static/media/logoblack.webp": "/static/media/logoblack.71f05f228059a90e3cdd.webp",
     "static/media/cloud4.webp": "/static/media/cloud4.78b47578708b40ed39c2.webp",
     "static/media/Object.webp": "/static/media/Object.0813f85c8b1ca44691ce.webp",
-    "static/media/Logo.webp": "/static/media/Logo.b8e33183a544e60a173d.webp",
     "static/media/free.webp": "/static/media/free.0ad4d2bd65366825f6cd.webp",
     "static/media/Group.webp": "/static/media/Group.0b48679bdb139c4a1ed7.webp",
     "index.html": "/index.html",
@@ -71,12 +71,12 @@
     "static/media/cross.webp": "/static/media/cross.f12e231260c87e3fafea.webp",
     "static/media/menu.webp": "/static/media/menu.0e31c8d2a6de5e522d3d.webp",
     "static/media/downarrow.webp": "/static/media/downarrow.af04b1ce1bba52b54fe8.webp",
-    "main.3a7491cc.css.map": "/static/css/main.3a7491cc.css.map",
-    "main.1c8e854c.js.map": "/static/js/main.1c8e854c.js.map",
+    "main.9d1444b6.css.map": "/static/css/main.9d1444b6.css.map",
+    "main.718e621f.js.map": "/static/js/main.718e621f.js.map",
     "488.0a81433a.chunk.js.map": "/static/js/488.0a81433a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a7491cc.css",
-    "static/js/main.1c8e854c.js"
+    "static/css/main.9d1444b6.css",
+    "static/js/main.718e621f.js"
   ]
 }
