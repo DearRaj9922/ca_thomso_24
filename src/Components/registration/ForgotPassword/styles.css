@@ -19,7 +19,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
-  margin: 30vh 0 0 0;
+  margin: 20vh 0 0 0;
   width: fit-content;
   /* height: 46.5vh !important; */
   height: auto;
@@ -32,7 +32,7 @@
 
 .forgot .f-h2 {
   font-family: Comic Sans MS;
-  color: #ff5c00;
+  color: #ff00c6;
   font-size: 35px;
   font-weight: 900;
   line-height: 32px;
@@ -55,7 +55,7 @@
   font-size: 16px;
   font-family: Comic Sans MS;
   font-weight: 400;
-  background-color: #ff5c00;
+  background-color: #ff00c6;
   color: #ffffff;
   margin: 2rem auto;
   border: 1.52px solid #505050;
@@ -64,7 +64,7 @@
 }
 
 .send:hover {
-  background-color: #ff5c00;
+  background-color: #ff00c6;
 }
 
 .email {
@@ -80,6 +80,7 @@
   border: 2px solid #000000;
   color: #505050;
   text-align: left;
+  /* z-index: 45; */
 }
 
 .message {
@@ -112,15 +113,15 @@
 }
 .background{
   
-  z-index: -1;
+  /* z-index: -1; */
   height: 100vh;
   width: 100vw;
   
 }
 
 #welcomebckbg {
-  /* z-index: -1; */
-  /* position: absolute; */
+  z-index: -1;
+  position: absolute;
   height: 100vh;
   width: 100vw;
   position: fixed;
@@ -128,7 +129,7 @@
   overflow-y: hidden;
   object-fit: cover;
   margin: 0;
-  padding-top: 6vh;
+  /* padding-top: 6vh; */
 
   /* height: 89.8vh; */
 }
@@ -157,6 +158,11 @@
   .forgot {
     width: 80vw !important;
     /* height:60vh !important; */
+  }
+}
+@media only screen and (max-width:350px){
+  .email,.send{
+    width:90%;
   }
 }
 

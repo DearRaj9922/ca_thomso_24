@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Leaderboard.scss";
 import profilepic from "../../../assets/profilepic.webp";
 import profilepic1 from "../../../assets/femalepp.png";
-import copy from "../../../assets/Copy.png";
+import copy from "../../../assets/Copy.svg";
 import { connect } from "react-redux";
 import axios from "axios";
 import { getNumberWithOrdinal } from "./helper";

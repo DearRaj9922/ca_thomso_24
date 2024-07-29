@@ -1,57 +1,76 @@
-@import url(https://db.onlinewebfonts.com/c/5a6bcdf461365efd4a14cddf611bd176?family=NashvilleSerial-Bold);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
-@keyframes slideInRight {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
+@keyframes slideInTop {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
+@keyframes slideInBottom {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Add this to your CSS to prevent scrolling */
 body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  overflow: hidden;
+  background-image: url("../../Assets/newPageLanding4.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-/* .campus-ambassador-container {
-    width: 100%;
-    min-height: 100vh;
-    flex-shrink: 0;
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 16px;
-    position: relative; 
-} */
+.bg_img {
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 0;
+  position: absolute;
+}
 
-/* .bg_img {
-    width: 100vw;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    object-position: right center;
-    top: 0;
-    left: 0;
-    z-index: -1;
-} */
+.point_img {
+  width: 70px;
+  height: 70px;
+}
 
 .campus-ambassador-container {
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../../Assets/background_img_l3.webp');
-    background-size: cover;
-    background-position: bottom center top center;
-    background-repeat: no-repeat;
-    position: relative;
-    overflow-y: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
+.background-web {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
 
 /* Text frame styling */
 .text-frame {
+    position: relative;
+    z-index: 5;
     margin-left: 50px;
     margin-top: 100px;
     margin-bottom: 50px;
@@ -59,34 +78,51 @@ body {
     flex-direction: column;
     /* gap: 10px; */
     height: 100%;
-    width: 500px;
+    width: 50vw;
+}
+
+.whatdoweoffer {
+  width: 60vw;
+  margin-bottom: 5vh;
+}
+
+.text-items {
+  display: flex;
+  gap: 1vh;
+  flex-direction: column;
 }
 
 .text-item {
-    padding: 4px;
-    border-radius: 12px;
-    transition: transform 0.3s ease-in-out;
-    animation: slideInRight 0.5s ease-out forwards;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  font-size: large;
+  font-family: Karma;
 }
 
-.text-item:nth-child(1) {
-    animation-delay: 0.2s;
+.active .text-item {
+  animation: slideInBottom 1s ease-out forwards;
 }
 
-.text-item:nth-child(2) {
-    animation-delay: 0.4s;
+.active .text-item:nth-child(1) {
+  animation-delay: 0.3s;
 }
 
-.text-item:nth-child(3) {
-    animation-delay: 0.6s;
+.active .text-item:nth-child(2) {
+  animation-delay: 0.6s;
 }
 
-.text-item:nth-child(4) {
-    animation-delay: 0.8s;
+.active .text-item:nth-child(3) {
+  animation-delay: 0.9s;
 }
 
-.text-item:nth-child(5) {
-    animation-delay: 1s;
+.active .text-item:nth-child(4) {
+  animation-delay: 1.2s;
+}
+
+.active .text-item:nth-child(5) {
+  animation-delay: 1.5s;
 }
 
 .text-item:hover {
@@ -108,7 +144,8 @@ body {
     margin-bottom: 20px;
 }
 
-.text-item ul, .text-item li {
+.text-item ul,
+.text-item li {
     color: #000;
     text-align: justify;
     font-family: Noto serif;
@@ -129,7 +166,8 @@ body {
 }
 
 /* Cloud image styling */
-#cloud1, #cloud2 {
+#cloud1,
+#cloud2 {
     stroke-width: 3.437px;
     stroke: #595959;
     position: absolute;
@@ -149,8 +187,24 @@ body {
     right: 380px;
 }
 
+.background-mob {
+  display: none;
+}
+
 /* Media query for mobile view */
-@media (max-width: 768px) and (min-width: 300px) {
+@media (max-width: 768px) {
+    .background-web {
+      display: none;
+    }
+    .background-mob {
+      display: block;
+      position: absolute;
+      height: 100vh;
+      width: 100vw;
+    }
+    .whatdoweoffer {
+      display: none;
+    }
     .campus-ambassador-container {
         background-image: url('../../Assets/page3mobile.webp');
         background-size: cover;
@@ -163,9 +217,18 @@ body {
         margin-top: 50px;
         width: 90%;
     }
+    .text-items {
+      gap: 0.5vh;
+      margin-top: 5vh;
+    }
+    .point_img {
+      width: 60px;
+      height: 60px;
+    }
 
     .text-item {
-        padding: 10px;
+        /* padding: 10px; */
+        font-size: medium;
         border-radius: 12px;
         transition: transform 0.3s ease-in-out;
     }
@@ -183,7 +246,8 @@ body {
         letter-spacing: 1.25px;
     }
 
-    .text-item ul, .text-item li {
+    .text-item ul,
+    .text-item li {
         color: #000;
         text-align: justify;
         font-family: Noto serif;

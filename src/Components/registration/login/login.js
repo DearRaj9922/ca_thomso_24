@@ -107,8 +107,10 @@ const Login = (props) => {
       <img src={welcomebckbg} id="welcomebckbg" alt="" />
       <div id="bg">
         <div id="log_bg1">
+          <div className="text-img-log">
           <img src={logbg1} id="wel_log_back" alt="" />
-          <img src={logbg2} id="campus_ambd" />
+          <img src={logbg2} id="campus_ambad" />
+          </div>
           <div id="box">
             <div id="center">
               <div id="login">Log In</div>

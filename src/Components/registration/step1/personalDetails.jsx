@@ -45,10 +45,10 @@ const PersonalDetails = () => {
     e.preventDefault();
 
     if (!confirm_err) {
-      setLoading({ loading: true });
+      setLoading(true);
     }
 
-    if (user.password != user.confirmpassword) return;
+    if (user.password !== user.confirmpassword) return;
 
     try {
       e.preventDefault();
@@ -74,7 +74,7 @@ const PersonalDetails = () => {
       const { data } = err?.response;
       console.log("register Error:", data);
       var errorData = "";
-      if (data?.error == "user_not_verified") {
+      if (data?.error === "user_not_verified") {
         errorData = `Please verify your registered email. <a href=/verifyemail>Click Here.`;
       } else {
         for (var key in data) {
@@ -124,7 +124,7 @@ const PersonalDetails = () => {
       setMobile_check(true);
       setUser({ ...user, [e.target.name]: e.target.value });
       let mnumber = e.target.value;
-      if(mnumber.length==10){
+      if(mnumber.length===10){
         setMobile_check(false);
       }
     }
@@ -139,7 +139,7 @@ const PersonalDetails = () => {
   }, [user])
 
   const nextpage = ()=>{
-    if (user.password != user.confirmpassword) return;
+    if (user.password !== user.confirmpassword) return;
     else{
       setNextp(true);
     }
@@ -251,7 +251,7 @@ const PersonalDetails = () => {
           </div>
           <div className="personal-input3">
             <div>
-              <Input.Password
+              <Input
                 className="input-field"
                 type="password"
                 iconRender={(visible) =>
@@ -269,7 +269,7 @@ const PersonalDetails = () => {
               />
             </div>
             <div >
-              <Input.Password
+              <Input
                 className="input-field"
                 type="password"
 
@@ -297,14 +297,14 @@ const PersonalDetails = () => {
           {error && (
               <div
                 className="text-danger"
-                style={{ marginTop: "-10px" }}
+                style={{ margin:"0 0 30px 0" }}
                 dangerouslySetInnerHTML={{ __html: errorMsg }}
               ></div>
             )}
         </div>
 
         <div className="personal-buttons">
-          <button onClick ={nextpage} className="personal-button-submit" disabled={!active} style={active == true ? {background: "#ff5c00"} : {background: "#ff00c6"}}>
+          <button onClick ={nextpage} className="personal-button-submit" disabled={!active} style={active === true ? {background: "#ff00c6"} : {background: "#959595"}}>
                 Submit
           </button>
           <button className="personal-button-clear" onClick={clearInput}>

@@ -2,8 +2,8 @@ import React, { useState,useEffect } from "react";
 import "./styles.css";
 // import Nav from "../../web/NewNavbar/Nav";
 // import Nav from "src\Components\registration\Navbar\Navbar.js"
-import Nav from "../Navbar/Navbar";
-import welcomebckbg from "../../../Components/Assets/Registration.svg";
+// import Nav from "../Navbar/Navbar";
+import welcomebckbg from "../../../Components/Assets/Registration.webp";
 import axios from "axios";
 import SimpleReactValidator from "simple-react-validator";
 
@@ -14,12 +14,12 @@ import { message } from "antd";
 function ForgotPassword() {
   const [active, setActive] = useState(false);
   const validator = new SimpleReactValidator();
-  const [email, setEmail] = useState();
+  const [email, setEmail] = useState(null);
 
   async function handleSendEmail(e) {
     e.preventDefault();
     if (validator.allValid()) {
-      const response = await axios.post("/apiV1/resetpasswordca", {
+      const response = await axios.post("https://api2.thomso.in/apiV1/resetpasswordca", {
         email: email,
       });
       if (response?.status === 200) {
@@ -49,7 +49,7 @@ function ForgotPassword() {
   return (
     <>
       <div id="bg">
-        <Nav />
+      
         <div className="background">
         <img src={welcomebckbg} id="welcomebckbg" alt="" className="newBg" />
         {/* <img src={cawelcome} alt="" id="wel3" /> */}
@@ -64,7 +64,13 @@ function ForgotPassword() {
               Don't worry! It happens. Please enter the Email through which you
               had registered.
             </p>
-            <form onSubmit={handleSendEmail}>
+            <form onSubmit={handleSendEmail}
+            style={{display:"flex",
+              flexDirection:"column",
+              alignItems:"center",
+              justifyContent:"center"
+            }}
+            >
               {/* <label> */}
               <input
                 className="email"
@@ -84,7 +90,7 @@ function ForgotPassword() {
                 disabled={!active}
                 style={
                   active === true
-                    ? { background: "#ff5c00" }
+                    ? { background: "#ff00c6" }
                     : { background: "rgb(204, 204, 204)" }
                 }
               >

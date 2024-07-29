@@ -22,7 +22,7 @@
 
 .college {
   height: auto !important;
-  width: 34vw !important;
+  /* width: 550px !important; */
   background-color: #ffffff;
   border: 2px solid #000000;
   border-radius: 8px;
@@ -59,9 +59,9 @@
   justify-content: center;
   align-items: center;
   width: 32px;
-  height: 32px;
+  /* height: 32px; */
   border: 1.19px solid #111111;
-  border-radius: 5px;
+  border-radius: 100%;
   background-color: #12c459;
   box-shadow: 1.19px 2.38px 0px 0px #111111;
 }
@@ -111,10 +111,10 @@
   justify-content: center;
   align-items: center;
   width: 32px;
-  height: 32px;
+  /* height: 32px; */
   border: 1.19px solid #111111;
-  border-radius: 5px;
-  background-color: #ff5c00;
+  border-radius: 100%;
+  background-color: #ff00c6;
   box-shadow: 1.19px 2.38px 0px 0px #111111;
 }
 
@@ -329,7 +329,14 @@
   .select-option-2 {
     width: 100% !important;
   }
-}
+  .college-input1{
+    width:100%;
+  }
+  /* .select-options-2{
+    width: 50%;
+  }
+} */}
+
 
 @media only screen and (max-width: 953px) {
   /* #welcomebckbg {
@@ -438,7 +445,7 @@
     width: 100vw;
     overflow-x: hidden;
     display: block !important;
-    top: 76px;
+    /* top: 76px; */
   }
   .college {
     /* height: 68vh !important; */

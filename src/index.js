@@ -7,6 +7,7 @@ import axios from "axios";
 // import store from './store.js';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserHistory } from "history";
+// import { createBrowserHistory } from "history";
 import {Store} from "./Config/Store";
 const history = createBrowserHistory();
 // axios.defaults.baseURL = "https://api1.thomso.in";

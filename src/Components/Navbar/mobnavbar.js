@@ -38,7 +38,10 @@ const toggleNav = () => {
             <li className={location.pathname === '/feeds' ? 'active' : ''} onClick={()=>navigate('/feeds')}>Feeds</li>
             <li className={location.pathname === '/referrals' ? 'active' : ''} onClick={()=>navigate('/referrals')}>Referrals</li>
             <li className={location.pathname === '/profile' ? 'active' : ''} onClick={()=>navigate('/profile')}>Profile</li>
-            <li className={location.pathname === '/profile' ? 'active' : ''} onClick={()=>navigate('/profile')}>CA Guide</li>
+            <li className={location.pathname === '/profile' ? 'active' : ''}>
+            <li onClick={()=>window.open('https://drive.google.com/file/d/1-x6Ki3dwDX9EtAK-ePOTZDwlMMgWw1BP/view?usp=sharing','_blank')}>CA Guide</li>
+                        
+            </li>
             <li className='logout' onClick={handleLogout}>Logout</li>
         </ul>
     </div>
