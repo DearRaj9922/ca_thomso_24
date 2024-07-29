@@ -49,6 +49,11 @@ body {
   position: absolute;
 }
 
+.point_img {
+  width: 70px;
+  height: 70px;
+}
+
 .campus-ambassador-container {
   width: 100vw;
   height: 100vh;
@@ -56,9 +61,10 @@ body {
   overflow: hidden;
 }
 
-.bg_img {
-    position: relative;
-    z-index: -1;
+.background-web {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
 }
 
 /* Text frame styling */
@@ -72,12 +78,27 @@ body {
     flex-direction: column;
     /* gap: 10px; */
     height: 100%;
-    width: 500px;
+    width: 50vw;
+}
+
+.whatdoweoffer {
+  width: 60vw;
+  margin-bottom: 5vh;
+}
+
+.text-items {
+  display: flex;
+  gap: 1vh;
+  flex-direction: column;
 }
 
 .text-item {
-  margin: 20px;
   opacity: 0;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  font-size: large;
+  font-family: Karma;
 }
 
 .active .text-item {
@@ -85,19 +106,23 @@ body {
 }
 
 .active .text-item:nth-child(1) {
-  animation-delay: 0.5s;
+  animation-delay: 0.3s;
 }
 
 .active .text-item:nth-child(2) {
-  animation-delay: 1s;
+  animation-delay: 0.6s;
 }
 
 .active .text-item:nth-child(3) {
-  animation-delay: 1.5s;
+  animation-delay: 0.9s;
 }
 
 .active .text-item:nth-child(4) {
-  animation-delay: 2s;
+  animation-delay: 1.2s;
+}
+
+.active .text-item:nth-child(5) {
+  animation-delay: 1.5s;
 }
 
 .text-item:hover {
@@ -162,8 +187,24 @@ body {
     right: 380px;
 }
 
+.background-mob {
+  display: none;
+}
+
 /* Media query for mobile view */
-@media (max-width: 768px) and (min-width: 300px) {
+@media (max-width: 768px) {
+    .background-web {
+      display: none;
+    }
+    .background-mob {
+      display: block;
+      position: absolute;
+      height: 100vh;
+      width: 100vw;
+    }
+    .whatdoweoffer {
+      display: none;
+    }
     .campus-ambassador-container {
         background-image: url('../../Assets/page3mobile.webp');
         background-size: cover;
@@ -176,9 +217,17 @@ body {
         margin-top: 50px;
         width: 90%;
     }
+    .text-items {
+      gap: 0.5vh;
+    }
+    .point_img {
+      width: 60px;
+      height: 60px;
+    }
 
     .text-item {
-        padding: 10px;
+        /* padding: 10px; */
+        font-size: medium;
         border-radius: 12px;
         transition: transform 0.3s ease-in-out;
     }
