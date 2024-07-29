@@ -14,12 +14,12 @@ import { message } from "antd";
 function ForgotPassword() {
   const [active, setActive] = useState(false);
   const validator = new SimpleReactValidator();
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState(null);
 
   async function handleSendEmail(e) {
     e.preventDefault();
     if (validator.allValid()) {
-      const response = await axios.post("/apiV1/resetpasswordca", {
+      const response = await axios.post("https://api2.thomso.in/apiV1/resetpasswordca", {
         email: email,
       });
       if (response?.status === 200) {

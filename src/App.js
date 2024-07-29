@@ -23,6 +23,7 @@ import Leaderboard from "./Components/NewLeaderboard/leaderboard";
 import Winner from "./Components/registration/Leaderboard/Winner.js";
 import Feed from "./Components/Feed/FeedData.js";
 import ForgotPassword from "./Components/registration/ForgotPassword/ForgotPassword.jsx";
+import ResetPass from "./Components/registration/Resetpass/ResetPass.js";
 
 
 
@@ -61,6 +62,11 @@ function App(props) {
                     <Route path='/leaderboard' element={<Leaderboard/>}/>
                     <Route path='/winners' element={<Winner/>}/>
                     <Route path='/forgotpassword' element={<ForgotPassword/>}/>
+                    <Route
+            exact={true}
+            path="/auth/reset-password/:email/:token"
+            element={<ResetPass />}
+          />
                     {/* <Route path='/feed' element={<Feed/>}/> */}
 
                         {/*<Route path='/quizardry' element={<Quizardry/>}/>*/}

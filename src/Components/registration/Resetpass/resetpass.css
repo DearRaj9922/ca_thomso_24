@@ -1,0 +1,192 @@
+.rp-page {
+    background-image: url(../../Assets/Registration.webp);
+    /* background:tr; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position:absolute;
+    top:0px;
+    right:0px;
+    left:0px;
+    bottom: 0px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rp-header {
+    display: flex;
+    width: 85%;
+    margin: 30px auto;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  img {
+    background: transparent;
+  }
+
+  .rp-content {
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+    height: 520px;
+    margin: 5% auto;
+    align-items: center;
+
+    background: #fff;
+    border-radius: 8px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    filter: drop-shadow(12px 12px 0 rgba(0,0,0,.4));
+
+  }
+  .rp-content h3 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #000;
+    margin-top: 12%;
+  }
+  .rp-content input {
+    margin: 10px;
+    text-decoration: none;
+    border-style: none;
+    background-color: transparent !important;
+    border-bottom: 1px solid white;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    position: relative;
+    color: #000;
+    /* background-color: transparent;
+    color: white;
+    width: 100%;
+    font-size: 14px; */
+  }
+  .rp-field {
+    padding: 10px;
+    color: #000;
+  }
+
+  .rp-form {
+    display: flex;
+    flex-direction: column;
+    width: 56%;
+    margin-top: 55px;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 50px;
+    margin-top: 60px;
+  }
+  .rp-content button {
+    margin-top: 50px;
+    width: 275px;
+  }
+  .rp-form img {
+    width: 20px;
+    position: relative;
+    bottom: 20px;
+    left: 250px;
+    cursor: pointer;
+  }
+  .rp-content p {
+    margin-top: 55px;
+    width: 60%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #000;
+  }
+
+  /* .Form-input{
+    border: 1.5px solid #505050;
+    box-shadow: 1.5px 3px 0 0 #505050;
+    background-color: #fff;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 40px;
+    letter-spacing: 0;
+    line-height: 1rem;
+    padding: 12px 20px;
+    text-align: left;
+    width: 15vw !important;
+    color: #000;
+    outline: none;
+  }*/
+
+  .Form-input:hover{
+    border: 1.5px solid #111;
+    box-shadow: 1.5px 3px 0 0 #111;
+    color: #111;
+    outline: none;
+  }
+
+  .Form-input{
+    border: 1.5px solid #505050;
+    box-shadow: 1.5px 3px 0 0 #505050;
+    outline: none;
+  }
+
+  .btn_primary{
+    border: 1.5px solid #505050;
+    border-radius: 6px;
+    box-shadow: 1.5px 3px 0 0 #505050;
+    outline: none;
+    cursor: pointer;
+    font-family: Comic Sans MS;
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.25rem;
+    padding: 10px 20px;
+    color: #000;
+  }
+
+  .btn_primary:hover{
+    color: #fff;
+    background-color: #ff00c6;
+    border: 1.52px solid #111;
+    box-shadow: 1.5px 3px 0 0 #111;
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .rp-header img {
+      width: 100px;
+    }
+    .rp-header button {
+      width: 100px;
+    }
+    .rp-content {
+      margin-top: 50px;
+      width: 320px;
+      height: 460px;
+    }
+    .rp-content h3 {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 39px;
+    }
+    .rp-form {
+      width: 65%;
+      margin-top: 50px;
+    }
+    .rp-content button{
+      width: 250px;
+    }
+  }
