@@ -11,10 +11,12 @@ import presentation from '../../Assets/presentation.svg';
 import background from '../../Assets/Page 19.webp';
 import backgroundmob from '../../Assets/land3mobbg.webp';
 import whatdoweoffer from '../../Assets/WHAT DO WE OFFER_.svg';
+import Navbar from '../Hero Section/Navbar';
 
 function CampusAmbassador() {
   return (
     <div className='campus-ambassador-container'>
+      <Navbar />
       <img src={background} alt="bg" className='background-web' />
       <img src={backgroundmob} alt="bg" className='background-mob' />
       <div className="text-frame">
