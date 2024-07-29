@@ -64,7 +64,7 @@ function App(props) {
                     <Route path='/forgotpassword' element={<ForgotPassword/>}/>
                     <Route
             exact={true}
-            path="/auth/reset-password/:email/:token"
+            path="/#/auth/reset-password/:email/:token"
             element={<ResetPass />}
           />
                     {/* <Route path='/feed' element={<Feed/>}/> */}
