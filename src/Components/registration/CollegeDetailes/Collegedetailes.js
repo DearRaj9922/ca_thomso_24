@@ -81,6 +81,7 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
   const [loading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
   const [active, setActive] = useState(false);
+  const [mes,setMes] =useState(false);
 
 
   const [user, setUser] = useState({
@@ -160,8 +161,9 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
             setErrorMail(true)
             errorData =  `Please verify your registered email. <a href=/verifyemail>Click Here.`;
           } else {
-            message.warning("Email does not exist.Please enter correct email");
+            setMes(true);
             window.location.reload(false);
+            message.warning("Email does not exist.Please enter correct email");
             for (var key in data) {
               errorData += data[key];
             }
