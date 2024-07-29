@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.74d3dba1.css",
-    "main.js": "/static/js/main.3b31b518.js",
+    "main.css": "/static/css/main.dcc580a9.css",
+    "main.js": "/static/js/main.210639aa.js",
     "static/js/488.0a81433a.chunk.js": "/static/js/488.0a81433a.chunk.js",
     "static/media/hand.svg": "/static/media/hand.8759d5ed2a5bcfc3652f53d404eb55f3.svg",
     "static/media/scooter.svg": "/static/media/scooter.c6b30055b33dfb4b682f0d7d0ef9c275.svg",
@@ -12,9 +12,10 @@
     "static/media/landing1mob.webp": "/static/media/landing1mob.10008b3b2fddc646549f.webp",
     "static/media/Page-6.webp": "/static/media/Page-6.478c996e5b445174a82c.webp",
     "static/media/login.webp": "/static/media/login.ae50fb49abb6dcf1891f.webp",
-    "static/media/background.webp": "/static/media/background.5e54c180cf6e5cdc41c4.webp",
     "static/media/land4-mobile.webp": "/static/media/land4-mobile.139aa1defe5614636841.webp",
     "static/media/profilebackimg.webp": "/static/media/profilebackimg.c2135ad57d3df461990a.webp",
+    "static/media/land2-textppppp.svg": "/static/media/land2-textppppp.d845e4e797287c1bf9c6259f8ca7d5ab.svg",
+    "static/media/What is Campus Ambassador Program_.svg": "/static/media/What is Campus Ambassador Program_.d226aba67244a8594c817f1bad9928ad.svg",
     "static/media/Registrationbg.webp": "/static/media/Registrationbg.7084a8b8f1a99f0f7bff.webp",
     "static/media/newPageLanding4.jpg": "/static/media/newPageLanding4.f39fa6e98296f34b7cfe.jpg",
     "static/media/land2-mobile.webp": "/static/media/land2-mobile.e469a66e0cddff767a8d.webp",
@@ -22,8 +23,8 @@
     "static/media/first.webp": "/static/media/first.ec9a48afb2da2784de0d.webp",
     "static/media/WHAT ARE YOU WAITING FOR_.webp": "/static/media/WHAT ARE YOU WAITING FOR_.e3ab459a27243c5ad1d1.webp",
     "static/media/444.webp": "/static/media/444.353304f9cbd6909eb184.webp",
+    "static/media/WHAT ARE YOU WAITING FOR_.svg": "/static/media/WHAT ARE YOU WAITING FOR_.5e0b198f19acf3193b244c740f667a7c.svg",
     "static/media/profiledetailbg.webp": "/static/media/profiledetailbg.839bae0635365dddbc0d.webp",
-    "static/media/land2textmob.webp": "/static/media/land2textmob.8292cf4716aa008baa83.webp",
     "static/media/land5.webp": "/static/media/land5.11561a9af2b8317c799c.webp",
     "static/media/third.webp": "/static/media/third.8ee63645b77c9ad74f15.webp",
     "static/media/second.webp": "/static/media/second.747ed46674a9629f26b4.webp",
@@ -35,7 +36,6 @@
     "static/media/secondmob.webp": "/static/media/secondmob.fccfa677be4bf7b2ade9.webp",
     "static/media/Welcome Back-text.webp": "/static/media/Welcome Back-text.0376ae803270a48dec6d.webp",
     "static/media/cam-ambasdor-tex.webp": "/static/media/cam-ambasdor-tex.5a479fd362ef60f1ce86.webp",
-    "static/media/land4text.webp": "/static/media/land4text.dfe6a41c62357d8b135b.webp",
     "static/media/land5-mobile.webp": "/static/media/land5-mobile.3256874ef466cf3a590d.webp",
     "static/media/guyprofile.webp": "/static/media/guyprofile.36b5390f578bed846b9a.webp",
     "static/media/thomsologo.webp": "/static/media/thomsologo.56b2bef7178559c070f7.webp",
@@ -60,12 +60,12 @@
     "static/media/cross.webp": "/static/media/cross.f12e231260c87e3fafea.webp",
     "static/media/menu.webp": "/static/media/menu.0e31c8d2a6de5e522d3d.webp",
     "static/media/downarrow.webp": "/static/media/downarrow.af04b1ce1bba52b54fe8.webp",
-    "main.74d3dba1.css.map": "/static/css/main.74d3dba1.css.map",
-    "main.3b31b518.js.map": "/static/js/main.3b31b518.js.map",
+    "main.dcc580a9.css.map": "/static/css/main.dcc580a9.css.map",
+    "main.210639aa.js.map": "/static/js/main.210639aa.js.map",
     "488.0a81433a.chunk.js.map": "/static/js/488.0a81433a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.74d3dba1.css",
-    "static/js/main.3b31b518.js"
+    "static/css/main.dcc580a9.css",
+    "static/js/main.210639aa.js"
   ]
 }
