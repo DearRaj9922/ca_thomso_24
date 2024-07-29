@@ -1,10 +1,11 @@
 import React from "react"
 import "./Landing2.css"
 import back2 from "../../Assets/land2.webp"
-import back2mob from "../../Assets/land2-mobile.webp"
+import back2mob from "../../Assets/land2textmob.webp"
 import land2text from "../../Assets/What is Campus Ambassador Program_.svg"
 import land2textpp from "../../Assets/land2-textppppp.svg"
 import scooter from "../../Assets/scooter.svg"
+import Navbar from "../Hero Section/Navbar"
 
 const Landing2 = ({ isActive }) => {
 	return (
@@ -12,6 +13,7 @@ const Landing2 = ({ isActive }) => {
 			<img src={back2} className='bg_img_2' alt='bg-2-img' />
 			<img src={back2mob} className='bg_img_2_mob' alt='bg' />
 			<div className='landing2'>
+        <Navbar/>
 				<div className='landing2-text-box'>
 					<div className='landing2-text sansita-bold-italic'>
 						<h1>What is Campus Ambassador Program?</h1>
@@ -33,6 +35,7 @@ const Landing2 = ({ isActive }) => {
 				</div>
 			</div>
 			<div className='landing2-mobile'>
+        <Navbar/>
         <div className='landing2-text-box'>
           <img src={land2text} className='land2text-img' alt='land2-text' />
 				  <div className='landing2-details'>

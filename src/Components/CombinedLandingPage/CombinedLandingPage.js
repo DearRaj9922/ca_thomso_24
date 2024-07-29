@@ -6,6 +6,7 @@ import Landing4 from '../Landing/Landing4/Landing4';
 import Landing5 from '../Landing/Landing5/Landing5';
 import Footer from '../Footer/Footer';
 import './CombinedLandingPage.css';
+import Navbar from '../Landing/Hero Section/Navbar';
 
 const CombinedLandingPage = () => {
   const [currentSection, setCurrentSection] = useState(0);
@@ -55,6 +56,7 @@ const CombinedLandingPage = () => {
 
   return (
     <div className="combined-landing-page">
+      {/* <Navbar /> */}
       <div className='combined-pages'>
         <div className={`landing-section ${currentSection === 0 ? 'active' : ''}`} data-index="0">
           <HeroSection />

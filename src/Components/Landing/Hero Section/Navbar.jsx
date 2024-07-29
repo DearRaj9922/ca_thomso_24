@@ -3,7 +3,7 @@ import './Navbar.css'
 import logo from "../../Assets/ThomsoLogoBlack.webp";
 import { useNavigate,Link } from 'react-router-dom';
 
-const Navbar = ({display}) => {
+const Navbar = ({display, classs}) => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -12,7 +12,7 @@ const Navbar = ({display}) => {
     localStorage.removeItem("user_id");
   };
   return (
-    <div className='Nav-Wrapper'>
+    <div className={`Nav-Wrapper ${classs}`}>
         <div className="nav-logo-div">
             <img src={logo} alt="" />
 
@@ -27,14 +27,7 @@ const Navbar = ({display}) => {
         </div>
       ) : (
         <div className="Mobnav-top">
-          {/* <Link
-          to="/login"> */}
-              <button onClick={()=>navigate('/login')}className="hero-reg ">LOG IN</button>
-          {/* </Link> */}
-          {/* <a href="/login"> LOG IN</a> */}
-
-            
-        
+          <button onClick={()=>navigate('/login')}className="login ">LOG IN</button>          
         </div>
       )}
             {/* <button className="nav-login">Log In</button> */}
