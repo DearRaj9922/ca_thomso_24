@@ -2,7 +2,7 @@ import React from 'react'
 import thomsologo from '../Assets/thomsologo.webp'
 import './navbar.css';
 import hamburger from '../Assets/menu.webp';
-import {useLocation, useNavigate} from 'react-router-dom';
+import {useLocation, useNavigate,Link} from 'react-router-dom';
 import Mobnavbar from './mobnavbar.js';
 
 export default function Navbar() {
@@ -32,9 +32,12 @@ export default function Navbar() {
                     <div className={location.pathname === '/profile' ? 'active' : ''}
                          onClick={() => navigate('/profile')}>Profile
                     </div>
-                    <div className={location.pathname === '/Guide' ? 'active' : ''}
-                         onClick={() => navigate('/Guide')}>CA Guide
+                    {/* <Link to="/login"> */}
+                    <div>
+                    <a href="https://drive.google.com/file/d/1-x6Ki3dwDX9EtAK-ePOTZDwlMMgWw1BP/view?usp=sharing">CA Guide</a>
+                        
                     </div>
+                    
                     <div onClick={handleLogout} className="authbtn">Log Out</div>
                 </div>
                 {/* // <div className="hamburger"><img src={hamburger} alt="ham"/></div> */}

@@ -263,7 +263,8 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
                 </option>
               </select> */}
                     <Select
-                      className="select-option-2"
+                    // style={{width:"240px"}}
+                      className="select-option-2 state"
                       placeholder="Select State"
                       value={user.selectedOption}
                       onChange={handleChange1}
@@ -366,7 +367,7 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
               )} */}
    
               <div className="college-buttons">
-                <button type="submit" className="college-button-submit" disabled={!active} style={active == true ? {background: "#ff5c00"} : {background: "rgb(204, 204, 204)"}}>
+                <button type="submit" className="college-button-submit" disabled={!active} style={active == true ? {background: "##ff00c6"} : {background: "rgb(204, 204, 204)"}}>
                   {loading ? (
                     <CircularProgress color="inherit" size={20} />
                   ) : (
