@@ -159,7 +159,7 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
             console.log(data);
             
             setErrorMail(true)
-            errorData =  `Please verify your registered email. <a href=/#/verifyemail>Click Here.`;
+            errorData =  `Please verify your registered email. <a href=/verifyemail>Click Here.`;
           }
           else if (err?.response.status === 500){
             let status;
