@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 import './footer.css'
 import UpArrow from '../Footer/Footer Images/uparrow.webp';
 import DownArrow from '../Footer/Footer Images/downarrow.webp'
-import Logo from './Footer Images/Logo.webp'
+// import Logo from './Footer Images/Logo.webp'
+import Logo from '../Assets/Logo-White.webp'
+import nodatewhitelogo from '../Assets/logo-nodate-white.svg';
 import facebook from './Footer Images/facebook.webp'
 import facebookLite from './Footer Images/facebookLite.webp'
 import insta from './Footer Images/insta.webp'
@@ -13,6 +15,7 @@ import linkedin from './Footer Images/linkedin.webp'
 import linkedinLite from './Footer Images/linkedinLite.webp'
 import youtube from './Footer Images/youtube.webp'
 import youtubeLite from './Footer Images/youtubeLite.webp'
+
 
 
 const Footer = () => {
@@ -112,7 +115,7 @@ const Footer = () => {
           </div>
           <div className='footerSub2'>
             <button className='footerButton' onClick={handleClick}>
-              {clicked ? <img src={UpArrow} alt="upArrow" /> : <img src={DownArrow} alt="DownArrow" />}
+              {clicked ? <img src={UpArrow} alt="upArrow" /> : <img className='downarrow' src={DownArrow} alt="DownArrow" />}
             </button>
           </div>
         </div>
@@ -121,13 +124,16 @@ const Footer = () => {
           
           <div className='footerBoxBSub1'>
             <div>
-            <img src={Logo} alt="Logo"/>
+            {/* <img src={Logo} alt="Logo"/> */}
+            <img src={nodatewhitelogo} alt="Logo"/>
             </div>
             <div className='footerText1'>
             Get Direction
             </div>
             <div className='footerText2'>
+
             Thomso Office Multi Activity Centre Indian Institute of Technology,Roorkee 247667
+
             </div>
           </div>
           <div className='footerRight' style={{display:"flex",flexDirection:"column",gap:"30px"}}>
@@ -150,13 +156,13 @@ const Footer = () => {
           </div>
 
           <div className='footerBoxBSub1'>
-           
-            <div className='footerText2'>
-            Pramod - 9694627622
+          <div className='footerText2'>
+            Anunjay - 8077071943
             </div>
             <div className='footerText2'>
-            Jolly - 7081537653
+            Abhishek - 6201151210
             </div>
+            
           </div>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import thomsologo from '../Assets/thomsologo.webp'
+import thomsologo from '../Assets/logoblack.webp'
 import './navbar.css';
 import hamburger from '../Assets/menu.webp';
 import {useLocation, useNavigate,Link} from 'react-router-dom';
