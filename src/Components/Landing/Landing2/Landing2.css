@@ -284,18 +284,7 @@ body {
   }
 
   .scooter-div {
-    margin-top: 31vh;
-    height: 30vh;
-  }
-
-  .scooter-img-div {
-    display: flex;
-    align-items: baseline;
-    height: 30vh;
-  }
-
-  .scooter-img {
-    margin-top: auto;
+    bottom: 2vh;
   }
 
   .active .landing2-text {
