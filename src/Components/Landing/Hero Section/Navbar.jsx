@@ -2,6 +2,7 @@ import React from 'react'
 import './Navbar.css'
 
 import logo from "../../Assets/ThomsoLogoBlack.svg";
+import nodatelogo from "../../Assets/logo-nodate.svg";
 
 import { useNavigate,Link } from 'react-router-dom';
 
@@ -18,7 +19,8 @@ const Navbar = ({display, classs}) => {
   return (
     <div className={`Nav-Wrapper ${classs}`}>
         <div className="nav-logo-div">
-            <img src={logoblack} alt="" />
+            {/* <img src={logoblack} alt="" /> */}
+            <img src={nodatelogo} alt="" />
 
         </div>
 

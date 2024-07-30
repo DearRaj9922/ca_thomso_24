@@ -4,6 +4,7 @@ import UpArrow from '../Footer/Footer Images/uparrow.webp';
 import DownArrow from '../Footer/Footer Images/downarrow.webp'
 // import Logo from './Footer Images/Logo.webp'
 import Logo from '../Assets/Logo-White.webp'
+import nodatewhitelogo from '../Assets/logo-nodate-white.svg';
 import facebook from './Footer Images/facebook.webp'
 import facebookLite from './Footer Images/facebookLite.webp'
 import insta from './Footer Images/insta.webp'
@@ -123,7 +124,8 @@ const Footer = () => {
           
           <div className='footerBoxBSub1'>
             <div>
-            <img src={Logo} alt="Logo"/>
+            {/* <img src={Logo} alt="Logo"/> */}
+            <img src={nodatewhitelogo} alt="Logo"/>
             </div>
             <div className='footerText1'>
             Get Direction
