@@ -1,6 +1,7 @@
 import React from 'react'
 import './Navbar.css'
 
+import logo from "../../Assets/ThomsoLogoBlack.svg";
 
 import { useNavigate,Link } from 'react-router-dom';
 

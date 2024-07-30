@@ -149,7 +149,9 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
           setLoading(false);
           
         } catch (err) {
-          setLoading(false);
+
+          console.log("status ", err?.response.status)
+         
           const { data } = err?.response;
           console.log("register Error:", data);
           var errorData = "";
@@ -158,8 +160,24 @@ const CollegeDetails = ({name,email,gender,contact,password}) => {
             
             setErrorMail(true)
             errorData =  `Please verify your registered email. <a href=/#/verifyemail>Click Here.`;
-          } else {
-            setMes(true);
+          }
+          else if (err?.response.status === 500){
+            let status;
+            let data;
+             await axios.post("https://api2.thomso.in/apiV1/registerca", userresponse).then(response => {data = response.data; status = response.status});
+             //  await axios.post("https://api2.thomso.in/apiV1/registerca", userresponse).then(response => {data = response.data; status = response.status});
+             
+             console.log(userresponse);
+       
+                 
+                   localStorage.setItem("user_id", data.user_id);
+                   setLoading(false);
+                   navigate("/verifyemail");
+            
+          }
+          
+           else {
+            // setMes(true);
             // window.location.reload(false);
             // message.warning("Email does not exist.Please enter correct email");
             for (var key in data) {
