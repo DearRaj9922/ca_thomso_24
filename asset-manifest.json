@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9d1444b6.css",
-    "main.js": "/static/js/main.49a98d25.js",
+    "main.js": "/static/js/main.2636d8fc.js",
     "static/js/488.0a81433a.chunk.js": "/static/js/488.0a81433a.chunk.js",
     "static/media/hand.svg": "/static/media/hand.8759d5ed2a5bcfc3652f53d404eb55f3.svg",
     "static/media/certificate.svg": "/static/media/certificate.96e53003d2cdeacba6353d67d3c30ef5.svg",
@@ -37,11 +37,13 @@
     "static/media/second.webp": "/static/media/second.747ed46674a9629f26b4.webp",
     "static/media/registrationbg-mobile.webp": "/static/media/registrationbg-mobile.d054f06c985ab2a58dc5.webp",
     "static/media/Nashville-Serial Bold.ttf": "/static/media/Nashville-Serial Bold.bfa9d0d33ce568c2b91d.ttf",
+    "static/media/logo-nodate.svg": "/static/media/logo-nodate.516ae0acd7a7817c5e66dd014a3bdd73.svg",
     "static/media/ThomsoLogoBlack.svg": "/static/media/ThomsoLogoBlack.fd17308e23b463a1db9001e51428a2bf.svg",
     "static/media/firstmob.webp": "/static/media/firstmob.c647a0dfb5b63716d1d0.webp",
     "static/media/quizardry.png": "/static/media/quizardry.a8f958ed94213e0c8788.png",
     "static/media/thirdmob.webp": "/static/media/thirdmob.f4cfed9147757715967a.webp",
     "static/media/secondmob.webp": "/static/media/secondmob.fccfa677be4bf7b2ade9.webp",
+    "static/media/logo-nodate-white.svg": "/static/media/logo-nodate-white.f6c4139af81dad3a05f6d787d4fa49d5.svg",
     "static/media/Welcome Back-text.webp": "/static/media/Welcome Back-text.0376ae803270a48dec6d.webp",
     "static/media/cam-ambasdor-tex.webp": "/static/media/cam-ambasdor-tex.5a479fd362ef60f1ce86.webp",
     "static/media/vacancy.svg": "/static/media/vacancy.59bd11a882bae26e1f424a819a2e0973.svg",
@@ -73,11 +75,11 @@
     "static/media/menu.webp": "/static/media/menu.0e31c8d2a6de5e522d3d.webp",
     "static/media/downarrow.webp": "/static/media/downarrow.af04b1ce1bba52b54fe8.webp",
     "main.9d1444b6.css.map": "/static/css/main.9d1444b6.css.map",
-    "main.49a98d25.js.map": "/static/js/main.49a98d25.js.map",
+    "main.2636d8fc.js.map": "/static/js/main.2636d8fc.js.map",
     "488.0a81433a.chunk.js.map": "/static/js/488.0a81433a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9d1444b6.css",
-    "static/js/main.49a98d25.js"
+    "static/js/main.2636d8fc.js"
   ]
 }
