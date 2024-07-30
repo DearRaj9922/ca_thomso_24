@@ -53,8 +53,8 @@ body {
 .landing4 {
   width: 100vw;
   height: 100vh;
-  /* margin: -8px; */
   position: relative;
+  padding-top: 6vh;
   overflow: hidden;
   object-fit: cover;
 }
