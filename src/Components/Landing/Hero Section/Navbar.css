@@ -52,6 +52,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .Nav-Wrapper {
+        position: absolute;
+        top: 0;
+    }
     .nav-logo-div{
         width: 20vw;
     }
