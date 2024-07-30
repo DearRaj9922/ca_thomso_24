@@ -93,7 +93,7 @@ function ProfileCard(props) {
                             <p className="profilecard-referral-text">Referral Code</p>
                             <div className="profilecard-referral-code">
                                 <p>{User?.thomso_id}</p>
-                                <img src={Copy} alt="copy"/>
+                                <div onClick={()=>getCode()}><img src={Copy} alt="copy"/></div>
                             </div>
                         </div>
                     </div>
