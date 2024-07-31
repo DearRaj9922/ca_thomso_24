@@ -37,6 +37,10 @@
     }
 }
 
+.lan-one {
+    padding-top: 0.5vh;
+}
+
 .landingImage {
     width: 100vw;
     height: 100vh;
