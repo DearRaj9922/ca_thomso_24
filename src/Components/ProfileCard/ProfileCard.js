@@ -23,6 +23,13 @@ function ProfileCard(props) {
             setPhoneNumber(value);
         }
     };
+    const truncateEmail = (email) => {
+        const [name, domain] = email.split('@');
+        if (name.length > 3) {
+            return `${name.slice(0, 4)}...@${domain}`;
+        }
+        return email;
+    };
     useEffect(() => {
         console.log('card',props)
         setUser(props.userDetails)
@@ -67,7 +74,7 @@ function ProfileCard(props) {
                                 <div>Phone no.</div>
                             </div>
                             <div className="items">
-                                <div>{User?.email}</div>
+                                <div>{truncateEmail(User?.email)}</div>
                                 <div className="inputbox">
                                     <div><input className="profile-card-phoneinput" value={phoneNumber}/></div>
                                     <button>Save</button>
