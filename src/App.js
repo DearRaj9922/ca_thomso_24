@@ -23,7 +23,7 @@ import Leaderboard from "./Components/NewLeaderboard/leaderboard";
 import Winner from "./Components/registration/Leaderboard/Winner.js";
 import Feed from "./Components/Feed/FeedData.js";
 import ForgotPassword from "./Components/registration/ForgotPassword/ForgotPassword.jsx";
-import ResetPass from "./Components/registration/Resetpass/ResetPass.js";
+import ResetPass from "./Components/registration/Resetpass/ResetPass";
 
 
 
