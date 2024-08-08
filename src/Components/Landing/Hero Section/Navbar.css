@@ -6,7 +6,11 @@
     align-items: center;
     /* width: 100vw; */
     overflow: hidden;
+<<<<<<< HEAD
     height: 18vh;
+=======
+    height: 15vh;
+>>>>>>> 40b0244f22c7c04a3dd128eecdb3e7d4cce7ac45
     width: 100vw;
     position: fixed;
     z-index: 1000;
@@ -52,6 +56,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .Nav-Wrapper {
+        position: absolute;
+        top: 0;
+    }
     .nav-logo-div{
         width: 20vw;
     }

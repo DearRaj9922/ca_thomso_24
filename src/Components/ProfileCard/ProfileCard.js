@@ -69,8 +69,9 @@ function ProfileCard(props) {
                             <div className="items">
                                 <div>{User?.email}</div>
                                 <div className="inputbox">
-                                    <div><input className="profile-card-phoneinput" value={phoneNumber}/></div>
-                                    <button>Save</button>
+                                    <div className='profile-card-phoneinput'>{phoneNumber}</div>
+                                    {/*<div><input className="profile-card-phoneinput" value={phoneNumber}/></div>*/}
+                                    {/*<button>Save</button>*/}
                                 </div>
                             </div>
                         </div>
@@ -93,7 +94,7 @@ function ProfileCard(props) {
                             <p className="profilecard-referral-text">Referral Code</p>
                             <div className="profilecard-referral-code">
                                 <p>{User?.thomso_id}</p>
-                                <img src={Copy} alt="copy"/>
+                                <div onClick={()=>getCode()}><img src={Copy} alt="copy"/></div>
                             </div>
                         </div>
                     </div>
@@ -122,23 +123,16 @@ function ProfileCard(props) {
                             <div className="items">
                                 <div>{User?.email}</div>
                                 <div className="inputbox">
-                                    <div><input
-                                        type="tel"
-                                        id="phoneInput"
-                                        className="profile-card-phoneinput"
-                                        value={phoneNumber}
-                                        onChange={handleChange}
-                                        placeholder="Enter phone number"
-                                    /></div>
-                                    <button className="profilecard-button1">
-                                        {/*<div className="profilecard-save">Save</div>*/}
-                                        {/*<div><img src={editbtn} alt="editbtn"/></div>*/}
+                                    <div>{phoneNumber}</div>
+                                    {/*<button className="profilecard-button1">*/}
+                                    {/*    /!*<div className="profilecard-save">Save</div>*!/*/}
+                                    {/*    /!*<div><img src={editbtn} alt="editbtn"/></div>*!/*/}
 
-                                        save
-                                    </button>
-                                    <div className="profilecard-button2">
-                                        <div><img src={editbtn} alt="editbtn"/></div>
-                                    </div>
+                                    {/*    save*/}
+                                    {/*</button>*/}
+                                    {/*<div className="profilecard-button2">*/}
+                                    {/*    <div><img src={editbtn} alt="editbtn"/></div>*/}
+                                    {/*</div>*/}
                                 </div>
                             </div>
                         </div>
