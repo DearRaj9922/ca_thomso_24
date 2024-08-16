@@ -40,6 +40,7 @@ import Winner from '../registration/Leaderboard/Winner.js';
     <div className="referral-mob-div">
       <MobNavbar/>
       <div className="referral-list">
+        <Winner users={users} />
             <LeaderList/>
         </div>
     </div>

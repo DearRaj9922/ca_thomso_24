@@ -42,6 +42,9 @@
         background-image: url(../Assets/profilemobbg.webp);
         background-size: cover  ;
     }
+    .referral-list {
+        /* margin-top: 50vh; */
+    }
 }
 /* .referral-bg{
     width:100vw;

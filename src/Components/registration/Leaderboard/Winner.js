@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import first from "../../Assets/first.webp";
 import second from "../../Assets/second.webp";
 import third from "../../Assets/third.webp";
@@ -9,6 +9,7 @@ import "./Leaderboard.css";
 // import profileimg from "../../Assets/guyprofile.svg"
 
 function Winner() {
+  const [isMobile, setIsMobile] = useState(window.matchMedia("(max-width: 768px)").matches);
   const users = [
     {
       name: "Rahul",
@@ -38,8 +39,27 @@ function Winner() {
       top_3.push(users[i]);
     }
   }
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 1024px)");
+    const handleResize = () => setIsMobile(mediaQuery.matches);
+
+    // Attach listener to update state on screen size change
+    mediaQuery.addEventListener("change", handleResize);
+
+    // Clean up listener on component unmount
+    return () => mediaQuery.removeEventListener("change", handleResize);
+  }, []);
+
+
   return (
-    <div className="winners" style={{ color: "#440035", height: "40vh", marginLeft: "-21vw" }}>
+    <div className="winners" 
+    style={{
+      color: "#440035",
+      height: isMobile ? "30vh" : "40vh",
+      marginLeft: isMobile ? "0" : "-21vw",
+      marginTop: isMobile ? "0vh" : "0",
+    }}>
       {top_3.length !== 0 && (
         <>
           <div className="win-bg leader-2">

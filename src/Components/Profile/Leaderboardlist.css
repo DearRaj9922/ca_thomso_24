@@ -101,6 +101,9 @@ li{
     .leader-list-header-contact{
         display:none;
     }
+    .leader-list-header-name {
+        width: 50% !important;
+    }
     .leader-list-content-id{
         display:none;
     }
@@ -114,6 +117,9 @@ li{
         background-color: white;
         border-radius: 15px;
         border-width: 5px;
+    }
+    .leader-list-header-college, .leader-list-content-college {
+        display: none;
     }
     .lauda{
         height:100vh;
