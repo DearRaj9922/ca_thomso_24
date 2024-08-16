@@ -56,7 +56,7 @@ function Winner() {
     <div className="winners" 
     style={{
       color: "#440035",
-      height: isMobile ? "30vh" : "40vh",
+      height: isMobile ? "30vh" : "45vh",
       marginLeft: isMobile ? "0" : "-21vw",
       marginTop: isMobile ? "0vh" : "0",
     }}>
