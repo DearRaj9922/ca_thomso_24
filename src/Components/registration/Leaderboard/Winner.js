@@ -39,7 +39,7 @@ function Winner() {
     }
   }
   return (
-    <div className="winners" style={{ color: "#440035" }}>
+    <div className="winners" style={{ color: "#440035", height: "40vh", marginLeft: "-21vw" }}>
       {top_3.length !== 0 && (
         <>
           <div className="win-bg leader-2">

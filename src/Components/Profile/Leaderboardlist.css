@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap');
+.lauda{
+    height: 40vw;
+}
+.leader-list-container {
+    width: 45vw;
+    height: 49vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: #111111 solid 2px ;
+    border-radius: 10px 10px 0px 0px;
+    overflow: scroll;
+    /* top: 10vh; */
+    left: 10%;
+    font-family: Karma;
+    font-weight: 500;
+    background-color: white;
+}
+.ref-heading{
+    display: none;
+}
+
+.leader-list-container::-webkit-scrollbar{
+    display: none;
+}
+.leader-list-container li{
+    list-style: none;
+    text-align: left;
+}
+.leader-list-header{
+    width: calc(100%- 20px);
+    align-content: center;
+    justify-content: center;
+    margin: 0px 10px 0px 10px;
+    border-bottom: #111111 4px solid;
+    position: sticky;
+    top: 0px;
+    background-color: #ffffff;
+}
+.leader-list-header>ul{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+    /*position: fixed;*/
+    /*width: 100%;*/
+}
+.leader-list-header-name{
+    width: 35% !important;
+}
+.leader-list-content{
+    width: calc(100% - 20px);
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px 0px 10px;
+}
+.leader-list-content-name{
+    width: 35% !important;
+}
+.leader-list-header-college{
+    width: 35% !important;
+}
+.leader-list-content ul{
+    display: flex;
+    justify-content: space-between;
+}
+.leader-list-header>ul>li{
+    width: 16%;
+    font-weight: 700;
+    text-align: center;
+
+}
+.leader-list-content li{
+    width: 16%;
+    text-align: center;
+}
+.leader-list-content-not-last{
+    border-bottom: #111111 1px solid;
+    padding: 0px 0px 10px 0px;
+}.leader-list-content-last{
+    padding: 0px 0px 10px 0px;
+}
+.leader-list-content-status-green{
+    color: #15BF11;
+    font-weight: 500;
+}
+.leader-list-content-status-red{
+    color: red;
+    font-weight: 500;
+}
+.leader-list-content-sr{
+
+}
+li{
+    margin: 0;
+}
+@media only screen and (max-width:1024px){
+    .leader-list-header-id{
+        display:none;
+    }
+    .leader-list-header-contact{
+        display:none;
+    }
+    .leader-list-content-id{
+        display:none;
+    }
+    .leader-list-content-contact{
+        display:none;
+    }
+    .leader-list-container{
+        top:15vh;
+        width:80vw;
+        height: 82vh;
+        background-color: white;
+        border-radius: 15px;
+        border-width: 5px;
+    }
+    .lauda{
+        height:100vh;
+        overflow: hidden;
+    }
+    .ref-heading{
+        display: block;
+        /* position: absolute; */
+        font-size: 6vw;
+        font-weight: 800;
+        margin:2vh 0 0 4vw;
+    }
+}

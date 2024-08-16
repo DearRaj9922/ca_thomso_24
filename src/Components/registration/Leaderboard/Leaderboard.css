@@ -502,6 +502,11 @@
   display: none;
 }
 
+.winners {
+  position: relative;
+  
+}
+
 #mob-nav-leaderboard {
   display: none;
 }
