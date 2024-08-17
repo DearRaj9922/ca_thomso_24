@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0453d34d.css",
-    "main.js": "/static/js/main.d3997088.js",
+    "main.css": "/static/css/main.9f2f94fe.css",
+    "main.js": "/static/js/main.e10fd589.js",
     "static/js/488.0a81433a.chunk.js": "/static/js/488.0a81433a.chunk.js",
     "static/media/hand.svg": "/static/media/hand.8759d5ed2a5bcfc3652f53d404eb55f3.svg",
     "static/media/certificate.svg": "/static/media/certificate.96e53003d2cdeacba6353d67d3c30ef5.svg",
@@ -35,6 +35,7 @@
     "static/media/WHAT DO WE OFFER_.svg": "/static/media/WHAT DO WE OFFER_.5a39efe342a3638ed4c2f109ac713fc2.svg",
     "static/media/third.webp": "/static/media/third.8ee63645b77c9ad74f15.webp",
     "static/media/second.webp": "/static/media/second.747ed46674a9629f26b4.webp",
+    "static/media/Frame 2 16.webp": "/static/media/Frame 2 16.8baf6f90bd790a6d65f2.webp",
     "static/media/registrationbg-mobile.webp": "/static/media/registrationbg-mobile.d054f06c985ab2a58dc5.webp",
     "static/media/Nashville-Serial Bold.ttf": "/static/media/Nashville-Serial Bold.bfa9d0d33ce568c2b91d.ttf",
     "static/media/logo-nodate.svg": "/static/media/logo-nodate.516ae0acd7a7817c5e66dd014a3bdd73.svg",
@@ -74,12 +75,12 @@
     "static/media/cross.webp": "/static/media/cross.f12e231260c87e3fafea.webp",
     "static/media/menu.webp": "/static/media/menu.0e31c8d2a6de5e522d3d.webp",
     "static/media/downarrow.webp": "/static/media/downarrow.af04b1ce1bba52b54fe8.webp",
-    "main.0453d34d.css.map": "/static/css/main.0453d34d.css.map",
-    "main.d3997088.js.map": "/static/js/main.d3997088.js.map",
+    "main.9f2f94fe.css.map": "/static/css/main.9f2f94fe.css.map",
+    "main.e10fd589.js.map": "/static/js/main.e10fd589.js.map",
     "488.0a81433a.chunk.js.map": "/static/js/488.0a81433a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0453d34d.css",
-    "static/js/main.d3997088.js"
+    "static/css/main.9f2f94fe.css",
+    "static/js/main.e10fd589.js"
   ]
 }
