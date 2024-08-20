@@ -21,7 +21,7 @@ export default function Navbar() {
                 <img className='thomso-logo' src={thomsologo}/>
                 <div className="rightcontainer">
                     <div className={location.pathname === '/leaderboard' ? 'active' : ''}
-                         onClick={() => navigate('/learderboard')}>Leaderboard
+                         onClick={() => navigate('/leaderboard')}>Leaderboard
                     </div>
                     <div className={location.pathname === '/feeds' ? 'active' : ''}
                          onClick={() => navigate('/feeds')}>Feeds

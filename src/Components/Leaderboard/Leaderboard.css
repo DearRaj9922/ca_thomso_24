@@ -1,0 +1,54 @@
+.referrals-main-div{
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
+    margin:0;
+    padding: 0;
+    background-image: url(../Assets/profilebackimg.webp);
+    background-size: cover;
+    /* display: flex; */
+}
+.refer-wrap{
+    display: flex;
+    margin-top: 20vw;
+    gap:7vw;
+    height:70vh;
+    align-items: end;
+}
+.profile-details{
+    /* position: absolute; */
+    z-index: 1;
+}
+.referral-mob-div{
+    display: none;
+}
+.leaderboard-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.leaderboard-left-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+@media only  screen and (max-width:1024px){
+    .referrals-main-div{
+        display: none;;
+    }
+    .referral-mob-div{
+        display: block;
+        width:100vw;
+        height:100vh;
+        background-image: url(../Assets/profilemobbg.webp);
+        background-size: cover  ;
+    }
+    .referral-list {
+        /* margin-top: 50vh; */
+    }
+}
+/* .referral-bg{
+    width:100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+} */
