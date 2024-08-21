@@ -19,7 +19,7 @@ import Footer from "./Components/Footer/Footer.js";
 import Profile from "./Components/Profile/Profile";
 import ProfileDetails from "./Components/ProfileDetails/ProfileDetails.js";
 import Referrals from "./Components/Referrals/referrals.js";
-import Leaderboard from "./Components/NewLeaderboard/leaderboard";
+import Landing from "./Components/Leaderboard/Leaderboard.jsx";
 import Winner from "./Components/registration/Leaderboard/Winner.js";
 import Feed from "./Components/Feed/FeedData.js";
 import ForgotPassword from "./Components/registration/ForgotPassword/ForgotPassword.jsx";
@@ -55,6 +55,7 @@ function App(props) {
                     <Route path='/' element={<CombinedLandingPage />} />
                     <Route path='/registration' element={<PersonalDetails />} />
                     <Route path='/verifyemail' element={<Emailverify />} />
+<<<<<<< HEAD
                     <Route path='/feeds' element={<Feed />} />
                     <Route path='/emailverified' element={<Emailverified />} />
                     <Route path='/login' element={<Login />} />
@@ -64,6 +65,16 @@ function App(props) {
                     <Route path='/leaderboard' element={<Leaderboard />} />
                     <Route path='/winners' element={<Winner />} />
                     <Route path='/forgotpassword' element={<ForgotPassword />} />
+=======
+                    <Route path='/emailverified' element={<Emailverified/>}/>
+                    <Route path='/login' element={<Login/>}/>
+                    <Route path='/profile' element={<Profile/>}/>
+                    <Route path='/profiledetail' element={<ProfileDetails/>}/>
+                    <Route path='/referrals' element={<Referrals/>}/>
+                    <Route path='/leaderboard' element={<Landing/>}/>
+                    <Route path='/winners' element={<Winner/>}/>
+                    <Route path='/forgotpassword' element={<ForgotPassword/>}/>
+>>>>>>> 10b01c99909c5128ea75acb4ce19df89c43f57d6
                     <Route
                         exact={true}
                         path="/auth/reset-password/:email/:token"
