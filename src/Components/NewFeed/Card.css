@@ -182,7 +182,10 @@
         padding: 2px 4px;
         border-radius:4px;
     }
-
+    .card-content .heading {
+        font-size: 0.5em;
+        color: #212121;
+      }
     .sharecount {
         font-size: 0.6em;
     }
