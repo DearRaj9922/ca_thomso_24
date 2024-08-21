@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: Karma;
+    font-size:16px;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.card {
+    height: 12em;
+    width:32em;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 600px;
+    margin: 20px;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+.card-image {
+    height: 100%;
+}
+
+.card-image img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:10px 0 10px 10px;
+    
+}
+
+.card-content .heading {
+    font-size: 1em;
+    color: #212121;
+}
+
+.card-content .content {
+    /* margin: 10px 0; */
+    color: #505050;
+    font-size:0.7em;
+}
+
+.card-content .note {
+    color: #FF6B00;
+    font-size:0.7em;
+    margin: 0 0;
+}
+
+.card-content button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.card-content button:hover {
+    background-color: #0056b3;
+}
+
+.copybutton {
+    height:1.8em;
+    display: inline-flex;
+    padding: 0.5em 0.8em;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1.5px solid #212121;
+    background: #FF00C7;
+    width: 6.9em;
+}
+
+.copyfont {
+    color: #212121;
+    font-family: Sansita;
+    font-weight: 700;
+    font-size:0.8em;
+}
+
+.sharecount {
+    font-weight: 700;
+    font-size:0.7em;
+}
+.copybtn{
+    order:1;
+}
+.points-earned {
+    order:2;
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    text-align:center;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size:1.7em;
+}
+
+.points-number {
+    font-size: 1em;
+    font-weight:700;
+    color: #15BF11;
+}
+
+.points-text {
+    font-size: 0.35em;
+    font-weight: 700;
+    color:#505050;
+}
+.bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+    *{
+        font-size:20px;
+    }
+    .card {
+        height: 8.5em;
+        width: 15em;
+    }
+
+    .card-content .content {
+        display: none;
+    }
+
+    .card-content .note {
+        font-size:0.6em;
+    }
+
+    .bottom {
+        flex-direction: column;
+        justify-content:center;
+    }
+
+    .points-earned {
+        order:1;
+        font-size: 1em;
+        width:100%;
+        row-gap:-1em;
+        flex-direction:row;
+        align-items: flex-start;
+        justify-content:flex-start;
+        position:static;
+        text-align:left;
+        column-gap: 1em;
+    }
+
+    .points-number {
+        font-size: 1.1em;
+        margin-right: 5px;
+    }
+
+    .points-text {
+        font-size: 0.5em;
+    }
+    .copybtn{
+        order:2;
+    }
+    .copybutton {
+        height:1.1em;
+        width: 5.2em;
+        padding: 2px 4px;
+        border-radius:4px;
+    }
+
+    .sharecount {
+        font-size: 0.6em;
+    }
+}

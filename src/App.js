@@ -15,6 +15,7 @@ import Emailverified from "./Components/registration/EmailVerify/EmailVerify.js"
 import Login from './Components/registration/login/login.js';
 import HeroSection from "./Components/Landing/Hero Section/HeroSection";
 import Footer from "./Components/Footer/Footer.js";
+import NewFeed from "./Components/NewFeed/NewFeed.js";
 
 import Profile from "./Components/Profile/Profile";
 import ProfileDetails from "./Components/ProfileDetails/ProfileDetails.js";
@@ -62,6 +63,7 @@ function App(props) {
                     <Route path='/leaderboard' element={<Landing/>}/>
                     <Route path='/winners' element={<Winner/>}/>
                     <Route path='/forgotpassword' element={<ForgotPassword/>}/>
+                    <Route path='/newfeed' element={<NewFeed/>}/>
                     <Route
             exact={true}
             path="/auth/reset-password/:email/:token"
