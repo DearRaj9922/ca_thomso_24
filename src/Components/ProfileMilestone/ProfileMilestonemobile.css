@@ -111,6 +111,7 @@ body {
 .ranking, .score, .referrals {
     text-align: center;
     position:relative;
+    margin:0 !important;
 }
 
 

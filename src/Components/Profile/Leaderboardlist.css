@@ -117,6 +117,7 @@ li{
         background-color: white;
         border-radius: 15px;
         border-width: 5px;
+        position:static;
     }
     .leader-list-header-college, .leader-list-content-college {
         display: none;

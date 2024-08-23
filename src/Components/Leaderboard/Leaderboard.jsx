@@ -26,9 +26,12 @@ import Winner from '../registration/Leaderboard/Winner.js';
                 <LeaderList/>
             </div> 
         </div>
+        <div>
         <div className="profile-details">
             <ProfileDetail/>
         </div>
+        </div>
+        
         </div>
         <div className="fooetr-div">
           <Footer/>

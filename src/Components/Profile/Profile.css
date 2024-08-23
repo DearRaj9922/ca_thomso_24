@@ -10,8 +10,10 @@
     height: calc(100vh - 8vh - 3rem - 40px + 1vh);
     /*padding-inline: 30px;*/
     display: flex;
-    align-items: end;
+    /* align-items: end; */
     justify-content: space-evenly;
+    align-items: flex-start;
+
 }
 
 .banner {
@@ -41,8 +43,9 @@
     color: #6E6D6D;
     font-size: x-large;
     display: flex;
+    height: 100%;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 20px;
     font-weight: bold;
 }
@@ -82,12 +85,16 @@
     border: 1px solid #74005A;
 }
 
-
+.profile-data{
+    height: 100%;
+}
 @media only screen and (max-width: 1000px) {
     .milestone-container {
         display: none;
     }
-
+    .profile-data{
+        height: auto;
+    }
     .banner {
         display: none;
     }

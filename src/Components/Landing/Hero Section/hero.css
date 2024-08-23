@@ -53,11 +53,11 @@
 }
 
 .hero_content {
-    padding-top: 5vh;
+    padding-top: 10vh;
     display: grid;
     place-content: center;
     text-align: center;
-    line-height: 0;
+    line-height: normal;
     margin-top: -2vw;
     font-size: 5vw;
     font-family: Sansita;
