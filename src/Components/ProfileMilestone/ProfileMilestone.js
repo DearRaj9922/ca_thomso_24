@@ -1,9 +1,11 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import './ProfileMilestone.css';
 import {connect} from "react-redux";
 import { fetchReferrals } from "../User/UserActions";
+import axios from "axios";
 
 const ReferralData = [
+
     { score: 20, name: "Mukul Dhiman" },
     { score: 20, name: "Mukul Dhiman" },
     { score: 20, name: "Mukul Dhiman" },
@@ -24,15 +26,30 @@ const ReferralData = [
 ];
 
 function ProfileMilestone(props) {
-    return (
+    const [reffs, setReffs] = useState([])
+    const [loader, setLoader] = useState(false)
+      useEffect(()=>{
+        (async()=>{
+            await axios.get(`https://api2.thomso.in/apiV1/ca_activity?ca_id=${localStorage.getItem('id')}`).then((res)=>{
+              console.log(res.data)
+                setReffs(res.data)
+            })
+            setLoader(true)
+        })()
+    },[])
+    if(!loader){
+        return(<></>)
+    }
+    else{
+        return (
         <div className="profile-milestone">
-            {props.referrals.map((item, index) => (
+            {reffs.map((item, index) => (
                 <React.Fragment key={index}>
                     <div className="milestone-item">
                         <div className="milestone-score">+{item.points}</div>
                         <div className="milestone-inner-text">
                             <div>Referral Accepted</div>
-                            <div className="milestone-secondary">{item.category} joined</div>
+                            <div className="milestone-secondary">{item.description}</div>
                         </div>
                     </div>
                     <div><hr /></div>
@@ -40,6 +57,8 @@ function ProfileMilestone(props) {
             ))}
         </div>
     );
+    }
+
 }
 
 const mapStateToProps = (state) => {

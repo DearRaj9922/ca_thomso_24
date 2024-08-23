@@ -6,9 +6,22 @@ import mobfirst from "../../Assets/firstmob.webp";
 import mobsecond from "../../Assets/secondmob.webp";
 import mobthird from "../../Assets/thirdmob.webp";
 import "./Leaderboard.css";
+import axios from "axios";
 // import profileimg from "../../Assets/guyprofile.svg"
 
 function Winner() {
+    const [loader, setLoader] = useState(false)
+    const [winners, setWinners] = useState([])
+
+    useEffect(()=>{
+        (async()=>{
+            await axios.get('https://api2.thomso.in/apiV1/ca_leaderboard').then((res)=>{
+                setWinners(res.data.slice(0,3))
+                // console.log(res.data.slice(0,3))
+            })
+            setLoader(true)
+        })()
+    },[])
   const [isMobile, setIsMobile] = useState(window.matchMedia("(max-width: 768px)").matches);
   const users = [
     {
@@ -31,7 +44,7 @@ function Winner() {
     },
   ];
 
-  console.log(users);
+  // console.log(users);
   let top_3 = [];
 
   for (let i = 0; i < 3; i++) {
@@ -51,9 +64,12 @@ function Winner() {
     return () => mediaQuery.removeEventListener("change", handleResize);
   }, []);
 
-
-  return (
-    <div className="winners" 
+if(!loader){
+    return(<></>)
+}
+else{
+    return (
+    <div className="winners"
     style={{
       color: "#440035",
       height: isMobile ? "30vh" : "45vh",
@@ -65,17 +81,17 @@ function Winner() {
           <div className="win-bg leader-2">
             <img src={second} alt="" />
             <div className="info">
-              <h2>{top_3[1].name}</h2>
-              <h4>{top_3[1].college.slice(0, 25)}... </h4>
+              <h2>{winners[1].name}</h2>
+              <h4>{winners[1].college.slice(0, 25)}... </h4>
             </div>
             <div className="details6">
               <div className="score">
-                <h1 style={{ margin: 0 }}>{top_3[1].total_score}</h1>
+                <h1 style={{ margin: 0 }}>{winners[1].total_score}</h1>
                 <hr className="line6" />
                 Score
               </div>
               <div className="ref">
-                <h1 style={{ margin: 0 }}>{top_3[1].referral_score}</h1>
+                <h1 style={{ margin: 0 }}>{winners[1].referral_score}</h1>
                 <hr className="line6" />
                 Referrals
               </div>
@@ -85,17 +101,17 @@ function Winner() {
           <div className="win-bg leader-1">
             <img src={first} alt="" />
             <div className="info">
-              <h2>{top_3[0].name}</h2>
-              <h4>{top_3[0].college.slice(0, 25)}...</h4>
+              <h2>{winners[0].name}</h2>
+              <h4>{winners[0].college.slice(0, 25)}...</h4>
             </div>
             <div className="details7">
               <div className="score">
-                <h1 style={{ margin: 0 }}>{top_3[0].total_score} </h1>
+                <h1 style={{ margin: 0 }}>{winners[0].total_score} </h1>
                 <hr className="line6" />
                 Score
               </div>
               <div className="ref">
-                <h1 style={{ margin: 0 }}>{top_3[0].referral_score}</h1>
+                <h1 style={{ margin: 0 }}>{winners[0].referral_score}</h1>
                 <hr className="line6" />
                 Referrals
               </div>
@@ -104,17 +120,17 @@ function Winner() {
           <div className="win-bg leader-3">
             <img src={third} alt="" />
             <div className="info">
-              <h2>{top_3[2].name}</h2>
-              <h4>{top_3[2].college.slice(0, 25)}...</h4>
+              <h2>{winners[2].name}</h2>
+              <h4>{winners[2].college.slice(0, 25)}...</h4>
             </div>
             <div className="details8">
               <div className="score">
-                <h1 style={{ margin: 0 }}>{top_3[2].total_score}</h1>
+                <h1 style={{ margin: 0 }}>{winners[2].total_score}</h1>
                 <hr className="line6" />
                 Score
               </div>
               <div className="ref">
-                <h1 style={{ margin: 0 }}>{top_3[2].referral_score}</h1>
+                <h1 style={{ margin: 0 }}>{winners[2].referral_score}</h1>
                 <hr className="line6" />
                 Referrals
               </div>
@@ -134,31 +150,31 @@ function Winner() {
             <div className="mob-win-bg mob-leader-1">
               <img src={mobfirst} alt="" />
               <div className="info">
-                <h2>{top_3[0].name}</h2>
+                <h2>{winners[0].name}</h2>
                 <h4 className="hideKro">{top_3[0].college}</h4>
               </div>
               <div className="points">
-                <h5>{top_3[0].total_score} pts</h5>
+                <h5>{winners[0].total_score} pts</h5>
               </div>
             </div>
             <div className="mob-win-bg mob-leader-2">
               <img src={mobsecond} alt="" />
               <div className="info">
-                <h2>{top_3[1].name}</h2>
+                <h2>{winners[1].name}</h2>
                 <h4 className="hideKro">{top_3[1].college}</h4>
               </div>
               <div className="points">
-                <h5>{top_3[1].total_score} pts</h5>
+                <h5>{winners[1].total_score} pts</h5>
               </div>
             </div>
             <div className="mob-win-bg mob-leader-3">
               <img src={mobthird} alt="" />
               <div className="info">
-                <h2>{top_3[2].name}</h2>
+                <h2>{winners[2].name}</h2>
                 <h4 className="hideKro">{top_3[2].college}</h4>
               </div>
               <div className="points">
-                <h5>{top_3[2].total_score} pts</h5>
+                <h5>{winners[2].total_score} pts</h5>
               </div>
             </div>
           </div>
@@ -166,6 +182,8 @@ function Winner() {
       )}
     </div>
   );
+}
+
 }
 
 export default Winner;

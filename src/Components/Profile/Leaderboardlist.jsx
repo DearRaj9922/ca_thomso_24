@@ -2,7 +2,19 @@ import React, { useState,useEffect } from "react";
 import './Leaderboardlist.css'
 import {fetchReferrals, fetchUser, logout} from "../User/UserActions";
 import {connect} from "react-redux";
+import axios from "axios";
 const Leaderboardlist = (props) =>{
+    const [loader, setLoader] = useState(false)
+    const [leaderpeeps,setLeaderpeeps] = useState([])
+    useEffect(()=>{
+        (async()=>{
+            await axios.get('https://api2.thomso.in/apiV1/ca_leaderboard').then((res)=>{
+                setLeaderpeeps(res.data)
+                // console.log(res.data)
+            })
+            setLoader(true)
+        })()
+    },[])
     const data = [
         {
             "Sr. no.": 1,
@@ -278,7 +290,11 @@ const Leaderboardlist = (props) =>{
             "feeStatus": "Paid"
         }
         ]
-            return(
+    if(!loader){
+        return (<></>)
+    }
+    else{
+        return(
                 <div className='lauda'>
                     <div className='leader-list-container'>
                         <div className="ref-heading">Referrals</div>
@@ -291,13 +307,13 @@ const Leaderboardlist = (props) =>{
                             </ul>
                         </div>
                         <div className='leader-list-content'>
-                            {props.referrals.map((item, index) => {
+                            {leaderpeeps.map((item, index) => {
                                 if(index == 0){
                                     return (<ul className='leader-list-content-first leader-list-content-not-last'>
                                         <li className='leader-list-content-sr'>{index + 1}</li>
                                         <li className='leader-list-content-name'>{item.name}</li>
                                         <li className='leader-list-content-college'>{item.college}</li>
-                                        <li className={item.feeStatus==='Paid'?"leader-list-content-status-green":"leader-list-content-status-red"}>{item.feeStatus}</li>
+                                        <li className='leader-list-content-college'>{item.total_score}</li>
                                     </ul>)
                                 }
                                 if(index === data.length - 1) {
@@ -305,14 +321,14 @@ const Leaderboardlist = (props) =>{
                                         <li className='leader-list-content-sr'>{index + 1}</li>
                                         <li className='leader-list-content-name'>{item.name}</li>
                                         <li className='leader-list-content-college'>{item.college}</li>
-                                        <li className={item.feeStatus==='Paid'?"leader-list-content-status-green":"leader-list-content-status-red"}>{item.feeStatus}</li>
+                                        <li className='leader-list-content-college'>{item.total_score}</li>
                                     </ul>)
                                 }
                                 return (<ul className='leader-list-content-not-last'>
                                     <li className='leader-list-content-sr'>{index + 1}</li>
                                     <li className='leader-list-content-name'>{item.name}</li>
                                     <li className='leader-list-content-college'>{item.college}</li>
-                                    <li className={item.feeStatus==='Paid'?"leader-list-content-status-green":"leader-list-content-status-red"}>{item.feeStatus}</li>
+                                    <li className='leader-list-content-college'>{item.total_score}</li>
                                 </ul>)
                             })}
                         </div>
@@ -320,6 +336,8 @@ const Leaderboardlist = (props) =>{
                 </div>
 
             )
+    }
+
 }
 const mapStateToProps = (state) => {
     let userDetails = state.user.user;
