@@ -16,6 +16,8 @@
     height:auto;
     align-items: end;
     overflow:visible;
+    justify-content: center;
+    align-items: flex-start;
 }
 .profile-details{
     /* position: absolute; */

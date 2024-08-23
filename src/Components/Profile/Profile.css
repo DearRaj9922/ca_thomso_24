@@ -85,10 +85,8 @@
     border: 1px solid #74005A;
 }
 
-.profile-data{
-    height: 100%;
-}
-@media only screen and (max-width: 1000px) {
+
+@media only screen and (max-width: 800px) {
     .milestone-container {
         display: none;
     }

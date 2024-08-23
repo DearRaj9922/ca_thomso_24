@@ -142,7 +142,7 @@ const Login = (props) => {
               </Link>
               {/* </div> */}
 
-              <button type="submit" id="log" disabled={!active} style={active == true ? {background: "#ff5c00"} : {background: "rgb(204, 204, 204)"}}>
+              <button type="submit" id="log" disabled={!active} style={active == true ? {background: "#ff00c7"} : {background: "rgb(204, 204, 204)"}}>
                 Log In
               </button>
               </form>

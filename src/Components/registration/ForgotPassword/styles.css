@@ -19,7 +19,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
-  margin: 20vh 0 0 0;
+  margin: 25vh 0 0 0;
   width: fit-content;
   /* height: 46.5vh !important; */
   height: auto;
@@ -80,6 +80,7 @@
   border: 2px solid #000000;
   color: #505050;
   text-align: left;
+  padding-left:10px;
   /* z-index: 45; */
 }
 

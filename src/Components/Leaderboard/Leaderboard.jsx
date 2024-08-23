@@ -9,12 +9,11 @@ import MobNavbar from "../Navbar/mobnavbar.js";
 import {fetchReferrals, fetchUser, logout} from "../User/UserActions";
 import {connect} from "react-redux";
 import Winner from '../registration/Leaderboard/Winner.js';
+import axios from "axios";
 
  function Leaderboard(props) {
     const [users, setUser] = useState([]);
-    useEffect(()=>{
-        console.log("reff",props)
-    },[])
+
   return (
     <>
     <div className='referrals-main-div'>
