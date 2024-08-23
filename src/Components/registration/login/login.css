@@ -147,7 +147,7 @@
 #log{
     border-radius: 6.074px;
     border: 1.518px solid #505050;
-    background: #FF5C00;
+    background: #ff00c7;
     box-shadow: 1.518475890159607px 3.036951780319214px 0px 0px #505050;
     color: #fff;
     font-family:'Karma Medium';
@@ -164,7 +164,7 @@
     cursor: pointer;
 }
 #log:hover{
-    background:#FF5C00;
+    background:#ff00c7;
 }
 #bottom{
     display: inline-block;
@@ -184,7 +184,7 @@
 
 #register{
     display: inline-block;
-    color: #FF5C00;
+    color: #ff00c7;
     /* leading-trim: both;
     text-edge: cap; */
     font-family: 'Karma Medium';

@@ -1,20 +1,20 @@
 import React, { useState } from 'react'
 import './footer.css'
-import UpArrow from '../Footer/Footer Images/uparrow.webp';
-import DownArrow from '../Footer/Footer Images/downarrow.webp'
+import UpArrow from '../Footer/Footer Images/uparrow.svg';
+import DownArrow from '../Footer/Footer Images/downarrow.svg'
 // import Logo from './Footer Images/Logo.webp'
 import Logo from '../Assets/Logo-White.webp'
 import nodatewhitelogo from '../Assets/logo-nodate-white.svg';
-import facebook from './Footer Images/facebook.webp'
-import facebookLite from './Footer Images/facebookLite.webp'
-import insta from './Footer Images/insta.webp'
-import instaLite from './Footer Images/instaLite.webp'
-import twitter from './Footer Images/twitter.webp'
-import twitterLite from './Footer Images/twitterLite.webp'
-import linkedin from './Footer Images/linkedin.webp'
-import linkedinLite from './Footer Images/linkedinLite.webp'
-import youtube from './Footer Images/youtube.webp'
-import youtubeLite from './Footer Images/youtubeLite.webp'
+import facebook from './Footer Images/facebook.svg'
+import facebookLite from './Footer Images/facebookLite.svg'
+import insta from './Footer Images/insta.svg'
+import instaLite from './Footer Images/instaLite.svg'
+import twitter from './Footer Images/twitter.svg'
+import twitterLite from './Footer Images/twitterLite.svg'
+import linkedin from './Footer Images/linkedin.svg'
+import linkedinLite from './Footer Images/linkedinLite.svg'
+import youtube from './Footer Images/youtube.svg'
+import youtubeLite from './Footer Images/youtubeLite.svg'
 
 
 

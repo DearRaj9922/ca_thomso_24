@@ -48,7 +48,7 @@ const FeedData = ({ fetchFeed, feeds }) => {
               </div>
               <div className="pRight">
                 <div className="phead">
-                  {user?.title ?? "Thomso'22- A Mystical Sierra"}
+                  {user?.title ?? "Thomso'24- A Mystical Sierra"}
                 </div>
                 <p
                   className="hideDesc"

@@ -27,7 +27,7 @@ const EmailVerify = () => {
             {/* <Link to='/collegedetailes'> */}
             <button className="submit" onClick={()=>{navigate("/login")}}>
               <Link to="/login" className="reg-btn1">
-                Continue Registration
+                Log In
               </Link>
             </button>
             {/* </Link> */}
