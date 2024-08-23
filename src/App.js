@@ -20,11 +20,12 @@ import NewFeed from "./Components/NewFeed/NewFeed.js";
 import Profile from "./Components/Profile/Profile";
 import ProfileDetails from "./Components/ProfileDetails/ProfileDetails.js";
 import Referrals from "./Components/Referrals/referrals.js";
-import Landing from "./Components/Leaderboard/Leaderboard.jsx";
+import Leaderboard from "./Components/Leaderboard/Leaderboard.jsx";
 import Winner from "./Components/registration/Leaderboard/Winner.js";
 import Feed from "./Components/Feed/FeedData.js";
 import ForgotPassword from "./Components/registration/ForgotPassword/ForgotPassword.jsx";
 import ResetPass from "./Components/registration/Resetpass/ResetPass";
+// import Leaderboard from "./Components/registration/Leaderboard/";
 
 
 
@@ -57,7 +58,7 @@ function App(props) {
                     <Route path='/registration' element={<PersonalDetails />} />
                     <Route path='/verifyemail' element={<Emailverify />} />
 
-                    <Route path='/feeds' element={<Feed />} />
+                    {/* <Route path='/feeds' element={<Feed />} /> */}
                     <Route path='/emailverified' element={<Emailverified />} />
                     <Route path='/login' element={<Login />} />
                     <Route path='/profile' element={<Profile />} />
@@ -68,7 +69,7 @@ function App(props) {
                     <Route path='/forgotpassword' element={<ForgotPassword />} />
 
 
-                    <Route path='/newfeed' element={<NewFeed/>}/>
+                    <Route path='/feeds' element={<NewFeed/>}/>
 
                     <Route
                         exact={true}
