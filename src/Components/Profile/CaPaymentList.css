@@ -11,8 +11,8 @@
     border: #111111 solid 2px ;
     border-radius: 10px 10px 0px 0px;
     overflow: scroll;
-    /* top: 10vh; */
-    left: 10%;
+    top: 0vh;
+    /* left: 10%; */
     font-family: Karma;
     font-weight: 500;
     background-color: white;
@@ -105,7 +105,7 @@ li{
         display:none;
     }
     .ca-payment-list-container{
-        top:15vh;
+        top:0vh;
         width:80vw;
         height: 82vh;
         background-color: white;

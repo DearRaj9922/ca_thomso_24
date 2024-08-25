@@ -1,9 +1,10 @@
 import React from 'react'
-import thomsologo from '../Assets/logoblack.webp'
+// import thomsologo from '../Assets/logoblack.webp'
 import './navbar.css';
 import hamburger from '../Assets/menu.webp';
 import {useLocation, useNavigate,Link} from 'react-router-dom';
 import Mobnavbar from './mobnavbar.js';
+import nodatelogo from "../Assets/logo-nodate.svg";
 
 export default function Navbar() {
     const navigate = useNavigate();
@@ -18,7 +19,7 @@ export default function Navbar() {
     return (
         <>
             <div className="navcontainer">
-                <img className='thomso-logo' src={thomsologo}/>
+                <img className='thomso-logo' src={nodatelogo}/>
                 <div className="rightcontainer">
                     <div className={location.pathname === '/leaderboard' ? 'active' : ''}
                          onClick={() => navigate('/leaderboard')}>Leaderboard

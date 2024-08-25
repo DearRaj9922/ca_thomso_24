@@ -88,7 +88,7 @@ const getUser = async()=>{
             <div className="profile-container">
                 {User?
                     (
-                <div><ProfileCard User={User} /></div>
+                <div className='profile-data'><ProfileCard User={User} /></div>
 
                     ):
                     (

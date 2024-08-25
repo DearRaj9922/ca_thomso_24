@@ -10,6 +10,7 @@
     width: 100vw;
     position: fixed;
     z-index: 1000;
+    top: 6vh;
 
 }
 
@@ -20,7 +21,7 @@
 }
 
 .nav-logo-div img {
-    width: 8vw
+    width: 8vw;
         /* overflow: hidden; */
 }
 

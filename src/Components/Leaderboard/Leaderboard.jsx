@@ -25,9 +25,12 @@ import axios from "axios";
                 <LeaderList/>
             </div> 
         </div>
+        <div>
         <div className="profile-details">
             <ProfileDetail/>
         </div>
+        </div>
+        
         </div>
         <div className="fooetr-div">
           <Footer/>

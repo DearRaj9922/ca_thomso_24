@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProfileMilestonemobile.css';
 import ProfileImg from '../Assets/ProfileImg.svg';
-import copy from '../Assets/copy.svg';
+import copy from '../Assets/copy.png';
 import edit from '../Assets/EditOutlined.svg'
 
 const ProfileMilestonemobile = () => {
@@ -32,7 +32,7 @@ const ProfileMilestonemobile = () => {
             <div className="underline"></div>
             <h2 className='rsr'>Ranking</h2>
           </div>
-          <div className='score'>
+          <div className='scores'>
             <h2 className="number rsr" id='score'>312</h2>
             <div className="underline"></div>
             <h2 className='rsr'>Score</h2>

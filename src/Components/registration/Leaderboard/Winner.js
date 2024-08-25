@@ -72,7 +72,7 @@ else{
     <div className="winners"
     style={{
       color: "#440035",
-      height: isMobile ? "30vh" : "45vh",
+      height: isMobile ? "70vw" : "45vh",
       marginLeft: isMobile ? "0" : "-21vw",
       marginTop: isMobile ? "0vh" : "0",
     }}>
@@ -144,7 +144,7 @@ else{
               justifyContent: "center",
               alignItems: "center",
               gap: "3vw",
-              marginTop: "10vh",
+              marginTop: "0vh",
             }}
           >
             <div className="mob-win-bg mob-leader-1">
