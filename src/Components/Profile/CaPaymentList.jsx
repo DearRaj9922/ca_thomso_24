@@ -2,7 +2,19 @@ import React, { useState,useEffect } from "react";
 import './CaPaymentList.css'
 import {fetchReferrals, fetchUser, logout} from "../User/UserActions";
 import {connect} from "react-redux";
+import axios from "axios";
 const CaPaymentList = (props) =>{
+    const[loading, setLoading] = useState(false)
+    const [reffdata, setReffdata] = useState([])
+    useEffect(()=>{
+        (async()=>{
+            await axios.get(`https://api2.thomso.in/apiV1/get_all_referral?ca_id=${localStorage.getItem('id')}`).then((res)=>{
+                setReffdata(res.data)
+                console.log(res.data)
+            });
+            setLoading(true)
+        })()
+    },[])
     const data = [
         {
             "Sr. no.": 1,
@@ -278,7 +290,11 @@ const CaPaymentList = (props) =>{
             "feeStatus": "Paid"
         }
         ]
-            return(
+    if(!loading){
+        return(<></>)
+    }
+    else{
+         return(
                 <div className='lauda'>
                     <div className='ca-payment-list-container'>
                         <div className="ref-heading">Referrals</div>
@@ -292,14 +308,15 @@ const CaPaymentList = (props) =>{
                             </ul>
                         </div>
                         <div className='ca-payment-list-content'>
-                            {props.referrals.map((item, index) => {
+                            {reffdata.map((item, index) => {
                                 if(index == 0){
                                     return (<ul className='ca-payment-list-content-first ca-payment-list-content-not-last'>
                                         <li className='ca-payment-list-content-sr'>{index + 1}</li>
                                         <li className='ca-payment-list-content-name'>{item.name}</li>
                                         <li className='ca-payment-list-content-id'>{item.id}</li>
                                         <li className='ca-payment-list-content-contact'>{item.contact}</li>
-                                        <li className={item.feeStatus==='Paid'?"ca-payment-list-content-status-green":"ca-payment-list-content-status-red"}>{item.feeStatus}</li>
+                                        {item.payment?(<li className={"ca-payment-list-content-status-green"}>Paid</li>):(<li className={"ca-payment-list-content-status-red"}>Unpaid</li>)}
+
                                     </ul>)
                                 }
                                 if(index === data.length - 1) {
@@ -308,7 +325,7 @@ const CaPaymentList = (props) =>{
                                         <li className='ca-payment-list-content-name'>{item.name}</li>
                                         <li className='ca-payment-list-content-id'>{item.id}</li>
                                         <li className='ca-payment-list-content-contact'>{item.contact}</li>
-                                        <li className={item.feeStatus==='Paid'?"ca-payment-list-content-status-green":"ca-payment-list-content-status-red"}>{item.feeStatus}</li>
+                                        {item.payment?(<li className={"ca-payment-list-content-status-green"}>Paid</li>):(<li className={"ca-payment-list-content-status-red"}>Unpaid</li>)}
                                     </ul>)
                                 }
                                 return (<ul className='ca-payment-list-content-not-last'>
@@ -316,7 +333,7 @@ const CaPaymentList = (props) =>{
                                     <li className='ca-payment-list-content-name'>{item.name}</li>
                                     <li className='ca-payment-list-content-id'>{item.id}</li>
                                     <li className='ca-payment-list-content-contact'>{item.contact}</li>
-                                    <li className={item.feeStatus==='Paid'?"ca-payment-list-content-status-green":"ca-payment-list-content-status-red"}>{item.feeStatus}</li>
+                                    {item.payment?(<li className={"ca-payment-list-content-status-green"}>Paid</li>):(<li className={"ca-payment-list-content-status-red"}>Unpaid</li>)}
                                 </ul>)
                             })}
                         </div>
@@ -324,6 +341,8 @@ const CaPaymentList = (props) =>{
                 </div>
 
             )
+    }
+
 }
 const mapStateToProps = (state) => {
     let userDetails = state.user.user;
