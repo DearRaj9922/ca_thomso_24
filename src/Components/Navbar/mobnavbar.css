@@ -24,7 +24,7 @@
     background: transparent;
     width: 100vw;
     padding-top: 2vh;
-    z-index: 5;
+    z-index: 10;
     position: fixed;
 }
 .nav-logo{
@@ -51,7 +51,7 @@
     font-family: samarkan;
     font-size:2rem;
     padding-top: 7vh;
-    z-index: 3;
+    z-index: 7;
     position: fixed;
     animation: sidePopin 1s forwards;
 
@@ -67,7 +67,7 @@
     font-family: samarkan;
     font-size:2rem;
     padding-top: 7vh;
-    z-index: 3;
+    z-index: 6;
     
     position: fixed;
     animation: sidePopup 1s forwards;

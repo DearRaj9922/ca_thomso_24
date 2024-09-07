@@ -151,7 +151,7 @@ else{
               <img src={mobfirst} alt="" />
               <div className="info">
                 <h2>{winners[0].name}</h2>
-                <h4 className="hideKro">{top_3[0].college}</h4>
+                <h4 className="hideKro">{winners[0].college.slice(0,25)}...</h4>
               </div>
               <div className="points">
                 <h5>{winners[0].total_score} pts</h5>
@@ -161,7 +161,7 @@ else{
               <img src={mobsecond} alt="" />
               <div className="info">
                 <h2>{winners[1].name}</h2>
-                <h4 className="hideKro">{top_3[1].college}</h4>
+                <h4 className="hideKro">{winners[1].college.slice(0,25)}...</h4>
               </div>
               <div className="points">
                 <h5>{winners[1].total_score} pts</h5>
@@ -171,7 +171,7 @@ else{
               <img src={mobthird} alt="" />
               <div className="info">
                 <h2>{winners[2].name}</h2>
-                <h4 className="hideKro">{top_3[2].college}</h4>
+                <h4 className="hideKro">{winners[2].college.slice(0,25)}...</h4>
               </div>
               <div className="points">
                 <h5>{winners[2].total_score} pts</h5>
