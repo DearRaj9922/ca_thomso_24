@@ -295,7 +295,7 @@ const Leaderboardlist = (props) =>{
     }
     else{
         return(
-                <div className='lauda'>
+                <div className='leadnew'>
                     <div className='leader-list-container'>
                         <div className="ref-heading">Referrals</div>
                         <div className='leader-list-header'>
@@ -313,7 +313,7 @@ const Leaderboardlist = (props) =>{
                                         <li className='leader-list-content-sr'>{index + 1}</li>
                                         <li className='leader-list-content-name'>{item.name}</li>
                                         <li className='leader-list-content-college'>{item.college}</li>
-                                        <li className='leader-list-content-college'>{item.total_score}</li>
+                                        <li className='leader-list-content-score'>{item.total_score}</li>
                                     </ul>)
                                 }
                                 if(index === data.length - 1) {
@@ -321,14 +321,14 @@ const Leaderboardlist = (props) =>{
                                         <li className='leader-list-content-sr'>{index + 1}</li>
                                         <li className='leader-list-content-name'>{item.name}</li>
                                         <li className='leader-list-content-college'>{item.college}</li>
-                                        <li className='leader-list-content-college'>{item.total_score}</li>
+                                        <li className='leader-list-content-score'>{item.total_score}</li>
                                     </ul>)
                                 }
                                 return (<ul className='leader-list-content-not-last'>
                                     <li className='leader-list-content-sr'>{index + 1}</li>
                                     <li className='leader-list-content-name'>{item.name}</li>
                                     <li className='leader-list-content-college'>{item.college}</li>
-                                    <li className='leader-list-content-college'>{item.total_score}</li>
+                                    <li className='leader-list-content-score'>{item.total_score}</li>
                                 </ul>)
                             })}
                         </div>

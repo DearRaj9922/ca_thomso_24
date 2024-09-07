@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap');
-.lauda{
+.leadnew{
     height: 40vw;
 }
 .leader-list-container {
@@ -122,7 +122,7 @@ li{
     .leader-list-header-college, .leader-list-content-college {
         display: none;
     }
-    .lauda{
+    .leadnew{
         height:100vh;
         overflow: hidden;
     }
