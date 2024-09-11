@@ -55,7 +55,7 @@
     .referral-mob-div{
         display: block;
         width:100%;
-        height:auto;
+        /* height:auto; */
         background-image: url(../Assets/profilemobbg.webp);
         background-size: cover  ;
         position: relative;
