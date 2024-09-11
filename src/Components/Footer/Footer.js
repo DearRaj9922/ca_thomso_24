@@ -157,7 +157,7 @@ const Footer = () => {
 
           <div className='footerBoxBSub1'>
           <div className='footerText2'>
-            Anunjay - 8077071943
+            Anunjay - 9128004995
             </div>
             <div className='footerText2'>
             Abhishek - 6201151210
