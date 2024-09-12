@@ -21,13 +21,13 @@
 }
 
 
-.profile-details {
+.profile-detailsnew {
     z-index: 1;
 }
 
 /* Media query to hide .profile-details on small devices */
 @media (max-width: 768px) {
-    .profile-details {
+    .profile-detailsnew {
         display: none; /* Hide the entire .child2 container, including .profile-details */
     }
     .child1{
