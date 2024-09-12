@@ -56,7 +56,7 @@ const NewFeed = () => {
                         ShareCount="06"
                     />
                 </div>
-                <div className="profile-details">
+                <div className="profile-detailsnew">
                     <ProfileDetail/>
                 </div>
             </div>
