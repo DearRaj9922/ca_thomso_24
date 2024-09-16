@@ -138,7 +138,7 @@
 }
 
 /* Mobile view */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     *{
         font-size:20px;
     }
