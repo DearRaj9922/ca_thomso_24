@@ -5,6 +5,12 @@
     padding:0;
     box-sizing:border-box;
 }
+.feedcard:hover{
+    transform: scale(1.05);
+}
+.feedcard{
+    transition: 0.2s ease-in-out;
+}
 
 .card {
     height: 12em;
@@ -82,6 +88,10 @@
     border: 1.5px solid #212121;
     background: #FF00C7;
     width: 6.9em;
+    transition: 0.2s ease-in-out;
+}
+.copybutton:hover{
+    transform: scale(1.05);
 }
 
 .copyfont {

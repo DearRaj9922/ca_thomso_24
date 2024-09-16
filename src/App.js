@@ -31,6 +31,7 @@ import ResetPass from "./Components/registration/Resetpass/ResetPass";
 
 import CombinedLandingPage from "./Components/CombinedLandingPage/CombinedLandingPage.js";
 import FeedData from "./Components/Feed/FeedData.js";
+import PostSharing from "./Components/PostSharing/index";
 
 
 function App(props) {
@@ -77,7 +78,7 @@ function App(props) {
                         element={<ResetPass />}
                     />
                     {/* <Route path='/feed' element={<Feed/>}/> */}
-
+                    <Route exact={true} path="/post_sharing" element={<PostSharing />} />
                     {/*<Route path='/quizardry' element={<Quizardry/>}/>*/}
 
                 </Routes>
