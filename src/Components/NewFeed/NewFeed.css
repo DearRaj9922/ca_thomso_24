@@ -31,9 +31,10 @@
         display: none; /* Hide the entire .child2 container, including .profile-details */
     }
     .child1{
+        margin-top: 5rem;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
     }
 }

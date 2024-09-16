@@ -144,7 +144,12 @@
     }
     .card {
         height: 8.5em;
-        width: 15em;
+        width: 18em;
+        overflow: visible;
+    }
+
+    .card-image {
+        height: 140px;
     }
 
     .card-content .content {
